@@ -1,0 +1,79 @@
+{
+    "workspace/mdn-tests/tests:test_dev_derby.py:test_are_previous_challenges_visible": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'base_url') == 'https://developer.mozilla.org'\", reason=\"The Dev Derby will be on hiatus from August to October\""
+            ]
+        }, 
+        "file": "test_dev_derby.py", 
+        "dir": "workspace/mdn-tests/tests", 
+        "method": "test_are_previous_challenges_visible"
+    }, 
+    "workspace/mdn-tests/tests:test_dev_derby.py:test_judge_photos_visible": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'base_url') == 'https://developer.mozilla.org'\", reason=\"The Dev Derby will be on hiatus from August to October\""
+            ]
+        }, 
+        "file": "test_dev_derby.py", 
+        "dir": "workspace/mdn-tests/tests", 
+        "method": "test_judge_photos_visible"
+    }, 
+    "workspace/mdn-tests/tests:test_dev_derby.py:test_derby_links_visible": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "\"No derby winners on production yet\""
+            ]
+        }, 
+        "file": "test_dev_derby.py", 
+        "dir": "workspace/mdn-tests/tests", 
+        "method": "test_derby_links_visible"
+    }, 
+    "workspace/mdn-tests/tests:test_demo.py:test_main_nav_links_are_visible": {
+        "results": {
+            "skip_or_xfail": [
+                "skip", 
+                "'allizom.org')\""
+            ]
+        }, 
+        "file": "test_demo.py", 
+        "dir": "workspace/mdn-tests/tests", 
+        "method": "test_main_nav_links_are_visible"
+    }, 
+    "workspace/mdn-tests/tests:test_home.py:test_read_docs_menu_link_urls_are_valid": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'allizom.org'"
+            ]
+        }, 
+        "file": "test_home.py", 
+        "dir": "workspace/mdn-tests/tests", 
+        "method": "test_read_docs_menu_link_urls_are_valid"
+    }, 
+    "workspace/mdn-tests/tests:test_dev_derby.py:test_main_nav_links_are_visible": {
+        "results": {
+            "skip_or_xfail": [
+                "skip", 
+                "'allizom.org')\""
+            ]
+        }, 
+        "file": "test_dev_derby.py", 
+        "dir": "workspace/mdn-tests/tests", 
+        "method": "test_main_nav_links_are_visible"
+    }, 
+    "workspace/mdn-tests/tests:test_learning.py:test_main_nav_links_are_visible": {
+        "results": {
+            "skip_or_xfail": [
+                "skip", 
+                "'allizom.org')\""
+            ]
+        }, 
+        "file": "test_learning.py", 
+        "dir": "workspace/mdn-tests/tests", 
+        "method": "test_main_nav_links_are_visible"
+    }
+}

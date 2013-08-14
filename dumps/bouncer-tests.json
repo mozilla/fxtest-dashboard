@@ -1,0 +1,35 @@
+{
+    "workspace/bouncer-tests/tests:test_redirects.py:test_that_checks_redirect_using_incorrect_query_values": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'base_url') == 'http://download.allizom.org'\""
+            ]
+        }, 
+        "file": "test_redirects.py", 
+        "dir": "workspace/bouncer-tests/tests", 
+        "method": "test_that_checks_redirect_using_incorrect_query_values"
+    }, 
+    "workspace/bouncer-tests/tests:test_redirects.py:test_redirect_for_firefox_aliases": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'https://bugzilla.mozilla.org/show_bug.cgi?id=813968 - Alias returns 404'"
+            ]
+        }, 
+        "file": "test_redirects.py", 
+        "dir": "workspace/bouncer-tests/tests", 
+        "method": "test_redirect_for_firefox_aliases"
+    }, 
+    "workspace/bouncer-tests/tests:test_redirects.py:test_stub_installer_redirect_for_en_us_and_win": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'there currently is not a stub installer -- xfailing until one lands in the wild'"
+            ]
+        }, 
+        "file": "test_redirects.py", 
+        "dir": "workspace/bouncer-tests/tests", 
+        "method": "test_stub_installer_redirect_for_en_us_and_win"
+    }
+}

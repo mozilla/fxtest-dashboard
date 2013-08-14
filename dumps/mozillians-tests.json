@@ -1,0 +1,13 @@
+{
+    "workspace/mozillians-tests/tests:test_profile.py:test_non_ascii_characters_are_allowed_in_profile_information": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "\"Bug   - Error adding groups / skills / or languages with non-latin chars.\""
+            ]
+        }, 
+        "file": "test_profile.py", 
+        "dir": "workspace/mozillians-tests/tests", 
+        "method": "test_non_ascii_characters_are_allowed_in_profile_information"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "workspace/mcom-tests/tests:test_contribute.py:test_want_to_help_form_is_correct": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 793002 - reCaptcha key for staging is bad'"
+            ]
+        }, 
+        "file": "test_contribute.py", 
+        "dir": "workspace/mcom-tests/tests", 
+        "method": "test_want_to_help_form_is_correct"
+    }, 
+    "workspace/mcom-tests/tests:test_404.py:test_xrobots_tag_is_present": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 744671 - x-robots-tag header not set after redirect'"
+            ]
+        }, 
+        "file": "test_404.py", 
+        "dir": "workspace/mcom-tests/tests", 
+        "method": "test_xrobots_tag_is_present"
+    }
+}

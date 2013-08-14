@@ -1,0 +1,13 @@
+{
+    "workspace/qmo-tests/tests:test_user_registration.py:test_new_user_can_register": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "u'There is a capcha on the registration page'"
+            ]
+        }, 
+        "file": "test_user_registration.py", 
+        "dir": "workspace/qmo-tests/tests", 
+        "method": "test_new_user_can_register"
+    }
+}

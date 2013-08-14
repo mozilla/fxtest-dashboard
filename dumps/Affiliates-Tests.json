@@ -1,0 +1,13 @@
+{
+    "workspace/Affiliates-Tests/tests:test_home_page.py:test_edit_profile_has_proper_display_name": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 897575 - [dev][traceback] Unable to register new accounts'"
+            ]
+        }, 
+        "file": "test_home_page.py", 
+        "dir": "workspace/Affiliates-Tests/tests", 
+        "method": "test_edit_profile_has_proper_display_name"
+    }
+}
