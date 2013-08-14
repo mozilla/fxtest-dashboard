@@ -1,0 +1,112 @@
+{
+    "workspace/Socorro-Tests/tests:test_layout.py:test_that_product_versions_are_ordered_correctly": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 687841 - Versions in Navigation Bar appear in wrong order'"
+            ]
+        }, 
+        "file": "test_layout.py", 
+        "dir": "workspace/Socorro-Tests/tests", 
+        "method": "test_that_product_versions_are_ordered_correctly"
+    }, 
+    "workspace/Socorro-Tests/tests:test_layout.py:test_that_products_are_sorted_correctly": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'base_url')\""
+            ]
+        }, 
+        "file": "test_layout.py", 
+        "dir": "workspace/Socorro-Tests/tests", 
+        "method": "test_that_products_are_sorted_correctly"
+    }, 
+    "workspace/Socorro-Tests/tests:test_search.py:test_that_filter_for_browser_results": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Disabled until bug 720037 is fixed'"
+            ]
+        }, 
+        "file": "test_search.py", 
+        "dir": "workspace/Socorro-Tests/tests", 
+        "method": "test_that_filter_for_browser_results"
+    }, 
+    "workspace/Socorro-Tests/tests:test_smoke_tests.py:test_that_bugzilla_link_contain_current_site": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Disabled until bug 891203 is fixed.'"
+            ]
+        }, 
+        "file": "test_smoke_tests.py", 
+        "dir": "workspace/Socorro-Tests/tests", 
+        "method": "test_that_bugzilla_link_contain_current_site"
+    }, 
+    "workspace/Socorro-Tests/tests:test_search.py:test_that_advanced_search_drilldown_results_are_correct": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Disabled until bug 788601 is fixed'"
+            ]
+        }, 
+        "file": "test_search.py", 
+        "dir": "workspace/Socorro-Tests/tests", 
+        "method": "test_that_advanced_search_drilldown_results_are_correct"
+    }, 
+    "workspace/Socorro-Tests/tests:test_download.py:test_that_csv_urls_are_valid": {
+        "results": {
+            "skip_or_xfail": [
+                "skip", 
+                "'Do not check csv urls on crash-stats-dev.allizom.org'"
+            ]
+        }, 
+        "file": "test_download.py", 
+        "dir": "workspace/Socorro-Tests/tests", 
+        "method": "test_that_csv_urls_are_valid"
+    }, 
+    "workspace/Socorro-Tests/tests:test_crash_reports.py:test_the_product_releases_return_results": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Lack of data on the staging server'"
+            ]
+        }, 
+        "file": "test_crash_reports.py", 
+        "dir": "workspace/Socorro-Tests/tests", 
+        "method": "test_the_product_releases_return_results"
+    }, 
+    "workspace/Socorro-Tests/tests:test_crash_reports.py:test_that_top_changers_is_highlighted_when_chosen": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'base_url')\", reason=\"Bug 603561 - Top Changers option isn't highlighted when chosen\""
+            ]
+        }, 
+        "file": "test_crash_reports.py", 
+        "dir": "workspace/Socorro-Tests/tests", 
+        "method": "test_that_top_changers_is_highlighted_when_chosen"
+    }, 
+    "workspace/Socorro-Tests/tests:test_crash_reports.py:test_that_filtering_for_a_past_date_returns_results": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "run=False, reason=\"Bug 721928 - We shouldn't let the user query /daily for dates past for which we don't have data\""
+            ]
+        }, 
+        "file": "test_crash_reports.py", 
+        "dir": "workspace/Socorro-Tests/tests", 
+        "method": "test_that_filtering_for_a_past_date_returns_results"
+    }, 
+    "workspace/Socorro-Tests/tests:test_crash_reports.py:test_that_malformed_urls_on_query_do_not_return_500_error": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 792096 - slight, malformed-URL regression we took in 19; fix me in 20'"
+            ]
+        }, 
+        "file": "test_crash_reports.py", 
+        "dir": "workspace/Socorro-Tests/tests", 
+        "method": "test_that_malformed_urls_on_query_do_not_return_500_error"
+    }
+}
