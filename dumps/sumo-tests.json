@@ -10,6 +10,28 @@
         "dir": "workspace/sumo-tests/tests/desktop", 
         "method": "test_that_questions_sorts_correctly_by_filter_equal_to_solved"
     }, 
+    "workspace/sumo-tests/tests/desktop:test_login_logout.py:test_logout_from_pages": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
+            ]
+        }, 
+        "file": "test_login_logout.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_logout_from_pages"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_rewrites.py:_check_redirect": {
+        "results": {
+            "skip_or_xfail": [
+                "skip", 
+                "\"Only run re-write tests on prod.\""
+            ]
+        }, 
+        "file": "test_rewrites.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "_check_redirect"
+    }, 
     "workspace/sumo-tests/tests/desktop:test_search.py:test_no_query_adv_forum_search": {
         "results": {
             "skip_or_xfail": [
@@ -20,17 +42,6 @@
         "file": "test_search.py", 
         "dir": "workspace/sumo-tests/tests/desktop", 
         "method": "test_no_query_adv_forum_search"
-    }, 
-    "workspace/sumo-tests/tests/desktop:test_search.py:test_user_flow_to_forum_post": {
-        "results": {
-            "skip_or_xfail": [
-                "skip", 
-                "'Search results are not guaranteed to exist on support-dev.allizom.org'"
-            ]
-        }, 
-        "file": "test_search.py", 
-        "dir": "workspace/sumo-tests/tests/desktop", 
-        "method": "test_user_flow_to_forum_post"
     }, 
     "workspace/sumo-tests/tests/desktop:test_questions.py:test_that_questions_sorts_correctly_by_filter_equal_to_no_replies": {
         "results": {
@@ -43,15 +54,15 @@
         "dir": "workspace/sumo-tests/tests/desktop", 
         "method": "test_that_questions_sorts_correctly_by_filter_equal_to_no_replies"
     }, 
-    "workspace/sumo-tests/tests/desktop:test_rewrites.py:_check_redirect": {
+    "workspace/sumo-tests/tests/desktop:test_search.py:test_user_flow_to_forum_post": {
         "results": {
             "skip_or_xfail": [
                 "skip", 
-                "\"Only run re-write tests on prod.\""
+                "'Search results are not guaranteed to exist on support-dev.allizom.org'"
             ]
         }, 
-        "file": "test_rewrites.py", 
+        "file": "test_search.py", 
         "dir": "workspace/sumo-tests/tests/desktop", 
-        "method": "_check_redirect"
+        "method": "test_user_flow_to_forum_post"
     }
 }
