@@ -3,7 +3,7 @@
         "results": {
             "skip_or_xfail": [
                 "xfail", 
-                "'base_url') == 'http://download.allizom.org'\""
+                "\"config.getvalue('base_url') == 'http://download.allizom.org'\""
             ]
         }, 
         "file": "test_redirects.py", 

@@ -14,7 +14,7 @@
         "results": {
             "skip_or_xfail": [
                 "xfail", 
-                "'base_url')\""
+                "\"'crash-stats-dev.allizom.org' in config.getvalue('base_url')\""
             ]
         }, 
         "file": "test_layout.py", 
@@ -80,7 +80,7 @@
         "results": {
             "skip_or_xfail": [
                 "xfail", 
-                "'base_url')\", reason=\"Bug 603561 - Top Changers option isn't highlighted when chosen\""
+                "\"'crash-stats-dev.allizom.org' in config.getvalue('base_url')\", reason=\"Bug 603561 - Top Changers option isn't highlighted when chosen\""
             ]
         }, 
         "file": "test_crash_reports.py", 

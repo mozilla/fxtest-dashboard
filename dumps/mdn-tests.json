@@ -3,7 +3,7 @@
         "results": {
             "skip_or_xfail": [
                 "xfail", 
-                "'base_url') == 'https://developer.mozilla.org'\", reason=\"The Dev Derby will be on hiatus from August to October\""
+                "\"config.getvalue('base_url') == 'https://developer.mozilla.org'\", reason=\"The Dev Derby will be on hiatus from August to October\""
             ]
         }, 
         "file": "test_dev_derby.py", 
@@ -14,7 +14,7 @@
         "results": {
             "skip_or_xfail": [
                 "xfail", 
-                "'base_url') == 'https://developer.mozilla.org'\", reason=\"The Dev Derby will be on hiatus from August to October\""
+                "\"config.getvalue('base_url') == 'https://developer.mozilla.org'\", reason=\"The Dev Derby will be on hiatus from August to October\""
             ]
         }, 
         "file": "test_dev_derby.py", 
@@ -35,8 +35,8 @@
     "workspace/mdn-tests/tests:test_demo.py:test_main_nav_links_are_visible": {
         "results": {
             "skip_or_xfail": [
-                "skip", 
-                "'allizom.org')\""
+                "skipif", 
+                "\"config.getvalue('base_url').endswith('allizom.org')\""
             ]
         }, 
         "file": "test_demo.py", 
@@ -47,7 +47,7 @@
         "results": {
             "skip_or_xfail": [
                 "xfail", 
-                "'allizom.org'"
+                "\"config.getvalue('base_url').endswith('allizom.org'"
             ]
         }, 
         "file": "test_home.py", 
@@ -57,8 +57,8 @@
     "workspace/mdn-tests/tests:test_dev_derby.py:test_main_nav_links_are_visible": {
         "results": {
             "skip_or_xfail": [
-                "skip", 
-                "'allizom.org')\""
+                "skipif", 
+                "\"config.getvalue('base_url').endswith('allizom.org')\""
             ]
         }, 
         "file": "test_dev_derby.py", 
@@ -68,8 +68,8 @@
     "workspace/mdn-tests/tests:test_learning.py:test_main_nav_links_are_visible": {
         "results": {
             "skip_or_xfail": [
-                "skip", 
-                "'allizom.org')\""
+                "skipif", 
+                "\"config.getvalue('base_url').endswith('allizom.org')\""
             ]
         }, 
         "file": "test_learning.py", 

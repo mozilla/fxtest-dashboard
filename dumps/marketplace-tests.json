@@ -57,7 +57,7 @@
     "workspace/marketplace-tests/tests/desktop/consumer_pages:test_reviews.py:test_that_checks_the_addition_of_a_review": {
         "results": {
             "skip_or_xfail": [
-                "skip", 
+                "skipif", 
                 "\"webdriver.__version__ >= '2.32.0'\", reason='Issue 5735: Firefox-Driver 2.33.0 falsely reports elements not to be visible'"
             ]
         }, 

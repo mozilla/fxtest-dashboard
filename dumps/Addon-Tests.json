@@ -13,8 +13,8 @@
     "workspace/Addon-Tests/tests/desktop:test_statistics.py:test_that_checks_content_in_json_endpoints_from_statistics_urls": {
         "results": {
             "skip_or_xfail": [
-                "skip", 
-                "\"base_url\")).netloc != \"addons.mozilla.org\"'"
+                "skipif", 
+                "'urlparse(config.getvalue(\"base_url\")).netloc != \"addons.mozilla.org\"'"
             ]
         }, 
         "file": "test_statistics.py", 
