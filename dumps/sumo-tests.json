@@ -1,15 +1,4 @@
 {
-    "workspace/sumo-tests/tests/desktop:test_questions.py:test_that_questions_sorts_correctly_by_filter_equal_to_solved": {
-        "results": {
-            "skip_or_xfail": [
-                "skip", 
-                "\"No questions present for filter=%s\" % expected_sorted_text"
-            ]
-        }, 
-        "file": "test_questions.py", 
-        "dir": "workspace/sumo-tests/tests/desktop", 
-        "method": "test_that_questions_sorts_correctly_by_filter_equal_to_solved"
-    }, 
     "workspace/sumo-tests/tests/desktop:test_login_logout.py:test_logout_from_pages": {
         "results": {
             "skip_or_xfail": [
@@ -20,6 +9,17 @@
         "file": "test_login_logout.py", 
         "dir": "workspace/sumo-tests/tests/desktop", 
         "method": "test_logout_from_pages"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_kb_article.py:test_that_article_can_be_created": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
+            ]
+        }, 
+        "file": "test_kb_article.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_that_article_can_be_created"
     }, 
     "workspace/sumo-tests/tests/desktop:test_rewrites.py:_check_redirect": {
         "results": {
@@ -32,16 +32,115 @@
         "dir": "workspace/sumo-tests/tests/desktop", 
         "method": "_check_redirect"
     }, 
-    "workspace/sumo-tests/tests/desktop:test_search.py:test_no_query_adv_forum_search": {
+    "workspace/sumo-tests/tests/desktop:test_login_logout.py:test_logout_from_edit_kb_article_page": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
+            ]
+        }, 
+        "file": "test_login_logout.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_logout_from_edit_kb_article_page"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_login_logout.py:test_logout_from_translate_kb_article_page": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
+            ]
+        }, 
+        "file": "test_login_logout.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_logout_from_translate_kb_article_page"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_login_logout.py:test_logout_from_new_kb_article_page": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
+            ]
+        }, 
+        "file": "test_login_logout.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_logout_from_new_kb_article_page"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_kb_article.py:test_that_article_can_be_translated": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
+            ]
+        }, 
+        "file": "test_kb_article.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_that_article_can_be_translated"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_search.py:test_user_flow_to_forum_post": {
         "results": {
             "skip_or_xfail": [
                 "skip", 
-                "'Search results are not guaranteed to exist on %s' % mozwebqa.base_url"
+                "'Search results are not guaranteed to exist on support-dev.allizom.org'"
+            ]
+        }, 
+        "file": "test_search.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_user_flow_to_forum_post"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_kb_article.py:test_that_article_can_be_previewed_before_submitting": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
+            ]
+        }, 
+        "file": "test_kb_article.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_that_article_can_be_previewed_before_submitting"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_questions.py:test_that_questions_sorts_correctly_by_filter_equal_to_solved": {
+        "results": {
+            "skip_or_xfail": [
+                "skip", 
+                "\"No questions present for filter=%s\" % expected_sorted_text"
+            ]
+        }, 
+        "file": "test_questions.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_that_questions_sorts_correctly_by_filter_equal_to_solved"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_search.py:test_no_query_adv_forum_search": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
             ]
         }, 
         "file": "test_search.py", 
         "dir": "workspace/sumo-tests/tests/desktop", 
         "method": "test_no_query_adv_forum_search"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_kb_article.py:test_that_article_can_be_deleted": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
+            ]
+        }, 
+        "file": "test_kb_article.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_that_article_can_be_deleted"
+    }, 
+    "workspace/sumo-tests/tests/desktop:test_questions.py:test_that_posting_question_works": {
+        "results": {
+            "skip_or_xfail": [
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
+            ]
+        }, 
+        "file": "test_questions.py", 
+        "dir": "workspace/sumo-tests/tests/desktop", 
+        "method": "test_that_posting_question_works"
     }, 
     "workspace/sumo-tests/tests/desktop:test_questions.py:test_that_questions_sorts_correctly_by_filter_equal_to_no_replies": {
         "results": {
@@ -54,15 +153,15 @@
         "dir": "workspace/sumo-tests/tests/desktop", 
         "method": "test_that_questions_sorts_correctly_by_filter_equal_to_no_replies"
     }, 
-    "workspace/sumo-tests/tests/desktop:test_search.py:test_user_flow_to_forum_post": {
+    "workspace/sumo-tests/tests/desktop:test_kb_article.py:test_that_article_can_be_edited": {
         "results": {
             "skip_or_xfail": [
-                "skip", 
-                "'Search results are not guaranteed to exist on support-dev.allizom.org'"
+                "xfail", 
+                "'Bug 905118 - Signing in from other pages always redirects user to home_page'"
             ]
         }, 
-        "file": "test_search.py", 
+        "file": "test_kb_article.py", 
         "dir": "workspace/sumo-tests/tests/desktop", 
-        "method": "test_user_flow_to_forum_post"
+        "method": "test_that_article_can_be_edited"
     }
 }
