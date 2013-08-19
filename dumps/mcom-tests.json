@@ -1,24 +1,38 @@
 {
-    "workspace/mcom-tests/tests:test_contribute.py:test_want_to_help_form_is_correct": {
-        "results": {
-            "skip_or_xfail": [
-                "xfail", 
-                "'Bug 793002 - reCaptcha key for staging is bad'"
-            ]
-        }, 
-        "file": "test_contribute.py", 
-        "dir": "workspace/mcom-tests/tests", 
-        "method": "test_want_to_help_form_is_correct"
+  "response": [
+    {
+      "results": {
+        "xfail": {
+          "reason": "'Bug 744671 - x-robots-tag header not set after redirect'", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/744671", 
+              "status": "Getting status...", 
+              "string": "Bug 744671"
+            }
+          ]
+        }
+      }, 
+      "file": "test_404.py", 
+      "dir": "workspace/mcom-tests/tests", 
+      "method": "test_xrobots_tag_is_present"
     }, 
-    "workspace/mcom-tests/tests:test_404.py:test_xrobots_tag_is_present": {
-        "results": {
-            "skip_or_xfail": [
-                "xfail", 
-                "'Bug 744671 - x-robots-tag header not set after redirect'"
-            ]
-        }, 
-        "file": "test_404.py", 
-        "dir": "workspace/mcom-tests/tests", 
-        "method": "test_xrobots_tag_is_present"
+    {
+      "results": {
+        "xfail": {
+          "reason": "'Bug 793002 - reCaptcha key for staging is bad'", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/793002", 
+              "status": "Getting status...", 
+              "string": "Bug 793002"
+            }
+          ]
+        }
+      }, 
+      "file": "test_contribute.py", 
+      "dir": "workspace/mcom-tests/tests", 
+      "method": "test_want_to_help_form_is_correct"
     }
+  ]
 }

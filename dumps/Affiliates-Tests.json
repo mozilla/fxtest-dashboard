@@ -1,13 +1,32 @@
 {
-    "workspace/Affiliates-Tests/tests:test_home_page.py:test_edit_profile_has_proper_display_name": {
-        "results": {
-            "skip_or_xfail": [
-                "xfail", 
-                "'Bug 897575 - [dev][traceback] Unable to register new accounts'"
-            ]
-        }, 
-        "file": "test_home_page.py", 
-        "dir": "workspace/Affiliates-Tests/tests", 
-        "method": "test_edit_profile_has_proper_display_name"
+  "response": [
+    {
+      "results": {
+        "xfail": {
+          "reason": "'Bug 897575 - [dev][traceback] Unable to register new accounts'", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/897575", 
+              "status": "Getting status...", 
+              "string": "Bug 897575"
+            }
+          ]
+        }
+      }, 
+      "file": "test_home_page.py", 
+      "dir": "workspace/Affiliates-Tests/tests", 
+      "method": "test_edit_profile_has_proper_display_name"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "'Selenium visibility/scroll issue, see http://code.google.com/p/selenium/issues/detail?id=6105'", 
+          "links": []
+        }
+      }, 
+      "file": "test_start_page.py", 
+      "dir": "workspace/Affiliates-Tests/tests", 
+      "method": "test_that_text_bubble_appears_on_hovering_learn_more_link"
     }
+  ]
 }

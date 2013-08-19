@@ -1,35 +1,49 @@
 {
-    "workspace/Addon-Tests/tests/mobile:test_home.py:test_that_checks_the_tabs": {
-        "results": {
-            "skip_or_xfail": [
-                "xfail", 
-                "'Bug 824471 - New Personas tab on mobile site not working as expected'"
-            ]
-        }, 
-        "file": "test_home.py", 
-        "dir": "workspace/Addon-Tests/tests/mobile", 
-        "method": "test_that_checks_the_tabs"
+  "response": [
+    {
+      "results": {
+        "skipif": {
+          "reason": "'urlparse(config.getvalue(\"base_url\")).netloc != \"addons.mozilla.org\"'", 
+          "links": []
+        }
+      }, 
+      "file": "test_statistics.py", 
+      "dir": "workspace/Addon-Tests/tests/desktop", 
+      "method": "test_that_checks_content_in_json_endpoints_from_statistics_urls"
     }, 
-    "workspace/Addon-Tests/tests/desktop:test_statistics.py:test_that_checks_content_in_json_endpoints_from_statistics_urls": {
-        "results": {
-            "skip_or_xfail": [
-                "skipif", 
-                "'urlparse(config.getvalue(\"base_url\")).netloc != \"addons.mozilla.org\"'"
-            ]
-        }, 
-        "file": "test_statistics.py", 
-        "dir": "workspace/Addon-Tests/tests/desktop", 
-        "method": "test_that_checks_content_in_json_endpoints_from_statistics_urls"
+    {
+      "results": {
+        "xfail": {
+          "reason": "'GitHub Issue: https://github.com/mozilla/Addon-Tests/issues/618 - need new prod account'", 
+          "links": [
+            {
+              "url": "https://api.github.com/repos/mozilla/Addon-Tests/issues/618", 
+              "status": "Getting status...", 
+              "string": "https://github.com/mozilla/Addon-Tests/issues/618"
+            }
+          ]
+        }
+      }, 
+      "file": "test_users_account.py", 
+      "dir": "workspace/Addon-Tests/tests/desktop", 
+      "method": "test_user_can_update_profile_information_in_account_settings_page"
     }, 
-    "workspace/Addon-Tests/tests/desktop:test_users_account.py:test_user_can_update_profile_information_in_account_settings_page": {
-        "results": {
-            "skip_or_xfail": [
-                "xfail", 
-                "'GitHub Issue: https://github.com/mozilla/Addon-Tests/issues/618 - need new prod account'"
-            ]
-        }, 
-        "file": "test_users_account.py", 
-        "dir": "workspace/Addon-Tests/tests/desktop", 
-        "method": "test_user_can_update_profile_information_in_account_settings_page"
+    {
+      "results": {
+        "xfail": {
+          "reason": "'Bug 824471 - New Personas tab on mobile site not working as expected'", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/824471", 
+              "status": "Getting status...", 
+              "string": "Bug 824471"
+            }
+          ]
+        }
+      }, 
+      "file": "test_home.py", 
+      "dir": "workspace/Addon-Tests/tests/mobile", 
+      "method": "test_that_checks_the_tabs"
     }
+  ]
 }

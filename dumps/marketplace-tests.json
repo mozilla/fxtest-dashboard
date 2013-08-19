@@ -1,90 +1,104 @@
 {
-    "workspace/marketplace-tests/tests/desktop/consumer_pages:test_purchase_app.py:test_that_purchases_an_app_without_pre_auth_and_requests_a_refund": {
-        "results": {
-            "skip_or_xfail": [
-                "xfail", 
-                "\"Purchase app option is currently not available for desktop environment\""
-            ]
-        }, 
-        "file": "test_purchase_app.py", 
-        "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-        "method": "test_that_purchases_an_app_without_pre_auth_and_requests_a_refund"
+  "response": [
+    {
+      "results": {
+        "skip": {
+          "reason": "\"We currently don't have the option for changing the language in Fireplace\"", 
+          "links": []
+        }
+      }, 
+      "file": "test_users_account.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_checks_changing_language"
     }, 
-    "workspace/marketplace-tests/tests/desktop/consumer_pages:test_reviews.py:test_that_checks_the_deletion_of_a_review": {
-        "results": {
-            "skip_or_xfail": [
-                "xfail", 
-                "\"Need different apps for different tests for reviews. Issue https://github.com/mozilla/marketplace-tests/issues/320.\""
-            ]
-        }, 
-        "file": "test_reviews.py", 
-        "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-        "method": "test_that_checks_the_deletion_of_a_review"
+    {
+      "results": {
+        "skip": {
+          "reason": "'Sort not available yet.'", 
+          "links": []
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_verifies_the_sort_region_from_search_results"
     }, 
-    "workspace/marketplace-tests/tests/desktop/consumer_pages:test_search.py:test_that_verifies_the_sort_region_from_search_results": {
-        "results": {
-            "skip_or_xfail": [
-                "skip", 
-                "'Sort not available yet.'"
-            ]
-        }, 
-        "file": "test_search.py", 
-        "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-        "method": "test_that_verifies_the_sort_region_from_search_results"
+    {
+      "results": {
+        "skip": {
+          "reason": "'Search suggestions not available yet.'", 
+          "links": []
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
     }, 
-    "workspace/marketplace-tests/tests/mobile:test_search.py:test_that_verifies_the_search_suggestions_list_under_the_search_field": {
-        "results": {
-            "skip_or_xfail": [
-                "xfail", 
-                "\"Search suggestions has not been implemented yet\""
-            ]
-        }, 
-        "file": "test_search.py", 
-        "dir": "workspace/marketplace-tests/tests/mobile", 
-        "method": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
+    {
+      "results": {
+        "skipif": {
+          "reason": "\"webdriver.__version__ >= '2.32.0'\", reason='Issue 5735: Firefox-Driver 2.33.0 falsely reports elements not to be visible'", 
+          "links": []
+        }
+      }, 
+      "file": "test_reviews.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_checks_the_addition_of_a_review"
     }, 
-    "workspace/marketplace-tests/tests/desktop/consumer_pages:test_users_account.py:test_that_checks_changing_language": {
-        "results": {
-            "skip_or_xfail": [
-                "skip", 
-                "\"We currently don't have the option for changing the language in Fireplace\""
-            ]
-        }, 
-        "file": "test_users_account.py", 
-        "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-        "method": "test_that_checks_changing_language"
+    {
+      "results": {
+        "xfail": {
+          "reason": "\"Need different apps for different tests for reviews. Issue https://github.com/mozilla/marketplace-tests/issues/320.\"", 
+          "links": [
+            {
+              "url": "https://api.github.com/repos/mozilla/marketplace-tests/issues/320", 
+              "status": "Getting status...", 
+              "string": "https://github.com/mozilla/marketplace-tests/issues/320"
+            }
+          ]
+        }
+      }, 
+      "file": "test_reviews.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_checks_the_deletion_of_a_review"
     }, 
-    "workspace/marketplace-tests/tests/desktop/consumer_pages:test_reviews.py:test_that_checks_the_addition_of_a_review": {
-        "results": {
-            "skip_or_xfail": [
-                "skipif", 
-                "\"webdriver.__version__ >= '2.32.0'\", reason='Issue 5735: Firefox-Driver 2.33.0 falsely reports elements not to be visible'"
-            ]
-        }, 
-        "file": "test_reviews.py", 
-        "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-        "method": "test_that_checks_the_addition_of_a_review"
+    {
+      "results": {
+        "xfail": {
+          "reason": "\"Bugzilla 769364 - IPN Updates refund table\"", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/769364", 
+              "status": "Getting status...", 
+              "string": "Bugzilla 769364"
+            }
+          ]
+        }
+      }, 
+      "file": "test_purchase_app.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "request_refund_procedure"
     }, 
-    "workspace/marketplace-tests/tests/desktop/consumer_pages:test_search.py:test_that_verifies_the_search_suggestions_list_under_the_search_field": {
-        "results": {
-            "skip_or_xfail": [
-                "skip", 
-                "'Search suggestions not available yet.'"
-            ]
-        }, 
-        "file": "test_search.py", 
-        "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-        "method": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
+    {
+      "results": {
+        "xfail": {
+          "reason": "\"Purchase app option is currently not available for desktop environment\"", 
+          "links": []
+        }
+      }, 
+      "file": "test_purchase_app.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_purchases_an_app_without_pre_auth_and_requests_a_refund"
     }, 
-    "workspace/marketplace-tests/tests/desktop/consumer_pages:test_purchase_app.py:request_refund_procedure": {
-        "results": {
-            "skip_or_xfail": [
-                "xfail", 
-                "\"Bugzilla 769364 - IPN Updates refund table\""
-            ]
-        }, 
-        "file": "test_purchase_app.py", 
-        "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-        "method": "request_refund_procedure"
+    {
+      "results": {
+        "xfail": {
+          "reason": "\"Search suggestions has not been implemented yet\"", 
+          "links": []
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/marketplace-tests/tests/mobile", 
+      "method": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
     }
+  ]
 }
