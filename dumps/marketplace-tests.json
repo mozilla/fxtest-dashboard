@@ -67,7 +67,7 @@
           "reason": "Bugzilla 769364 - IPN Updates refund table", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/769364", 
               "status": "Getting status...", 
               "string": "Bugzilla 769364"
             }

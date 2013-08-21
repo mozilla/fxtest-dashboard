@@ -6,7 +6,7 @@
           "reason": "Bug 744671 - x-robots-tag header not set after redirect", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/744671", 
               "status": "Getting status...", 
               "string": "Bug 744671"
             }
@@ -23,7 +23,7 @@
           "reason": "Bug 793002 - reCaptcha key for staging is bad", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/793002", 
               "status": "Getting status...", 
               "string": "Bug 793002"
             }

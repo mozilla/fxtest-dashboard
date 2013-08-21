@@ -17,7 +17,7 @@
           "reason": "Disabled until bug 891203 is fixed.", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/891203", 
               "status": "Getting status...", 
               "string": "bug 891203"
             }
@@ -45,7 +45,7 @@
           "reason": "Bug 687841 - Versions in Navigation Bar appear in wrong order", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/687841", 
               "status": "Getting status...", 
               "string": "Bug 687841"
             }
@@ -62,7 +62,7 @@
           "reason": "Disabled until bug 788601 is fixed", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/788601", 
               "status": "Getting status...", 
               "string": "bug 788601"
             }
@@ -79,7 +79,7 @@
           "reason": "Disabled until bug 720037 is fixed", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/720037", 
               "status": "Getting status...", 
               "string": "bug 720037"
             }
@@ -96,7 +96,7 @@
           "reason": "Bug 792096 - slight, malformed-URL regression we took in 19; fix me in 20", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/792096", 
               "status": "Getting status...", 
               "string": "Bug 792096"
             }
@@ -113,7 +113,7 @@
           "reason": "run=False, reason=\"Bug 721928 - We shouldn't let the user query /daily for dates past for which we don't have data", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/721928", 
               "status": "Getting status...", 
               "string": "Bug 721928"
             }
@@ -141,7 +141,7 @@
           "reason": "'crash-stats-dev.allizom.org' in config.getvalue('base_url')\", reason=\"Bug 603561 - Top Changers option isn't highlighted when chosen", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/603561", 
               "status": "Getting status...", 
               "string": "Bug 603561"
             }
