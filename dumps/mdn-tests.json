@@ -3,7 +3,7 @@
     {
       "results": {
         "skipif": {
-          "reason": "\"config.getvalue('base_url').endswith('allizom.org')\"", 
+          "reason": "config.getvalue('base_url').endswith('allizom.org')", 
           "links": []
         }
       }, 
@@ -14,7 +14,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "\"No derby winners on production yet\"", 
+          "reason": "No derby winners on production yet", 
           "links": []
         }
       }, 
@@ -25,7 +25,7 @@
     {
       "results": {
         "skipif": {
-          "reason": "\"config.getvalue('base_url').endswith('allizom.org')\"", 
+          "reason": "config.getvalue('base_url').endswith('allizom.org')", 
           "links": []
         }
       }, 
@@ -36,7 +36,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "\"config.getvalue('base_url') == 'https://developer.mozilla.org'\", reason=\"The Dev Derby will be on hiatus from August to October\"", 
+          "reason": "config.getvalue('base_url') == 'https://developer.mozilla.org'\", reason=\"The Dev Derby will be on hiatus from August to October", 
           "links": []
         }
       }, 
@@ -47,7 +47,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "\"config.getvalue('base_url') == 'https://developer.mozilla.org'\", reason=\"The Dev Derby will be on hiatus from August to October\"", 
+          "reason": "config.getvalue('base_url') == 'https://developer.mozilla.org'\", reason=\"The Dev Derby will be on hiatus from August to October", 
           "links": []
         }
       }, 
@@ -58,7 +58,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "\"config.getvalue('base_url').endswith('allizom.org'", 
+          "reason": "config.getvalue('base_url').endswith('allizom.org", 
           "links": []
         }
       }, 
@@ -69,7 +69,7 @@
     {
       "results": {
         "skipif": {
-          "reason": "\"config.getvalue('base_url').endswith('allizom.org')\"", 
+          "reason": "config.getvalue('base_url').endswith('allizom.org')", 
           "links": []
         }
       }, 

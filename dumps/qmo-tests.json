@@ -3,7 +3,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "u'There is a capcha on the registration page'", 
+          "reason": "u'There is a capcha on the registration page", 
           "links": []
         }
       }, 

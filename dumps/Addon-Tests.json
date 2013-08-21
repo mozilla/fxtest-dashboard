@@ -3,7 +3,7 @@
     {
       "results": {
         "skipif": {
-          "reason": "'urlparse(config.getvalue(\"base_url\")).netloc != \"addons.mozilla.org\"'", 
+          "reason": "urlparse(config.getvalue(\"base_url\")).netloc != \"addons.mozilla.org", 
           "links": []
         }
       }, 
@@ -14,7 +14,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "'GitHub Issue: https://github.com/mozilla/Addon-Tests/issues/618 - need new prod account'", 
+          "reason": "GitHub Issue: https://github.com/mozilla/Addon-Tests/issues/618 - need new prod account", 
           "links": [
             {
               "url": "https://api.github.com/repos/mozilla/Addon-Tests/issues/618", 
@@ -31,10 +31,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 824471 - New Personas tab on mobile site not working as expected'", 
+          "reason": "Bug 824471 - New Personas tab on mobile site not working as expected", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/824471", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 824471"
             }

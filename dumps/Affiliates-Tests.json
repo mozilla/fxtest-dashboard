@@ -3,10 +3,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 897575 - [dev][traceback] Unable to register new accounts'", 
+          "reason": "Bug 897575 - [dev][traceback] Unable to register new accounts", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/897575", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 897575"
             }
@@ -20,7 +20,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Selenium visibility/scroll issue, see http://code.google.com/p/selenium/issues/detail?id=6105'", 
+          "reason": "Selenium visibility/scroll issue, see http://code.google.com/p/selenium/issues/detail?id=6105", 
           "links": []
         }
       }, 

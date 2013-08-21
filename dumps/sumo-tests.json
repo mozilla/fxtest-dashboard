@@ -3,7 +3,7 @@
     {
       "results": {
         "skip": {
-          "reason": "\"No questions present for filter=%s\" % expected_sorted_text", 
+          "reason": "No questions present for filter=%s\" % expected_sorted_text", 
           "links": []
         }
       }, 
@@ -14,10 +14,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -31,7 +31,7 @@
     {
       "results": {
         "skip": {
-          "reason": "\"No questions present for filter=%s\" % expected_sorted_text", 
+          "reason": "No questions present for filter=%s\" % expected_sorted_text", 
           "links": []
         }
       }, 
@@ -42,10 +42,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -59,10 +59,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -76,10 +76,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -93,10 +93,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -110,7 +110,7 @@
     {
       "results": {
         "skip": {
-          "reason": "\"Only run re-write tests on prod.\"", 
+          "reason": "Only run re-write tests on prod.", 
           "links": []
         }
       }, 
@@ -121,10 +121,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -138,10 +138,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -155,10 +155,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -172,10 +172,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -189,10 +189,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -206,20 +206,20 @@
     {
       "results": {
         "skip": {
-          "reason": "'Search results are not guaranteed to exist on %s' % mozwebqa.base_url", 
+          "reason": "Search results are not guaranteed to exist on %s' % mozwebqa.base_url", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
           ]
         }, 
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -233,20 +233,20 @@
     {
       "results": {
         "skip": {
-          "reason": "'Search results are not guaranteed to exist on %s' % mozwebqa.base_url", 
+          "reason": "Search results are not guaranteed to exist on %s' % mozwebqa.base_url", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
           ]
         }, 
         "xfail": {
-          "reason": "'Bug 905118 - Signing in from other pages always redirects user to home_page'", 
+          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 905118"
             }
@@ -260,7 +260,7 @@
     {
       "results": {
         "skip": {
-          "reason": "'Search results are not guaranteed to exist on support-dev.allizom.org'", 
+          "reason": "Search results are not guaranteed to exist on support-dev.allizom.org", 
           "links": []
         }
       }, 

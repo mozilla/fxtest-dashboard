@@ -3,10 +3,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 744671 - x-robots-tag header not set after redirect'", 
+          "reason": "Bug 744671 - x-robots-tag header not set after redirect", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/744671", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 744671"
             }
@@ -20,10 +20,10 @@
     {
       "results": {
         "xfail": {
-          "reason": "'Bug 793002 - reCaptcha key for staging is bad'", 
+          "reason": "Bug 793002 - reCaptcha key for staging is bad", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/793002", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/\u0002", 
               "status": "Getting status...", 
               "string": "Bug 793002"
             }

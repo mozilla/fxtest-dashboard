@@ -3,7 +3,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "\"Bug   - Error adding groups / skills / or languages with non-latin chars.\"", 
+          "reason": "Bug   - Error adding groups / skills / or languages with non-latin chars.", 
           "links": []
         }
       }, 

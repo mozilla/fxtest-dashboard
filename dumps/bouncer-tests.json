@@ -3,7 +3,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "\"config.getvalue('base_url') == 'http://download.allizom.org'\"", 
+          "reason": "config.getvalue('base_url') == 'http://download.allizom.org'", 
           "links": []
         }
       }, 
@@ -14,7 +14,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "'there currently is not a stub installer -- xfailing until one lands in the wild'", 
+          "reason": "there currently is not a stub installer -- xfailing until one lands in the wild", 
           "links": []
         }
       }, 
@@ -25,7 +25,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "'https://bugzilla.mozilla.org/show_bug.cgi?id=813968 - Alias returns 404'", 
+          "reason": "https://bugzilla.mozilla.org/show_bug.cgi?id=813968 - Alias returns 404", 
           "links": []
         }
       }, 
