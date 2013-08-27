@@ -35,34 +35,6 @@
     }, 
     {
       "results": {
-        "skipif": {
-          "reason": "webdriver.__version__ >= '2.32.0'\", reason='Issue 5735: Firefox-Driver 2.33.0 falsely reports elements not to be visible", 
-          "links": []
-        }
-      }, 
-      "file": "test_reviews.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-      "method": "test_that_checks_the_addition_of_a_review"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Need different apps for different tests for reviews. Issue https://github.com/mozilla/marketplace-tests/issues/320.", 
-          "links": [
-            {
-              "url": "https://api.github.com/repos/mozilla/marketplace-tests/issues/320", 
-              "status": "Getting status...", 
-              "string": "https://github.com/mozilla/marketplace-tests/issues/320"
-            }
-          ]
-        }
-      }, 
-      "file": "test_reviews.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-      "method": "test_that_checks_the_deletion_of_a_review"
-    }, 
-    {
-      "results": {
         "xfail": {
           "reason": "Bugzilla 769364 - IPN Updates refund table", 
           "links": [
