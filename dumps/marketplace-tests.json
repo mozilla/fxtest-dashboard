@@ -13,6 +13,23 @@
     }, 
     {
       "results": {
+        "xfail": {
+          "reason": "Bug 911072 - [dev] \"Save Changes\" button from edit users account settings doesnt work correctly", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/911072", 
+              "status": "Getting status...", 
+              "string": "Bug 911072"
+            }
+          ]
+        }
+      }, 
+      "file": "test_users_account.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_editing_user_profile"
+    }, 
+    {
+      "results": {
         "skip": {
           "reason": "Sort not available yet.", 
           "links": []

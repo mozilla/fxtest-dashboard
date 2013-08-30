@@ -13,23 +13,6 @@
     }, 
     {
       "results": {
-        "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
-              "status": "Getting status...", 
-              "string": "Bug 905118"
-            }
-          ]
-        }
-      }, 
-      "file": "test_questions.py", 
-      "dir": "workspace/sumo-tests/tests/desktop", 
-      "method": "test_that_posting_question_works"
-    }, 
-    {
-      "results": {
         "skip": {
           "reason": "No questions present for filter=%s\" % expected_sorted_text", 
           "links": []
@@ -42,29 +25,12 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
+          "reason": "Bug 910149 - [browserid] Going to a @login_required view sends user to non-Persona login page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/910149", 
               "status": "Getting status...", 
-              "string": "Bug 905118"
-            }
-          ]
-        }
-      }, 
-      "file": "test_login_logout.py", 
-      "dir": "workspace/sumo-tests/tests/desktop", 
-      "method": "test_logout_from_pages"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
-              "status": "Getting status...", 
-              "string": "Bug 905118"
+              "string": "Bug 910149"
             }
           ]
         }
@@ -76,12 +42,12 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
+          "reason": "Bug 910149 - [browserid] Going to a @login_required view sends user to non-Persona login page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/910149", 
               "status": "Getting status...", 
-              "string": "Bug 905118"
+              "string": "Bug 910149"
             }
           ]
         }
@@ -93,12 +59,12 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
+          "reason": "Bug 910149 - [browserid] Going to a @login_required view sends user to non-Persona login page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/910149", 
               "status": "Getting status...", 
-              "string": "Bug 905118"
+              "string": "Bug 910149"
             }
           ]
         }
@@ -121,12 +87,12 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
+          "reason": "Bug 910149 - [browserid] Going to a @login_required view sends user to non-Persona login page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/910149", 
               "status": "Getting status...", 
-              "string": "Bug 905118"
+              "string": "Bug 910149"
             }
           ]
         }
@@ -138,12 +104,12 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
+          "reason": "Bug 910149 - [browserid] Going to a @login_required view sends user to non-Persona login page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/910149", 
               "status": "Getting status...", 
-              "string": "Bug 905118"
+              "string": "Bug 910149"
             }
           ]
         }
@@ -155,12 +121,12 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
+          "reason": "Bug 910149 - [browserid] Going to a @login_required view sends user to non-Persona login page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/910149", 
               "status": "Getting status...", 
-              "string": "Bug 905118"
+              "string": "Bug 910149"
             }
           ]
         }
@@ -172,12 +138,12 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
+          "reason": "Bug 910149 - [browserid] Going to a @login_required view sends user to non-Persona login page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/910149", 
               "status": "Getting status...", 
-              "string": "Bug 905118"
+              "string": "Bug 910149"
             }
           ]
         }
@@ -189,12 +155,12 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
+          "reason": "Bug 910149 - [browserid] Going to a @login_required view sends user to non-Persona login page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/910149", 
               "status": "Getting status...", 
-              "string": "Bug 905118"
+              "string": "Bug 910149"
             }
           ]
         }
@@ -207,50 +173,7 @@
       "results": {
         "skip": {
           "reason": "Search results are not guaranteed to exist on %s' % mozwebqa.base_url", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
-              "status": "Getting status...", 
-              "string": "Bug 905118"
-            }
-          ]
-        }, 
-        "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
-              "status": "Getting status...", 
-              "string": "Bug 905118"
-            }
-          ]
-        }
-      }, 
-      "file": "test_search.py", 
-      "dir": "workspace/sumo-tests/tests/desktop", 
-      "method": "test_no_query_adv_forum_search"
-    }, 
-    {
-      "results": {
-        "skip": {
-          "reason": "Search results are not guaranteed to exist on %s' % mozwebqa.base_url", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
-              "status": "Getting status...", 
-              "string": "Bug 905118"
-            }
-          ]
-        }, 
-        "xfail": {
-          "reason": "Bug 905118 - Signing in from other pages always redirects user to home_page", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/905118", 
-              "status": "Getting status...", 
-              "string": "Bug 905118"
-            }
-          ]
+          "links": []
         }
       }, 
       "file": "test_search.py", 

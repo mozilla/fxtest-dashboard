@@ -2,17 +2,6 @@
   "response": [
     {
       "results": {
-        "skip": {
-          "reason": "Do not check csv urls on crash-stats-dev.allizom.org", 
-          "links": []
-        }
-      }, 
-      "file": "test_download.py", 
-      "dir": "workspace/Socorro-Tests/tests", 
-      "method": "test_that_csv_urls_are_valid"
-    }, 
-    {
-      "results": {
         "xfail": {
           "reason": "Disabled until bug 891203 is fixed.", 
           "links": [
