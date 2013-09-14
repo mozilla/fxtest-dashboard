@@ -64,23 +64,6 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 912838 - Screenshots and app icons are missing from homepage/detail pages", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/912838", 
-              "status": "Getting status...", 
-              "string": "Bug 912838"
-            }
-          ]
-        }
-      }, 
-      "file": "test_details_page.py", 
-      "dir": "workspace/marketplace-tests/tests/mobile", 
-      "method": "test_reviews_section"
-    }, 
-    {
-      "results": {
-        "xfail": {
           "reason": "Search suggestions has not been implemented yet", 
           "links": []
         }
