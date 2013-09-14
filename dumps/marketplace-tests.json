@@ -1,0 +1,76 @@
+{
+  "response": [
+    {
+      "results": {
+        "skip": {
+          "reason": "We currently don't have the option for changing the language in Fireplace", 
+          "links": []
+        }
+      }, 
+      "file": "test_users_account.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_checks_changing_language"
+    }, 
+    {
+      "results": {
+        "skip": {
+          "reason": "Sort not available yet.", 
+          "links": []
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_verifies_the_sort_region_from_search_results"
+    }, 
+    {
+      "results": {
+        "skip": {
+          "reason": "Search suggestions not available yet.", 
+          "links": []
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bugzilla 769364 - IPN Updates refund table", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/769364", 
+              "status": "Getting status...", 
+              "string": "Bugzilla 769364"
+            }
+          ]
+        }
+      }, 
+      "file": "test_purchase_app.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "request_refund_procedure"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Purchase app option is currently not available for desktop environment", 
+          "links": []
+        }
+      }, 
+      "file": "test_purchase_app.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_purchases_an_app_without_pre_auth_and_requests_a_refund"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Search suggestions has not been implemented yet", 
+          "links": []
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/marketplace-tests/tests/mobile", 
+      "method": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "response": [
+    {
+      "results": {
+        "xfail": {
+          "reason": "Disabled until bug 788601 is fixed", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/788601", 
+              "status": "Getting status...", 
+              "string": "bug 788601"
+            }
+          ]
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/Socorro-Tests/tests", 
+      "method": "test_that_advanced_search_drilldown_results_are_correct"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 913549 - Malformed searches should return a no results returned message", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/913549", 
+              "status": "Getting status...", 
+              "string": "Bug 913549"
+            }
+          ]
+        }
+      }, 
+      "file": "test_crash_reports.py", 
+      "dir": "workspace/Socorro-Tests/tests", 
+      "method": "test_that_malformed_advanced_searches_should_not_return_an_error_message"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 913126 - Advanced Search: No results returned for 24.0b", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/913126", 
+              "status": "Getting status...", 
+              "string": "Bug 913126"
+            }
+          ]
+        }
+      }, 
+      "file": "test_crash_reports.py", 
+      "dir": "workspace/Socorro-Tests/tests", 
+      "method": "test_that_top_crashers_reports_links_work"
+    }
+  ]
+}
