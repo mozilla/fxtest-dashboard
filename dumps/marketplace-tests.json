@@ -40,9 +40,8 @@
           "links": [
             {
               "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/769364", 
-              "status": "Getting status...", 
-              "to_use": "Bugzilla 769364", 
-              "raw": "Bugzilla 769364"
+              "raw": "Bugzilla 769364", 
+              "to_use": "Bugzilla 769364"
             }
           ]
         }

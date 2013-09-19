@@ -7,9 +7,8 @@
           "links": [
             {
               "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/744671", 
-              "status": "Getting status...", 
-              "to_use": "Bug 744671", 
-              "raw": "Bug 744671"
+              "raw": "Bug 744671", 
+              "to_use": "Bug 744671"
             }
           ]
         }
