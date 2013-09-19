@@ -19,7 +19,8 @@
             {
               "url": "https://api.github.com/repos/mozilla/Addon-Tests/issues/618", 
               "status": "Getting status...", 
-              "string": "https://github.com/mozilla/Addon-Tests/issues/618"
+              "to_use": "mozilla/Addon-Tests-#618", 
+              "raw": "https://github.com/mozilla/Addon-Tests/issues/618"
             }
           ]
         }
@@ -36,7 +37,8 @@
             {
               "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/824471", 
               "status": "Getting status...", 
-              "string": "Bug 824471"
+              "to_use": "Bug 824471", 
+              "raw": "Bug 824471"
             }
           ]
         }

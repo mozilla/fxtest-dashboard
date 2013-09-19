@@ -8,7 +8,8 @@
             {
               "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/788601", 
               "status": "Getting status...", 
-              "string": "bug 788601"
+              "to_use": "bug 788601", 
+              "raw": "bug 788601"
             }
           ]
         }
@@ -25,7 +26,8 @@
             {
               "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/913549", 
               "status": "Getting status...", 
-              "string": "Bug 913549"
+              "to_use": "Bug 913549", 
+              "raw": "Bug 913549"
             }
           ]
         }
@@ -42,7 +44,8 @@
             {
               "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/913126", 
               "status": "Getting status...", 
-              "string": "Bug 913126"
+              "to_use": "Bug 913126", 
+              "raw": "Bug 913126"
             }
           ]
         }
