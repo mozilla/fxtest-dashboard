@@ -92,3 +92,30 @@ var linkify = function() {
     };
 };
 app.filter('linkify', linkify);
+
+var isBugType = function() {
+    return function(input, bugType) {
+        if (typeof bugType == 'undefined' || bugType == null || bugType == "") {
+            return input;
+        } else {
+            var out = [];
+            bugType = bugType.split('|');
+
+            for (var a = 0; a < input.length; a++) {
+                for (var b in input[a].results) {
+                    for (var c = 0; c < input[a].results[b].links.length; c++) {
+                        for (var i = 0; i < bugType.length; i++) {
+                            if (input[a].results[b].links[c].bug_info.$$v.status.toLowerCase().search(bugType[i]) != -1) {
+                                out.push(input[a]);
+                            }
+                        }
+                    }
+                }
+            }
+
+            setTimeout(Hyphenator.run, 200);
+            return out;
+        }
+    };
+}
+app.filter('isBugType', isBugType);

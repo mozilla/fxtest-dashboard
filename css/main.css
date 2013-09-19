@@ -77,3 +77,25 @@
     font-weight: bold;
     font-style: italic;
 }
+
+.filters_holder {
+    text-align: right;
+    display: block;
+}
+
+.filter_type {
+    text-align: left;
+    display: inline-block;
+}
+
+#filter_tag {
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #e3e3e3;
+    background: #f5f5f5;
+    margin-left: 4px;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
