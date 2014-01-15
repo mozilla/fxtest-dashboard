@@ -2,6 +2,28 @@
   "response": [
     {
       "results": {
+        "xfail": {
+          "reason": "config.getvalue('platform", 
+          "links": []
+        }
+      }, 
+      "file": "test_details_page.py", 
+      "dir": "workspace/Addon-Tests/tests/desktop", 
+      "method": "test_the_development_channel_section"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_details_page.py", 
+      "dir": "workspace/Addon-Tests/tests/desktop", 
+      "method": "test_what_is_this_in_the_version_information"
+    }, 
+    {
+      "results": {
         "skipif": {
           "reason": "urlparse(config.getvalue(\"base_url\")).netloc != \"addons.mozilla.org", 
           "links": []
@@ -14,19 +36,19 @@
     {
       "results": {
         "xfail": {
-          "reason": "GitHub Issue: https://github.com/mozilla/Addon-Tests/issues/618 - need new prod account", 
+          "reason": "Bug 959202 - [dev] 'Hide email address from other users' option is not working", 
           "links": [
             {
-              "url": "https://api.github.com/repos/mozilla/Addon-Tests/issues/618", 
-              "raw": "https://github.com/mozilla/Addon-Tests/issues/618", 
-              "to_use": "mozilla/Addon-Tests-#618"
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/959202", 
+              "raw": "Bug 959202", 
+              "to_use": "Bug 959202"
             }
           ]
         }
       }, 
       "file": "test_users_account.py", 
       "dir": "workspace/Addon-Tests/tests/desktop", 
-      "method": "test_user_can_update_profile_information_in_account_settings_page"
+      "method": "test_hide_email_checkbox_works"
     }, 
     {
       "results": {

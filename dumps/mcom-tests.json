@@ -3,19 +3,24 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 744671 - x-robots-tag header not set after redirect", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/744671", 
-              "raw": "Bug 744671", 
-              "to_use": "Bug 744671"
-            }
-          ]
+          "reason": "config.getvalue('base_url", 
+          "links": []
         }
       }, 
-      "file": "test_404.py", 
+      "file": "test_notes.py", 
       "dir": "workspace/mcom-tests/tests", 
-      "method": "test_xrobots_tag_is_present"
+      "method": "test_that_notes_page_is_reachable"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_notes.py", 
+      "dir": "workspace/mcom-tests/tests", 
+      "method": "test_that_all_links_are_valid"
     }
   ]
 }
