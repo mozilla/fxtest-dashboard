@@ -3,12 +3,12 @@
     {
       "results": {
         "xfail": {
-          "reason": "https://github.com/mozilla/marketplace-tests/issues/400", 
+          "reason": "Bug 960169 - 403 response returned when trying to create an app via the Marketplace API", 
           "links": [
             {
-              "url": "https://api.github.com/repos/mozilla/marketplace-tests/issues/400", 
-              "raw": "https://github.com/mozilla/marketplace-tests/issues/400", 
-              "to_use": "mozilla/marketplace-tests-#400"
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/960169", 
+              "raw": "Bug 960169", 
+              "to_use": "Bug 960169"
             }
           ]
         }
