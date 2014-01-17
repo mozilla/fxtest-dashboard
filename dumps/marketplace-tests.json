@@ -20,7 +20,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 960044 - [dev] App submission fails on Content Ratings step", 
+          "reason": "Bug 960044 - [dev] IARC submissionID/secCode form fails + pingback never comes on -dev", 
           "links": [
             {
               "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/960044", 
@@ -37,7 +37,41 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 960044 - [dev] App submission fails on Content Ratings step", 
+          "reason": "Bug 960044 - [dev] IARC submissionID/secCode form fails + pingback never comes on -dev", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/960044", 
+              "raw": "Bug 960044", 
+              "to_use": "Bug 960044"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_checks_that_manifest_url_cannot_be_edited_via_basic_info_for_a_free_app"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 960044 - [dev] IARC submissionID/secCode form fails + pingback never comes on -dev", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/960044", 
+              "raw": "Bug 960044", 
+              "to_use": "Bug 960044"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_checks_required_field_validations_on_device_types_for_hosted_apps"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 960044 - [dev] IARC submissionID/secCode form fails + pingback never comes on -dev", 
           "links": [
             {
               "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/960044", 
@@ -54,7 +88,7 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 960044 - [dev] App submission fails on Content Ratings step", 
+          "reason": "Bug 960044 - [dev] IARC submissionID/secCode form fails + pingback never comes on -dev", 
           "links": [
             {
               "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/960044", 
