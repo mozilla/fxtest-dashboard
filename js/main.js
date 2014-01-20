@@ -119,3 +119,53 @@ var isBugType = function() {
     };
 }
 app.filter('isBugType', isBugType);
+
+var MarketplaceCtrl = function($scope, $http) {
+
+  $scope.init = function() {
+    $http.get('final.json').success(function(data) {
+      $scope.testResults = data;
+      $scope.resultFilters = {'isPassing': true, 'isSkipping': true, 'isFailing': true};
+
+      // Set up display properties for the groups
+      angular.forEach($scope.testResults, function(group) {
+        group.show = true;
+        angular.forEach(group.test_results, function(test) {
+          test.isPassing = test.passed.length;
+          test.isSkipping = test.skipped.jobs && test.skipped.jobs.length;
+          test.isFailing = test.failed.length;
+          test.shouldShow = true;
+        });
+
+      });
+
+      setTimeout(Hyphenator.run, 200);
+    });
+
+  }
+
+  $scope.toggleGroup = function(group) {
+    group.show = ! group.show;
+  }
+
+  $scope.showHideResults = function() {
+    for (var a = 0; a < $scope.testResults.length; a++) {
+      test_results = $scope.testResults[a].test_results;
+      for (var b = 0; b < test_results.length; b++) {
+        test = test_results[b];
+        test.shouldShow = $scope.resultType == 'undefined' | $scope.resultType == null | $scope.resultType == '' | test[$scope.resultType];
+        if (test.shouldShow) {
+          var showForEnv = false;
+          for (var c = 0; c < test.environments.length; c++) {
+            if ($scope.environment == 'undefined' | $scope.environment == null | $scope.environment == '' | test.environments[c] == $scope.environment) {
+              showForEnv = true;
+              break;
+            }
+          }
+          test.shouldShow = test.shouldShow && showForEnv;
+        }
+      }
+    }
+
+  }
+}
