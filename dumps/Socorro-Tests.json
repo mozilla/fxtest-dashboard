@@ -3,6 +3,17 @@
     {
       "results": {
         "xfail": {
+          "reason": "'-dev' in config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_crash_reports.py", 
+      "dir": "workspace/Socorro-Tests/tests", 
+      "method": "test_that_reports_form_has_same_product"
+    }, 
+    {
+      "results": {
+        "xfail": {
           "reason": "Bug 913549 - Malformed searches should return a no results returned message", 
           "links": [
             {
