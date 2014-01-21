@@ -37,6 +37,17 @@
       }, 
       "file": "test_profile.py", 
       "dir": "workspace/mozillians-tests/tests", 
+      "method": "test_group_addition"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "'allizom' in config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_profile.py", 
+      "dir": "workspace/mozillians-tests/tests", 
       "method": "test_group_deletion"
     }, 
     {
