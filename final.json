@@ -6,7 +6,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.mobile.test_reviews.TestReviews",
+        "path_to_result": "tests.mobile.test_reviews/TestReviews/test_that_after_viewing_reviews_clicking_back_goes_to_app_page/",
         "failed": [],
         "passed": ["marketplace.dev.mobile.saucelabs", "marketplace.prod.mobile.saucelabs", "marketplace.stage.mobile.saucelabs"],
         "test_name": "test_that_after_viewing_reviews_clicking_back_goes_to_app_page"
@@ -15,7 +15,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.mobile.test_search.TestSearch",
+        "path_to_result": "tests.mobile.test_search/TestSearch/test_that_searching_with_empty_field_returns_results/",
         "failed": [],
         "passed": ["marketplace.dev.mobile.saucelabs", "marketplace.prod.mobile.saucelabs", "marketplace.stage.mobile.saucelabs"],
         "test_name": "test_that_searching_with_empty_field_returns_results"
@@ -24,7 +24,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "stage"],
-        "classname": "tests.mobile.test_reviews.TestReviews",
+        "path_to_result": "tests.mobile.test_reviews/TestReviews/test_that_checks_the_addition_of_a_review/",
         "failed": [],
         "passed": ["marketplace.dev.mobile.saucelabs", "marketplace.stage.mobile.saucelabs"],
         "test_name": "test_that_checks_the_addition_of_a_review"
@@ -37,7 +37,7 @@
         },
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.mobile.test_users_account.TestAccounts",
+        "path_to_result": "tests.mobile.test_users_account/TestAccounts/test_user_can_go_back_from_settings_page/",
         "failed": [],
         "passed": [],
         "test_name": "test_user_can_go_back_from_settings_page"
@@ -46,7 +46,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.mobile.test_home_page.TestHomepage",
+        "path_to_result": "tests.mobile.test_home_page/TestHomepage/test_that_verifies_categories_section/",
         "failed": [],
         "passed": ["marketplace.dev.mobile.saucelabs", "marketplace.prod.mobile.saucelabs", "marketplace.stage.mobile.saucelabs"],
         "test_name": "test_that_verifies_categories_section"
@@ -55,7 +55,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.mobile.test_search.TestSearch",
+        "path_to_result": "tests.mobile.test_search/TestSearch/test_that_searching_returns_results/",
         "failed": [],
         "passed": ["marketplace.dev.mobile.saucelabs", "marketplace.prod.mobile.saucelabs", "marketplace.stage.mobile.saucelabs"],
         "test_name": "test_that_searching_returns_results"
@@ -64,7 +64,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.mobile.test_details_page.TestDetails",
+        "path_to_result": "tests.mobile.test_details_page/TestDetails/test_details_page_for_an_app/",
         "failed": [],
         "passed": ["marketplace.dev.mobile.saucelabs", "marketplace.prod.mobile.saucelabs", "marketplace.stage.mobile.saucelabs"],
         "test_name": "test_details_page_for_an_app"
@@ -73,7 +73,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.mobile.test_users_account.TestAccounts",
+        "path_to_result": "tests.mobile.test_users_account/TestAccounts/test_user_can_login_and_logout/",
         "failed": [],
         "passed": ["marketplace.dev.mobile.saucelabs", "marketplace.prod.mobile.saucelabs", "marketplace.stage.mobile.saucelabs"],
         "test_name": "test_user_can_login_and_logout"
@@ -86,7 +86,7 @@
         },
         "all_passed": true,
         "environments": ["dev", "stage"],
-        "classname": "tests.mobile.test_reviews.TestReviews",
+        "path_to_result": "tests.mobile.test_reviews/TestReviews/test_that_after_writing_a_review_clicking_back_goes_to_app_page/",
         "failed": [],
         "passed": [],
         "test_name": "test_that_after_writing_a_review_clicking_back_goes_to_app_page"
@@ -95,7 +95,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.mobile.test_search.TestSearch",
+        "path_to_result": "tests.mobile.test_search/TestSearch/test_searching_with_no_matching_results/",
         "failed": [],
         "passed": ["marketplace.dev.mobile.saucelabs", "marketplace.prod.mobile.saucelabs", "marketplace.stage.mobile.saucelabs"],
         "test_name": "test_searching_with_no_matching_results"
@@ -104,7 +104,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.mobile.test_details_page.TestDetails",
+        "path_to_result": "tests.mobile.test_details_page/TestDetails/test_reviews_section/",
         "failed": [],
         "passed": ["marketplace.dev.mobile.saucelabs", "marketplace.prod.mobile.saucelabs", "marketplace.stage.mobile.saucelabs"],
         "test_name": "test_reviews_section"
@@ -117,7 +117,7 @@
         },
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.mobile.test_search.TestSearch",
+        "path_to_result": "tests.mobile.test_search/TestSearch/test_that_verifies_the_search_suggestions_list_under_the_search_field/",
         "failed": [],
         "passed": [],
         "test_name": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
@@ -131,7 +131,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["unknown"],
-        "classname": "test_marketplace_add_review.TestMarketplaceAddReview",
+        "path_to_result": "test_marketplace_add_review/TestMarketplaceAddReview/test_add_review/",
         "failed": [],
         "passed": ["b2g.hamachi.mozilla-aurora.marketplace"],
         "test_name": "test_add_review"
@@ -140,7 +140,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["unknown"],
-        "classname": "test_marketplace_feedback_login.TestMarketplaceFeedback",
+        "path_to_result": "test_marketplace_feedback_login/TestMarketplaceFeedback/test_marketplace_feedback_user/",
         "failed": [],
         "passed": ["b2g.hamachi.mozilla-aurora.marketplace"],
         "test_name": "test_marketplace_feedback_user"
@@ -149,7 +149,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["unknown"],
-        "classname": "test_marketplace_search_and_install_app.TestSearchMarketplaceAndInstallApp",
+        "path_to_result": "test_marketplace_search_and_install_app/TestSearchMarketplaceAndInstallApp/test_search_and_install_app/",
         "failed": [],
         "passed": ["b2g.hamachi.mozilla-aurora.marketplace"],
         "test_name": "test_search_and_install_app"
@@ -158,7 +158,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["unknown"],
-        "classname": "test_marketplace_feedback_anonymous.TestMarketplaceFeedback",
+        "path_to_result": "test_marketplace_feedback_anonymous/TestMarketplaceFeedback/test_marketplace_feedback_anonymous/",
         "failed": [],
         "passed": ["b2g.hamachi.mozilla-aurora.marketplace"],
         "test_name": "test_marketplace_feedback_anonymous"
@@ -167,7 +167,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["unknown"],
-        "classname": "test_marketplace_without_connectivity.TestMarketplaceWithoutConnectivity",
+        "path_to_result": "test_marketplace_without_connectivity/TestMarketplaceWithoutConnectivity/test_marketplace_without_connectivity/",
         "failed": [],
         "passed": ["b2g.hamachi.mozilla-aurora.marketplace"],
         "test_name": "test_marketplace_without_connectivity"
@@ -176,7 +176,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["unknown"],
-        "classname": "test_marketplace_login.TestMarketplaceLogin",
+        "path_to_result": "test_marketplace_login/TestMarketplaceLogin/test_login_marketplace/",
         "failed": [],
         "passed": ["b2g.hamachi.mozilla-aurora.marketplace"],
         "test_name": "test_login_marketplace"
@@ -190,7 +190,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_details_page.TestDetailsPage",
+        "path_to_result": "tests.desktop.consumer_pages.test_details_page/TestDetailsPage/test_that_application_page_contains_proper_objects/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.prod", "marketplace.stage.saucelabs", "marketplace.prod.saucelabs"],
         "test_name": "test_that_application_page_contains_proper_objects"
@@ -199,7 +199,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_search.TestSearching",
+        "path_to_result": "tests.desktop.consumer_pages.test_search/TestSearching/test_that_the_search_tag_is_present_in_the_search_results/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.prod", "marketplace.stage.saucelabs", "marketplace.prod.saucelabs"],
         "test_name": "test_that_the_search_tag_is_present_in_the_search_results"
@@ -208,7 +208,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_checks_apps_are_sorted_by_date/",
         "failed": [],
         "passed": ["marketplace.stage.developer_hub.saucelabs", "marketplace.dev.developer_hub", "marketplace.dev.developer_hub.saucelabs"],
         "test_name": "test_that_checks_apps_are_sorted_by_date"
@@ -217,7 +217,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_consumers_page.TestConsumerPage",
+        "path_to_result": "tests.desktop.consumer_pages.test_consumers_page/TestConsumerPage/test_that_clicking_on_featured_app_loads_details_page/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.prod", "marketplace.stage.saucelabs", "marketplace.prod.saucelabs"],
         "test_name": "test_that_clicking_on_featured_app_loads_details_page"
@@ -226,7 +226,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_checks_editing_basic_info_for_a_free_app/",
         "failed": [],
         "passed": ["marketplace.stage.developer_hub.saucelabs", "marketplace.dev.developer_hub", "marketplace.dev.developer_hub.saucelabs"],
         "test_name": "test_that_checks_editing_basic_info_for_a_free_app"
@@ -239,7 +239,7 @@
         },
         "all_passed": true,
         "environments": ["dev", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_users_account.TestAccounts",
+        "path_to_result": "tests.desktop.consumer_pages.test_users_account/TestAccounts/test_that_checks_changing_language/",
         "failed": [],
         "passed": [],
         "test_name": "test_that_checks_changing_language"
@@ -252,7 +252,7 @@
         },
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_hosted_app_submission/",
         "failed": [],
         "passed": [],
         "test_name": "test_hosted_app_submission"
@@ -261,7 +261,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_users_account.TestAccounts",
+        "path_to_result": "tests.desktop.consumer_pages.test_users_account/TestAccounts/test_editing_user_profile/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.stage.saucelabs"],
         "test_name": "test_editing_user_profile"
@@ -270,7 +270,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_users_account.TestAccounts",
+        "path_to_result": "tests.desktop.consumer_pages.test_users_account/TestAccounts/test_user_can_sign_in_and_sign_out_in_consumer_pages/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.prod", "marketplace.stage.saucelabs", "marketplace.prod.saucelabs"],
         "test_name": "test_user_can_sign_in_and_sign_out_in_consumer_pages"
@@ -279,7 +279,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_consumers_page.TestConsumerPage",
+        "path_to_result": "tests.desktop.consumer_pages.test_consumers_page/TestConsumerPage/test_that_verifies_featured_application_section/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.prod", "marketplace.stage.saucelabs", "marketplace.prod.saucelabs"],
         "test_name": "test_that_verifies_featured_application_section"
@@ -288,7 +288,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_consumers_page.TestConsumerPage",
+        "path_to_result": "tests.desktop.consumer_pages.test_consumers_page/TestConsumerPage/test_that_header_has_expected_items/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.prod", "marketplace.stage.saucelabs", "marketplace.prod.saucelabs"],
         "test_name": "test_that_header_has_expected_items"
@@ -297,7 +297,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_checks_required_field_validations_on_basic_info_for_a_free_app/",
         "failed": [],
         "passed": ["marketplace.stage.developer_hub.saucelabs", "marketplace.dev.developer_hub", "marketplace.dev.developer_hub.saucelabs"],
         "test_name": "test_that_checks_required_field_validations_on_basic_info_for_a_free_app"
@@ -310,7 +310,7 @@
         },
         "all_passed": true,
         "environments": ["dev", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_purchase_app.TestPurchaseApp",
+        "path_to_result": "tests.desktop.consumer_pages.test_purchase_app/TestPurchaseApp/test_that_purchases_an_app_without_pre_auth_and_requests_a_refund/",
         "failed": [],
         "passed": [],
         "test_name": "test_that_purchases_an_app_without_pre_auth_and_requests_a_refund"
@@ -319,7 +319,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_reviews.TestReviews",
+        "path_to_result": "tests.desktop.consumer_pages.test_reviews/TestReviews/test_that_checks_the_deletion_of_a_review/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.stage.saucelabs"],
         "test_name": "test_that_checks_the_deletion_of_a_review"
@@ -328,7 +328,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_consumers_page.TestConsumerPage",
+        "path_to_result": "tests.desktop.consumer_pages.test_consumers_page/TestConsumerPage/test_opening_every_category_page_from_categories_section/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.prod", "marketplace.stage.saucelabs", "marketplace.prod.saucelabs"],
         "test_name": "test_opening_every_category_page_from_categories_section"
@@ -337,7 +337,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_checks_editing_support_information_for_a_free_app/",
         "failed": [],
         "passed": ["marketplace.stage.developer_hub.saucelabs", "marketplace.dev.developer_hub", "marketplace.dev.developer_hub.saucelabs"],
         "test_name": "test_that_checks_editing_support_information_for_a_free_app"
@@ -350,7 +350,7 @@
         },
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_api_submit.TestAPI",
+        "path_to_result": "tests.desktop.developer_hub.test_api_submit/TestAPI/test_assert_that_a_app_can_be_added_by_api/",
         "failed": [],
         "passed": [],
         "test_name": "test_assert_that_a_app_can_be_added_by_api"
@@ -359,7 +359,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_reviews.TestReviews",
+        "path_to_result": "tests.desktop.consumer_pages.test_reviews/TestReviews/test_that_checks_the_editing_of_a_review/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.stage.saucelabs"],
         "test_name": "test_that_checks_the_editing_of_a_review"
@@ -368,7 +368,7 @@
         "skipped": {},
         "all_passed": false,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_deletes_app/",
         "failed": [
           {
             "jobs": ["marketplace.stage.developer_hub.saucelabs"],
@@ -387,7 +387,7 @@
         },
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_checks_that_manifest_url_cannot_be_edited_via_basic_info_for_a_free_app/",
         "failed": [],
         "passed": [],
         "test_name": "test_that_checks_that_manifest_url_cannot_be_edited_via_basic_info_for_a_free_app"
@@ -396,7 +396,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_a_screenshot_can_be_added/",
         "failed": [],
         "passed": ["marketplace.stage.developer_hub.saucelabs", "marketplace.dev.developer_hub", "marketplace.dev.developer_hub.saucelabs"],
         "test_name": "test_that_a_screenshot_can_be_added"
@@ -405,7 +405,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_search.TestSearching",
+        "path_to_result": "tests.desktop.consumer_pages.test_search/TestSearching/test_that_checks_search_with_foreign_characters/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.prod", "marketplace.stage.saucelabs", "marketplace.prod.saucelabs"],
         "test_name": "test_that_checks_search_with_foreign_characters"
@@ -414,7 +414,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_users_account.TestAccounts",
+        "path_to_result": "tests.desktop.consumer_pages.test_users_account/TestAccounts/test_create_new_user/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.stage.saucelabs"],
         "test_name": "test_create_new_user"
@@ -427,7 +427,7 @@
         },
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_checks_required_field_validations_on_device_types_for_hosted_apps/",
         "failed": [],
         "passed": [],
         "test_name": "test_that_checks_required_field_validations_on_device_types_for_hosted_apps"
@@ -436,7 +436,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_search.TestSearching",
+        "path_to_result": "tests.desktop.consumer_pages.test_search/TestSearching/test_that_searching_with_empty_field_using_submit_returns_results/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.prod", "marketplace.stage.saucelabs", "marketplace.prod.saucelabs"],
         "test_name": "test_that_searching_with_empty_field_using_submit_returns_results"
@@ -445,7 +445,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_consumers_page.TestConsumerPage",
+        "path_to_result": "tests.desktop.consumer_pages.test_consumers_page/TestConsumerPage/test_that_verifies_categories_section/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.prod", "marketplace.stage.saucelabs", "marketplace.prod.saucelabs"],
         "test_name": "test_that_verifies_categories_section"
@@ -458,7 +458,7 @@
         },
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_search.TestSearching",
+        "path_to_result": "tests.desktop.consumer_pages.test_search/TestSearching/test_that_verifies_the_sort_region_from_search_results[Rating]/",
         "failed": [],
         "passed": [],
         "test_name": "test_that_verifies_the_sort_region_from_search_results[Rating]"
@@ -467,7 +467,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_an_icon_cannot_be_added_via_an_invalid_file_format/",
         "failed": [],
         "passed": ["marketplace.stage.developer_hub.saucelabs", "marketplace.dev.developer_hub", "marketplace.dev.developer_hub.saucelabs"],
         "test_name": "test_that_an_icon_cannot_be_added_via_an_invalid_file_format"
@@ -476,7 +476,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["dev", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_reviews.TestReviews",
+        "path_to_result": "tests.desktop.consumer_pages.test_reviews/TestReviews/test_that_checks_the_addition_of_a_review/",
         "failed": [],
         "passed": ["marketplace.dev.saucelabs", "marketplace.stage.saucelabs"],
         "test_name": "test_that_checks_the_addition_of_a_review"
@@ -489,7 +489,7 @@
         },
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_packaged_app_submission/",
         "failed": [],
         "passed": [],
         "test_name": "test_packaged_app_submission"
@@ -502,7 +502,7 @@
         },
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_search.TestSearching",
+        "path_to_result": "tests.desktop.consumer_pages.test_search/TestSearching/test_that_verifies_the_sort_region_from_search_results[Relevancy]/",
         "failed": [],
         "passed": [],
         "test_name": "test_that_verifies_the_sort_region_from_search_results[Relevancy]"
@@ -511,7 +511,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_checks_apps_are_sorted_by_name/",
         "failed": [],
         "passed": ["marketplace.stage.developer_hub.saucelabs", "marketplace.dev.developer_hub", "marketplace.dev.developer_hub.saucelabs"],
         "test_name": "test_that_checks_apps_are_sorted_by_name"
@@ -520,7 +520,7 @@
         "skipped": {},
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_that_a_screenshot_cannot_be_added_via_an_invalid_file_format/",
         "failed": [],
         "passed": ["marketplace.stage.developer_hub.saucelabs", "marketplace.dev.developer_hub", "marketplace.dev.developer_hub.saucelabs"],
         "test_name": "test_that_a_screenshot_cannot_be_added_via_an_invalid_file_format"
@@ -533,7 +533,7 @@
         },
         "all_passed": true,
         "environments": ["stage", "dev"],
-        "classname": "tests.desktop.developer_hub.test_developer_hub.TestDeveloperHub",
+        "path_to_result": "tests.desktop.developer_hub.test_developer_hub/TestDeveloperHub/test_hosted_paid_app_submission/",
         "failed": [],
         "passed": [],
         "test_name": "test_hosted_paid_app_submission"
@@ -546,7 +546,7 @@
         },
         "all_passed": true,
         "environments": ["dev", "prod", "stage"],
-        "classname": "tests.desktop.consumer_pages.test_search.TestSearching",
+        "path_to_result": "tests.desktop.consumer_pages.test_search/TestSearching/test_that_verifies_the_search_suggestions_list_under_the_search_field/",
         "failed": [],
         "passed": [],
         "test_name": "test_that_verifies_the_search_suggestions_list_under_the_search_field"

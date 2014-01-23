@@ -85,7 +85,7 @@
                                                                 <td width="10%">Jobs:</td>
                                                                 <td>
                                                                     <span class="hyphenate" ng-repeat="job in test_result.passed">
-                                                                        <a href="http://qa-selenium.mv.mozilla.com:8080/job/{{job}}/lastCompletedBuild/HTML_Report/?">{{job}}</a>
+                                                                        <a href="http://qa-selenium.mv.mozilla.com:8080/job/{{job}}/lastCompletedBuild/testReport/{{test_result.path_to_result}}">{{job}}</a>
                                                                         <span ng-if="!$last"> &nbsp;&nbsp;|&nbsp;&nbsp; </span>
                                                                     </span>
                                                                 </td>
@@ -105,7 +105,7 @@
                                                                 <td>Jobs:</td>
                                                                 <td>
                                                                     <span class="hyphenate" ng-repeat="job in test_result.skipped.jobs">
-                                                                        <a href="http://qa-selenium.mv.mozilla.com:8080/job/{{job}}/lastCompletedBuild/HTML_Report/?">{{job}}</a>
+                                                                        <a href="http://qa-selenium.mv.mozilla.com:8080/job/{{job}}/lastCompletedBuild/testReport/{{test_result.path_to_result}}">{{job}}</a>
                                                                         <span ng-if="!$last"> &nbsp;&nbsp;|&nbsp;&nbsp; </span>
                                                                     </span>
                                                                 </td>
@@ -128,7 +128,7 @@
                                                                             <td>Jobs:</td>
                                                                             <td>
                                                                                 <span class="hyphenate" ng-repeat="job in failure.jobs">
-                                                                                    <a href="http://qa-selenium.mv.mozilla.com:8080/job/{{job}}/lastCompletedBuild/HTML_Report/?">{{job}}</a>
+                                                                                    <a href="http://qa-selenium.mv.mozilla.com:8080/job/{{job}}/lastCompletedBuild/testReport/{{test_result.path_to_result}}">{{job}}</a>
                                                                                     <span ng-if="!$last"> &nbsp;&nbsp;|&nbsp;&nbsp; </span>
                                                                                 </span>
                                                                             </td>
