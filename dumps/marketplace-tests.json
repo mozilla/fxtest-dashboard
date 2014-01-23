@@ -182,9 +182,15 @@
     }, 
     {
       "results": {
-        "xfail": {
-          "reason": "Search suggestions has not been implemented yet", 
-          "links": []
+        "skipif": {
+          "reason": "True', 'Test skipped because of Bug 847625 - Port search suggestions to Fireplace", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/847625", 
+              "raw": "Bug 847625", 
+              "to_use": "Bug 847625"
+            }
+          ]
         }
       }, 
       "file": "test_search.py", 
