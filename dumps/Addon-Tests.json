@@ -36,23 +36,6 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 959202 - [dev] 'Hide email address from other users' option is not working", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/959202", 
-              "raw": "Bug 959202", 
-              "to_use": "Bug 959202"
-            }
-          ]
-        }
-      }, 
-      "file": "test_users_account.py", 
-      "dir": "workspace/Addon-Tests/tests/desktop", 
-      "method": "test_hide_email_checkbox_works"
-    }, 
-    {
-      "results": {
-        "xfail": {
           "reason": "Bug 824471 - New Personas tab on mobile site not working as expected", 
           "links": [
             {
