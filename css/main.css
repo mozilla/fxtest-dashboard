@@ -34,7 +34,7 @@
     padding-top: 8px;
 }
 
-.reason-skip,.reason-skipif {
+.reason-skip,.reason-skipif, .status-skipping {
     background: rgba(238, 200, 0, 0.14);
 }
 
@@ -67,8 +67,12 @@
     background: #b94a48;
 }
 
-.reason-xfail {
+.reason-xfail, .status-failing {
     background: rgba(255, 93, 90, 0.12);
+}
+
+.status-passing {
+    background: rgba(50, 135, 60, 0.15);
 }
 
 .hooray {
