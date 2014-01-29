@@ -153,7 +153,7 @@ dashboardApp.controller('MarketplaceController', function ($scope, $http) {
 
   $scope.init = function () {
     $("#nav-marketplace").addClass('active');
-    $http.get('final.json').success(function (data) {
+    $http.get('data/marketplace_tests_results.json').success(function (data) {
       $scope.testResults = data;
       $scope.resultFilters = {'isPassing': true, 'isSkipping': true, 'isFailing': true};
 
