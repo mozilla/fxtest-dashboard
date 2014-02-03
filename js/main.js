@@ -11,6 +11,7 @@ $(function () {
 //Define Routing for the app
 //Uri /xfails -> xfails.html and Controller XfailsController
 //Uri /marketplace -> template marketplace.html and Controller MarketplaceController
+//Uri /issues -> template issues.html and Controller IssuesController
 dashboardApp.config(['$routeProvider',
   function ($routeProvider) {
     $routeProvider.
@@ -21,6 +22,10 @@ dashboardApp.config(['$routeProvider',
       when('/marketplace', {
         templateUrl: 'templates/marketplace.html',
         controller: 'MarketplaceController'
+      }).
+      when('/issues', {
+        templateUrl: 'templates/issues.html',
+        controller: 'IssuesController'
       }).
       otherwise({
         redirectTo: '/xfails'
@@ -198,4 +203,52 @@ dashboardApp.controller('MarketplaceController', function ($scope, $http) {
     }
 
   }
+});
+
+dashboardApp.controller('IssuesController', function ($scope, $http) {
+
+  $scope.init = function () {
+    $("#nav-issues").addClass('active');
+    $http.get('data/repos_issues.json').success(function (data) {
+      $scope.issues = data.issues;
+      $scope.last_updated = data.last_updated;
+      $scope.issueFilters = {'hasPullRequest': ''};
+
+      // Set up display properties for the issues
+      angular.forEach($scope.issues, function (repo) {
+        repo.show = true;
+        angular.forEach(repo.issues, function (issue) {
+          issue.shouldShow = true;
+        });
+
+      });
+
+      setTimeout(Hyphenator.run, 200);
+    });
+
+  }
+
+  $scope.toggleRepo = function (repo) {
+    repo.show = !repo.show;
+  }
+
+  $scope.showHideIssues = function () {
+    console.log('$scope.hasPullRequest is: ' + $scope.hasPullRequest);
+    for (var a = 0; a < $scope.issues.length; a++) {
+      issues = $scope.issues[a].issues;
+      for (var b = 0; b < issues.length; b++) {
+        issue = issues[b];
+        console.log('issue.pull_request.length: ' + issue.pull_request.length);
+        console.log('$scope.hasPullRequest: ' + $scope.hasPullRequest);
+        console.log(issue.pull_request.length > 0);
+        console.log(Boolean($scope.hasPullRequest));
+        console.log(issue.pull_request.length > 0 && Boolean($scope.hasPullRequest));
+
+        issue.shouldShow = $scope.hasPullRequest == 'undefined' | $scope.hasPullRequest == null | $scope.hasPullRequest == '' |
+          (issue.pull_request.length > 0 && $scope.hasPullRequest == 'yes') |  (issue.pull_request.length == 0 && $scope.hasPullRequest == 'no');
+      }
+    }
+
+  }
+
 });

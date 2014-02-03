@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="span12">
+        <div id="dashboard" ng-init="init()">
+            <div style="" id="filter_tag">
+                Filters
+            </div>
+            <div class="filters_holder well well-small">
+                <div class="filter_type">
+                    <div style="margin-bottom: 3px;">Is Pull Request:</div>
+                    <select ng-model="hasPullRequest" ng-change="showHideIssues()">
+                        <option value="">All</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+            <div>Issues last refreshed from Github on {{last_updated}}.</div>
+            <div class="test-result" ng-repeat="repo in issues">
+                <h3 ng-click="toggleRepo(repo)" id="{{repo.repo}}">{{repo.repo}}
+                    <span class="badge" title="{{repo.issues.length}} issues">
+                        {{repo.issues.length}}
+                    </span>
+                </h3>
+                <table class="table table-bordered" ng-show="repo.show">
+                    <tbody>
+                        <tr ng-repeat="issue in repo.issues" ng-show="issue.shouldShow">
+                            <td>
+                                <span ng-if="issue.pull_request.length" class="label label-pull-request">
+                                    Pull Request
+                                </span>
+                                <span class="hyphenate">
+                                    <a href="{{issue.html_url}}" target="_blank">
+                                        <strong>{{issue.title}}</strong>
+                                    </a>
+                                    <span class="badge" title="{{issue.comments}} comments">
+                                        {{issue.comments}}
+                                    </span>
+                                </span>
+                                <div ng-if="issue.labels.length" class="btn-group">
+                                    <span ng-repeat="label in issue.labels" class="label" style="background-color: #{{label.color}};">
+                                        {{label.name}}
+                                    </span>
+                                </div>
+                                <p>Last Updated: {{issue.updated_at}}</p>
+                                <p ng-if="issue.body.length">
+                                    <span class="hyphenate">{{issue.body | limitTo:150}}</span>
+                                    <span ng-if="issue.body.length > 150"> ...</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
