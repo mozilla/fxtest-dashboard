@@ -97,6 +97,17 @@
     }, 
     {
       "results": {
+        "xfail": {
+          "reason": "config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_details_page.py", 
+      "dir": "workspace/marketplace-tests/tests/mobile", 
+      "method": "test_details_page_for_an_app"
+    }, 
+    {
+      "results": {
         "skipif": {
           "reason": "True', 'Test skipped because of Bug 847625 - Port search suggestions to Fireplace", 
           "links": [
