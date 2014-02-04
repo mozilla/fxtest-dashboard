@@ -122,23 +122,6 @@
       "file": "test_search.py", 
       "dir": "workspace/marketplace-tests/tests/mobile", 
       "method": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Issue 381: https://github.com/mozilla/marketplace-tests/issues/381", 
-          "links": [
-            {
-              "url": "https://api.github.com/repos/mozilla/marketplace-tests/issues/381", 
-              "raw": "https://github.com/mozilla/marketplace-tests/issues/381", 
-              "to_use": "mozilla/marketplace-tests-#381"
-            }
-          ]
-        }
-      }, 
-      "file": "test_users_account.py", 
-      "dir": "workspace/marketplace-tests/tests/mobile", 
-      "method": "test_user_can_go_back_from_settings_page"
     }
   ]
 }
