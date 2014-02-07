@@ -3,6 +3,17 @@
     {
       "results": {
         "xfail": {
+          "reason": "config.getvalue(\"base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/Socorro-Tests/tests", 
+      "method": "test_that_advanced_search_drilldown_results_are_correct"
+    }, 
+    {
+      "results": {
+        "xfail": {
           "reason": "'-dev' in config.getvalue('base_url", 
           "links": []
         }
