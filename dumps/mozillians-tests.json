@@ -49,17 +49,6 @@
       "file": "test_profile.py", 
       "dir": "workspace/mozillians-tests/tests", 
       "method": "test_group_deletion"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "'allizom' in config.getvalue('base_url", 
-          "links": []
-        }
-      }, 
-      "file": "test_redirects.py", 
-      "dir": "workspace/mozillians-tests/tests", 
-      "method": "test_302_redirect_for_anonymous_users"
     }
   ]
 }
