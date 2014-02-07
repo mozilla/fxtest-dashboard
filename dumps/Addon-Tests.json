@@ -3,17 +3,6 @@
     {
       "results": {
         "xfail": {
-          "reason": "config.getvalue('platform", 
-          "links": []
-        }
-      }, 
-      "file": "test_details_page.py", 
-      "dir": "workspace/Addon-Tests/tests/desktop", 
-      "method": "test_the_development_channel_section"
-    }, 
-    {
-      "results": {
-        "xfail": {
           "reason": "config.getvalue('base_url", 
           "links": []
         }
