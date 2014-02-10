@@ -92,23 +92,6 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 944343 - Marketplace Stage Out-of-date app and failure trying to update", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/944343", 
-              "raw": "Bug 944343", 
-              "to_use": "Bug 944343"
-            }
-          ]
-        }
-      }, 
-      "file": "test_reviews.py", 
-      "dir": "workspace/marketplace-tests/tests/mobile", 
-      "method": "test_that_after_writing_a_review_clicking_back_goes_to_app_page"
-    }, 
-    {
-      "results": {
-        "xfail": {
           "reason": "config.getvalue('base_url", 
           "links": []
         }
