@@ -9,17 +9,6 @@
       }, 
       "file": "test_notes.py", 
       "dir": "workspace/mcom-tests/tests", 
-      "method": "test_that_notes_page_is_reachable"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "config.getvalue('base_url", 
-          "links": []
-        }
-      }, 
-      "file": "test_notes.py", 
-      "dir": "workspace/mcom-tests/tests", 
       "method": "test_that_all_links_are_valid"
     }
   ]
