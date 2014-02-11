@@ -1,0 +1,11 @@
+b2g.hamachi.mozilla-aurora.marketplace
+marketplace.dev.developer_hub.saucelabs
+marketplace.dev.developer_hub
+marketplace.dev.mobile.saucelabs
+marketplace.dev.saucelabs
+marketplace.prod.mobile.saucelabs
+marketplace.prod.saucelabs
+marketplace.prod
+marketplace.stage.developer_hub.saucelabs
+marketplace.stage.mobile.saucelabs
+marketplace.stage.saucelabs
