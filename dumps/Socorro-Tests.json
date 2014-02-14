@@ -3,8 +3,14 @@
     {
       "results": {
         "xfail": {
-          "reason": "config.getvalue(\"base_url", 
-          "links": []
+          "reason": "Bug 968476 - crash counts appear to be different", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/968476", 
+              "raw": "Bug 968476", 
+              "to_use": "Bug 968476"
+            }
+          ]
         }
       }, 
       "file": "test_search.py", 
