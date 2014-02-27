@@ -44,6 +44,40 @@
       "file": "test_crash_reports.py", 
       "dir": "workspace/Socorro-Tests/tests", 
       "method": "test_that_malformed_advanced_searches_should_not_return_an_error_message"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 977406 - featured versions that have aged out still display on the homepage", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/977406", 
+              "raw": "Bug 977406", 
+              "to_use": "Bug 977406"
+            }
+          ]
+        }
+      }, 
+      "file": "test_crash_reports.py", 
+      "dir": "workspace/Socorro-Tests/tests", 
+      "method": "test_that_top_crashers_reports_links_work"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 977406 - featured versions that have aged out still display on the homepage", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/977406", 
+              "raw": "Bug 977406", 
+              "to_use": "Bug 977406"
+            }
+          ]
+        }
+      }, 
+      "file": "test_crash_reports.py", 
+      "dir": "workspace/Socorro-Tests/tests", 
+      "method": "test_the_product_releases_return_results"
     }
   ]
 }
