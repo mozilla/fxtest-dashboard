@@ -3,11 +3,28 @@
     {
       "results": {
         "xfail": {
+          "reason": "Bug 977084 - Problems with screenshot previews on the Edit Listing page", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/977084", 
+              "raw": "Bug 977084", 
+              "to_use": "Bug 977084"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_a_screenshot_can_be_added"
+    }, 
+    {
+      "results": {
+        "xfail": {
           "reason": "-dev.allizom\" in config.getvalue(\"base_url", 
           "links": []
         }
       }, 
-      "file": "test_developer_hub.py", 
+      "file": "test_developer_hub_submit_apps.py", 
       "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
       "method": "test_hosted_paid_app_submission"
     }, 
