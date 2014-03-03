@@ -205,7 +205,7 @@ dashboardApp.controller('MarketplaceController', function ($scope, $http) {
   }
 });
 
-dashboardApp.controller('IssuesController', function ($scope, $http) {
+dashboardApp.controller('IssuesController', function ($scope, $http, filterFilter) {
 
   $scope.init = function () {
     $("#nav-issues").addClass('active');
@@ -213,6 +213,29 @@ dashboardApp.controller('IssuesController', function ($scope, $http) {
       $scope.issues = data.issues;
       $scope.last_updated = data.last_updated;
       $scope.issueFilters = {'hasPullRequest': ''};
+
+      var labelArray = ['Community', 'blocked',
+        'difficulty beginner', 'difficulty intermediate', 'difficulty advanced',
+        'priority low', 'priority medium', 'priority high']
+      $scope.labels = labelArray.map(function (label) {
+        return {'name': label, selected: false}
+      });
+
+      // selected labels
+      $scope.selection = [];
+
+      // helper method
+      $scope.selectedLabels = function selectedLabels() {
+        return filterFilter($scope.labels, { selected: true });
+      };
+
+      // watch labels for changes
+      $scope.$watch('labels|filter:{selected:true}', function (nv) {
+        $scope.selection = nv.map(function (label) {
+          return label.name;
+        });
+        $scope.showHideIssues();
+      }, true);
 
       // Set up display properties for the issues
       angular.forEach($scope.issues, function (repo) {
@@ -233,19 +256,29 @@ dashboardApp.controller('IssuesController', function ($scope, $http) {
   }
 
   $scope.showHideIssues = function () {
-    console.log('$scope.hasPullRequest is: ' + $scope.hasPullRequest);
     for (var a = 0; a < $scope.issues.length; a++) {
       issues = $scope.issues[a].issues;
       for (var b = 0; b < issues.length; b++) {
         issue = issues[b];
-        console.log('issue.pull_request.length: ' + issue.pull_request.length);
-        console.log('$scope.hasPullRequest: ' + $scope.hasPullRequest);
-        console.log(issue.pull_request.length > 0);
-        console.log(Boolean($scope.hasPullRequest));
-        console.log(issue.pull_request.length > 0 && Boolean($scope.hasPullRequest));
-
         issue.shouldShow = $scope.hasPullRequest == 'undefined' | $scope.hasPullRequest == null | $scope.hasPullRequest == '' |
           (issue.pull_request.length > 0 && $scope.hasPullRequest == 'yes') |  (issue.pull_request.length == 0 && $scope.hasPullRequest == 'no');
+        var showForLabels = true;
+        if (issue.shouldShow && $scope.selectedLabels().length > 0) {
+          showForLabels = false;
+          matchedLabels = 0;
+          for (var c = 0; c < issue.labels.length; c++) {
+            for (var d = 0; d < $scope.selectedLabels().length; d++) {
+              if (issue.labels[c]['name'] == $scope.selectedLabels()[d].name) {
+                matchedLabels++;
+              }
+            }
+          }
+          if (matchedLabels == $scope.selectedLabels().length) {
+            showForLabels = true;
+
+          }
+          issue.shouldShow = issue.shouldShow && showForLabels;
+        }
       }
     }
 

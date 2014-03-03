@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" xmlns="http://www.w3.org/1999/html">
     <div class="span12">
         <div id="dashboard" ng-init="init()">
             <div style="" id="filter_tag">
@@ -6,12 +6,23 @@
             </div>
             <div class="filters_holder well well-small">
                 <div class="filter_type">
-                    <div style="margin-bottom: 3px;">Is Pull Request:</div>
-                    <select ng-model="hasPullRequest" ng-change="showHideIssues()">
-                        <option value="">All</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
+                    <div class="controls>">
+                        Is Pull Request:
+                        <select ng-model="hasPullRequest" ng-change="showHideIssues()">
+                            <option value="">All</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter_type">
+                    <label class="control-label">Labels:</label>
+                        <div class="controls>">
+                            <label class="checkbox inline"  ng-repeat="label in labels">
+                                <input type="checkbox" name="selectedLabels[]" value="{{label.name}}" ng-model="label.selected" />
+                                {{label.name}}
+                            </label>
+                        </div>
                 </div>
             </div>
             <div>Issues last refreshed from Github on {{last_updated}}.</div>
