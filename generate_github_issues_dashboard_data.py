@@ -29,7 +29,11 @@ class GithubIssuesAggregator(object):
             print 'Retrieving issues for %s...' % repo
             issues = []
             for issue in org.get_repo(repo).get_issues(state='Open'):
-                issue_dict = {'assignee': issue.assignee and issue.assignee.name or '',
+                if issue.assignee:
+                    assignee = {'name': issue.assignee.name, 'avatar_url': issue.assignee.avatar_url}
+                else:
+                    assignee = ''
+                issue_dict = {'assignee': assignee,
                               'pull_request': issue.pull_request and issue.pull_request.html_url or '',
                               'updated_at': str(issue.updated_at)
                               }
