@@ -13,6 +13,12 @@
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
+                        Is Assigned:
+                        <select ng-model="hasAssignee" ng-change="showHideIssues()">
+                            <option value="">All</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
                     </div>
                 </div>
                 <div class="filter_type">
@@ -52,6 +58,15 @@
                                         {{label.name}}
                                     </span>
                                 </div>
+                                <p>Assigned To:
+                                    <span ng-if="issue.assignee.name">
+                                        <img class=" js-avatar" width="16" height="16" src="{{issue.assignee.avatar_url}}" alt="{{issue.assignee.name}}">
+                                        {{issue.assignee.name}}
+                                    </span>
+                                    <span ng-if="!issue.assignee.name">
+                                        Nobody!
+                                    </span>
+                                </p>
                                 <p>Last Updated: {{issue.updated_at}}</p>
                                 <p ng-if="issue.body.length">
                                     <span class="hyphenate">{{issue.body | limitTo:150}}</span>

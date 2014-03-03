@@ -279,6 +279,11 @@ dashboardApp.controller('IssuesController', function ($scope, $http, filterFilte
           }
           issue.shouldShow = issue.shouldShow && showForLabels;
         }
+        var showForAssignee = true;
+        if (issue.shouldShow && $scope.hasAssignee != 'undefined' & $scope.hasAssignee != null | $scope.hasAssignee == '' ) {
+          showForAssignee = (issue.assignee.name && $scope.hasAssignee == 'yes') | (!issue.assignee.name && $scope.hasAssignee == 'no');
+          issue.shouldShow = issue.shouldShow && showForAssignee;
+        }
       }
     }
 

@@ -1,4 +1,4 @@
-{"last_updated": "2014-02-27 09:09:49.323957", "issues": [
+{"last_updated": "2014-03-03 12:53:55.831661", "issues": [
   {
     "repo": "Addon-Tests",
     "issues": [
@@ -8,9 +8,9 @@
         "labels": [],
         "number": 691,
         "html_url": "https://github.com/mozilla/Addon-Tests/issues/691",
-        "updated_at": "2014-02-07 14:32:44",
+        "updated_at": "2014-02-28 12:37:07",
         "assignee": "",
-        "comments": 0,
+        "comments": 1,
         "pull_request": ""
       },
       {
@@ -35,9 +35,9 @@
         "labels": [],
         "number": 682,
         "html_url": "https://github.com/mozilla/Addon-Tests/issues/682",
-        "updated_at": "2014-01-21 12:12:55",
+        "updated_at": "2014-02-28 12:38:30",
         "assignee": "",
-        "comments": 1,
+        "comments": 2,
         "pull_request": ""
       }
     ]
@@ -89,7 +89,10 @@
         "number": 46,
         "html_url": "https://github.com/mozilla/bouncer-tests/issues/46",
         "updated_at": "2014-02-13 13:46:40",
-        "assignee": "Sergey Tupchiy",
+        "assignee": {
+          "avatar_url": "https://avatars.githubusercontent.com/u/775072",
+          "name": "Sergey Tupchiy"
+        },
         "comments": 5,
         "pull_request": ""
       },
@@ -99,20 +102,9 @@
         "labels": [],
         "number": 36,
         "html_url": "https://github.com/mozilla/bouncer-tests/issues/36",
-        "updated_at": "2014-02-13 14:10:06",
+        "updated_at": "2014-02-28 12:53:27",
         "assignee": "",
-        "comments": 3,
-        "pull_request": ""
-      },
-      {
-        "body": "See below; we don't return the failed parameters when we fail...\r\n\r\n_____________ TestRedirects.test_redirect_for_windows_200_to_2001 ______________\r\n[gw1] darwin -- Python 2.7.1 /Users/Shared/Jenkins/Home/jobs/bouncer.stage/workspace/.env/bin/python\r\nself = <tests.test_redirects.TestRedirects instance at 0x10437f5f0>\r\ntestsetup = <conftest.TestSetup object at 0x10434acd0>\r\n\r\n    def test_redirect_for_windows_200_to_2001(self, testsetup):\r\n    \r\n        url = testsetup.base_url\r\n        param = {\r\n            'product' : 'firefox-20.0',\r\n            'os': 'win',\r\n            'lang' : 'en-US',\r\n        }\r\n    \r\n        response = self._head_request(url, params=param)\r\n    \r\n        parsed_url = urlparse(response.url)\r\n    \r\n>       Assert.true('20.0.1' in parsed_url.query, 'Redirect failed using params of %s' % (parsed_url.query))\r\n\r\ntests/test_redirects.py:143: \r\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \r\n\r\nself = <class unittestzero.Assert at 0x1040f6188>, first = False\r\nmsg = 'Redirect failed using params of '\r\n\r\n    @classmethod\r\n    def true(self, first, msg=None):\r\n        \"\"\"\r\n            Asserts that what is given is equal to True\r\n    \r\n            :Args:\r\n             - First object to be tested\r\n             - Message that will be printed if it fails\r\n            \"\"\"\r\n    \r\n>       assert bool(first) is True, msg\r\nE       AssertionError: Redirect failed using params of\r\n",
-        "title": "Actually return the params in failure for test_redirect_for_windows_200_to_2001",
-        "labels": [],
-        "number": 31,
-        "html_url": "https://github.com/mozilla/bouncer-tests/issues/31",
-        "updated_at": "2014-02-13 14:14:28",
-        "assignee": "",
-        "comments": 2,
+        "comments": 5,
         "pull_request": ""
       },
       {
@@ -121,20 +113,29 @@
         "labels": [],
         "number": 21,
         "html_url": "https://github.com/mozilla/bouncer-tests/issues/21",
-        "updated_at": "2014-02-13 14:28:21",
+        "updated_at": "2014-02-28 12:58:52",
         "assignee": "",
-        "comments": 1,
+        "comments": 2,
         "pull_request": ""
       },
       {
         "body": "Create a beautifully written readme.",
         "title": "Create a readme",
-        "labels": [],
+        "labels": [
+          {
+            "color": "5319e7",
+            "name": "Community"
+          },
+          {
+            "color": "02e10c",
+            "name": "difficulty beginner"
+          }
+        ],
         "number": 12,
         "html_url": "https://github.com/mozilla/bouncer-tests/issues/12",
-        "updated_at": "2014-02-13 14:32:18",
+        "updated_at": "2014-03-03 14:48:57",
         "assignee": "",
-        "comments": 2,
+        "comments": 4,
         "pull_request": ""
       },
       {
@@ -144,7 +145,10 @@
         "number": 7,
         "html_url": "https://github.com/mozilla/bouncer-tests/issues/7",
         "updated_at": "2014-02-13 15:30:34",
-        "assignee": "Florin Strugariu",
+        "assignee": {
+          "avatar_url": "https://avatars.githubusercontent.com/u/703611",
+          "name": "Florin Strugariu"
+        },
         "comments": 8,
         "pull_request": ""
       }
@@ -170,15 +174,26 @@
     "repo": "marketplace-tests",
     "issues": [
       {
-        "body": "Automatically log in to developer hub as needed\r\nSplit developer hub tests into two files\r\nCreate and automatically delete test apps as needed\r\nUpdate requirements.txt to point to newest version of API client\r\nXfail test_that_a_screenshot_can_be_added due to newly uncovered bug\r\n\r\nThis is ready for review. I plan to address the issue of using the API in pieces. I have started with the developer hub tests that *do not* submit apps, as the submission tests need to use the UI anyway. My apologies that it is so big, but I wanted to do a bit of cleanup too.\r\n\r\nReviews welcome!",
-        "title": "Add fixtures to marketplace-tests",
+        "body": "As @AndreiH pointed out (#441), the search pages should be checked to be nonempty as described in #440",
+        "title": "Added assertions to desktop 'View All' link tests.",
         "labels": [],
-        "number": 450,
-        "html_url": "https://github.com/mozilla/marketplace-tests/pull/450",
-        "updated_at": "2014-02-27 13:58:55",
+        "number": 453,
+        "html_url": "https://github.com/mozilla/marketplace-tests/pull/453",
+        "updated_at": "2014-03-03 16:05:31",
         "assignee": "",
-        "comments": 2,
-        "pull_request": "https://github.com/mozilla/marketplace-tests/pull/450"
+        "comments": 0,
+        "pull_request": "https://github.com/mozilla/marketplace-tests/pull/453"
+      },
+      {
+        "body": "@krupa , this passes for me locally ! Please Review , thanks ",
+        "title": "[Android] Test the functionality to switch between New/Popular Tabs #444",
+        "labels": [],
+        "number": 452,
+        "html_url": "https://github.com/mozilla/marketplace-tests/pull/452",
+        "updated_at": "2014-03-03 15:28:33",
+        "assignee": "",
+        "comments": 3,
+        "pull_request": "https://github.com/mozilla/marketplace-tests/pull/452"
       },
       {
         "body": "## Steps to test \r\n1.  Log in to marketplace \r\n2.  Navigate to the details page for any public app \r\n3.  Click on the 'Report Abuse' link \r\n4.  The 'Report Abuse' form opens in a lightbox.  The 'Send Report' button is disabled. \r\n5.  Add some abuse comment. The 'Send Report' button becomes enabled.  \r\n6. Submit the form.  \r\n\r\nForm submission is successful and there is success message.",
@@ -201,26 +216,6 @@
         "pull_request": ""
       },
       {
-        "body": "## Steps to test\r\n1.  Tester is NOT logged in.\r\n2.  Navigate to the details page for any public app\r\n3.  Click on the 'Report Abuse' link\r\n4.  The 'Report Abuse' form opens in a lightbox.  The 'Send Report' button is disabled.\r\n5.  Add some abuse comment. The 'Send Report' button becomes enabled. \r\n6. Submit the form.\r\n\r\nForm submission is successful and there is success message.\r\n",
-        "title": "[Desktop] Add report abuse as an anonymous user",
-        "labels": [
-          {
-            "color": "02d7e1",
-            "name": "difficulty beginner"
-          },
-          {
-            "color": "5319e7",
-            "name": "Community"
-          }
-        ],
-        "number": 446,
-        "html_url": "https://github.com/mozilla/marketplace-tests/issues/446",
-        "updated_at": "2014-02-26 12:30:41",
-        "assignee": "",
-        "comments": 1,
-        "pull_request": ""
-      },
-      {
         "body": "## Steps to test\r\n1. Load marketplace on your latest Firefox browser --> Mobile view of Marketplace loads.\r\n2. The homepage loads and there is 'Popular/New' section\r\n3. Click on the 'View All' link for the Popular tab\r\n4. Click on the 'View All' link for the New tab\r\n\r\n## Expected behavior\r\n'View All' link on both tabs loads a scrollable list of apps  (no need to check if the sorting is right)\r\n",
         "title": "[Android] Test to verify the 'View All' link in the Popular/new section",
         "labels": [
@@ -235,9 +230,9 @@
         ],
         "number": 445,
         "html_url": "https://github.com/mozilla/marketplace-tests/issues/445",
-        "updated_at": "2014-02-25 23:35:18",
+        "updated_at": "2014-03-01 22:57:45",
         "assignee": "",
-        "comments": 0,
+        "comments": 1,
         "pull_request": ""
       },
       {
@@ -255,60 +250,9 @@
         ],
         "number": 444,
         "html_url": "https://github.com/mozilla/marketplace-tests/issues/444",
-        "updated_at": "2014-02-25 23:35:29",
+        "updated_at": "2014-03-03 11:01:18",
         "assignee": "",
-        "comments": 0,
-        "pull_request": ""
-      },
-      {
-        "body": "I have created a few tests for the consumer desktop homepage. \r\nRelated to #439 and #440",
-        "title": "Consumer homepage gallery tests",
-        "labels": [],
-        "number": 441,
-        "html_url": "https://github.com/mozilla/marketplace-tests/pull/441",
-        "updated_at": "2014-02-26 15:04:38",
-        "assignee": "",
-        "comments": 0,
-        "pull_request": "https://github.com/mozilla/marketplace-tests/pull/441"
-      },
-      {
-        "body": "## Steps to test\r\n1. Load marketplace on your latest Firefox browser.\r\n2. The homepage loads and there is 'Popular/New' section\r\n3. Click on the 'View All' link for the Popular tab\r\n4. Click on the 'View All' link for the New tab\r\n\r\n## Expected behavior\r\n'View All' link on both tabs loads a scrollable list of apps  (no need to check if the sorting is right)\r\n",
-        "title": "[Desktop] Test to verify the 'View All' link in the Popular/new section",
-        "labels": [
-          {
-            "color": "02d7e1",
-            "name": "difficulty beginner"
-          },
-          {
-            "color": "5319e7",
-            "name": "Community"
-          }
-        ],
-        "number": 440,
-        "html_url": "https://github.com/mozilla/marketplace-tests/issues/440",
-        "updated_at": "2014-02-26 15:04:18",
-        "assignee": "",
-        "comments": 1,
-        "pull_request": ""
-      },
-      {
-        "body": "## Steps to test:\r\n1. Load marketplace on your latest Firefox\r\n2. On the homepage, check that there is a 'Popular' tab and a 'New tab'\r\n3. Check that 'Popular' tab is open by default\r\n4. Click on 'New' tab\r\n5. Check that 'New' tab loads with apps.",
-        "title": "[Desktop] Test the functionality to switch between New/Popular Tabs",
-        "labels": [
-          {
-            "color": "02d7e1",
-            "name": "difficulty beginner"
-          },
-          {
-            "color": "5319e7",
-            "name": "Community"
-          }
-        ],
-        "number": 439,
-        "html_url": "https://github.com/mozilla/marketplace-tests/issues/439",
-        "updated_at": "2014-02-26 15:04:38",
-        "assignee": "",
-        "comments": 1,
+        "comments": 2,
         "pull_request": ""
       },
       {
@@ -354,28 +298,6 @@
         "number": 432,
         "html_url": "https://github.com/mozilla/marketplace-tests/issues/432",
         "updated_at": "2014-02-18 07:31:56",
-        "assignee": "",
-        "comments": 3,
-        "pull_request": ""
-      },
-      {
-        "body": "Right now there is an issue in TestDeveloperHub where the following apps might fail:\r\ntest_that_checks_that_manifest_url_cannot_be_edited_via_basic_info_for_a_free_app()\r\ntest_that_checks_required_field_validations_on_device_types_for_hosted_apps()\r\n\r\nThe problem is that there are times when no free hosted apps are not found. This is because the test that adds such apps has a clean-up method at the end. There is also a delete app test which removes the first free apps it finds (hosted or packaged). \r\n\r\nFor now we added free hosted apps by running test_hosted_app_submission() without the clean-up. ",
-        "title": "Search for solutions when hosted apps are not found, causing tests to fail",
-        "labels": [],
-        "number": 427,
-        "html_url": "https://github.com/mozilla/marketplace-tests/issues/427",
-        "updated_at": "2014-01-24 15:50:43",
-        "assignee": "",
-        "comments": 1,
-        "pull_request": ""
-      },
-      {
-        "body": "The test fails with the following stacktrace: \r\n\r\nStacktrace\r\n\r\nself = <tests.desktop.developer_hub.test_api_submit.TestAPI instance at 0x10622fb90>\r\nmozwebqa = <pytest_mozwebqa.pytest_mozwebqa.TestSetup instance at 0x10622fcb0>\r\n\r\n    def test_assert_that_a_app_can_be_added_by_api(self, mozwebqa):\r\n        mock_app = MockApplication()  # generate mock app\r\n        mock_app.name = 'API %s' % mock_app.name\r\n    \r\n        # init API client\r\n        mk_api = MarketplaceAPI.get_client(mozwebqa.base_url,\r\n                                           mozwebqa.credentials)\r\n    \r\n>       mk_api.submit_app(mock_app)  # submit app\r\n\r\ntests/desktop/developer_hub/test_api_submit.py:26: \r\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \r\n\r\nself = <mocks.marketplace_api.MarketplaceAPI instance at 0x105f175a8>\r\nmock_app = {'last_name': 'test', 'pitch_app': '', 'device_type': [('firefoxos', True), ('...974483.testmanifest.com/manifest.webapp', 'make_public': True, 'upsell': False}\r\n\r\n    def submit_app(self, mock_app):\r\n    \r\n        #validate app manifest\r\n        self._validate_manifest(mock_app)\r\n    \r\n        #create app\r\n        self._create_app(mock_app)\r\n    \r\n        # update the app with the mock app data\r\n>       self.update_app_data(mock_app)\r\n\r\nmocks/marketplace_api.py:34: \r\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \r\n\r\nself = <mocks.marketplace_api.MarketplaceAPI instance at 0x105f175a8>\r\nmock_app = {'last_name': 'test', 'pitch_app': '', 'device_type': [('firefoxos', True), ('...974483.testmanifest.com/manifest.webapp', 'make_public': True, 'upsell': False}\r\n\r\n    def update_app_data(self, mock_app):\r\n        # update the default app data with the custom mock app information\r\n    \r\n        data = {\r\n            'name': mock_app.name,\r\n            'summary': mock_app.summary,\r\n            'categories': [],\r\n            'support_email': mock_app.support_email,\r\n            'device_types': [],\r\n            'payment_type': mock_app.payment_type,\r\n            'premium_type': 'free',\r\n            'privacy_policy': mock_app.privacy_policy,\r\n            'description': mock_app.description,\r\n            'homepage': mock_app.homepage,\r\n            'support_url': mock_app.support_website\r\n        }\r\n    \r\n        # device_types: a list of the device types at least one of: 'desktop', 'android-tablet', 'android-mobile', 'firefoxos'\r\n        data['device_types'] = [device[0] for device in mock_app['device_type'] if device[1]]\r\n    \r\n        Assert.true(data['device_types'],  'insufficient data added device_types')\r\n    \r\n        # categories: a list of the categories, at least two of the category ids provided from the category api\r\n        data['categories'] = [category['id'] for category in self._categories\r\n                              if category['name'] in [mock_category[0] for mock_category in mock_app.categories]]\r\n    \r\n        Assert.greater_equal(len(data['categories']), 2,\r\n                             'Insufficient data added categories == %s\\n Minimum 2 categories required' % data['categories'])\r\n    \r\n>       response = self._client.update(mock_app.id, data)\r\n\r\nmocks/marketplace_api.py:87: \r\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \r\n\r\nself = <marketplace.client.Client instance at 0x105f17488>, app_id = 471169\r\ndata = {'categories': [155, 156], 'description': 'more details of marble app 1385974483', 'device_types': ['firefoxos'], 'homepage': 'http://test1385974483.com/', ...}\r\n\r\n    def update(self, app_id, data):\r\n        \"\"\"Update app identified by app_id with data\r\n    \r\n            :params:\r\n                * app_id (int) id in the marketplace received with :method:`create`\r\n                * data (dict) some keys are required:\r\n                    * *name*: the title of the app. Maximum length 127\r\n                      characters.\r\n                    * *summary*: the summary of the app. Maximum length\r\n                      255 characters.\r\n                    * *categories*: a list of the categories, at least\r\n                      two of the category ids provided from the category api\r\n                      (see below).\r\n                    * *support_email*: the email address for support.\r\n                    * *device_types*: a list of the device types at least\r\n                      one of: 'desktop', 'phone', 'tablet'.\r\n                    * *payment_type*: only choice at this time is 'free'.\r\n            :returns: HttResponse:\r\n                * status_code (int) 202 if successful\r\n                * content (dict) or empty if successful\r\n            \"\"\"\r\n        assert ('name' in data\r\n                and data['name']\r\n                and 'summary' in data\r\n                and 'categories' in data\r\n                and data['categories']\r\n                and 'support_email' in data\r\n                and data['support_email']\r\n                and 'device_types' in data\r\n                and data['device_types']\r\n                and 'payment_type' in data\r\n                and data['payment_type']\r\n                and 'privacy_policy' in data\r\n                and data['privacy_policy'])\r\n>       return self.conn.fetch('PUT', self.url('app') % app_id, data)\r\n\r\n.env/lib/python2.7/site-packages/marketplace/client.py:166: \r\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \r\n\r\nself = <marketplace.connection.Connection instance at 0x105f175f0>\r\nmethod = 'PUT'\r\nurl = 'https://marketplace-dev.allizom.org:443/api/apps/app/471169/'\r\ndata = {'categories': [155, 156], 'description': 'more details of marble app 1385974483', 'device_types': ['firefoxos'], 'homepage': 'http://test1385974483.com/', ...}\r\nexpected_status_code = None\r\n\r\n    def fetch(self, method, url, data=None, expected_status_code=None):\r\n        \"\"\"Prepare the headers, encode data, call API and provide\r\n            data it returns\r\n            \"\"\"\r\n        kwargs = self.prepare_request(method, url, data)\r\n        response = getattr(requests, method.lower())(url, **kwargs)\r\n        log.debug(str(response.__dict__))\r\n        if response.status_code >= 400:\r\n>           response.raise_for_status()\r\n\r\n.env/lib/python2.7/site-packages/marketplace/connection.py:83: \r\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \r\n\r\nself = <Response [400]>\r\n\r\n    def raise_for_status(self):\r\n        \"\"\"Raises stored :class:`HTTPError`, if one occurred.\"\"\"\r\n    \r\n        http_error_msg = ''\r\n    \r\n        if 400 <= self.status_code < 500:\r\n            http_error_msg = '%s Client Error: %s' % (self.status_code, self.reason)\r\n    \r\n        elif 500 <= self.status_code < 600:\r\n            http_error_msg = '%s Server Error: %s' % (self.status_code, self.reason)\r\n    \r\n        if http_error_msg:\r\n>           raise HTTPError(http_error_msg, response=self)\r\nE           HTTPError: 400 Client Error: BAD REQUEST\r\n\r\n.env/lib/python2.7/site-packages/requests/models.py:683: HTTPError",
-        "title": "test_assert_that_a_app_can_be_added_by_api fails on stage and dev",
-        "labels": [],
-        "number": 400,
-        "html_url": "https://github.com/mozilla/marketplace-tests/issues/400",
-        "updated_at": "2014-01-15 18:44:52",
         "assignee": "",
         "comments": 3,
         "pull_request": ""
@@ -463,7 +385,10 @@
         "number": 252,
         "html_url": "https://github.com/mozilla/mcom-tests/issues/252",
         "updated_at": "2014-02-13 15:17:14",
-        "assignee": "",
+        "assignee": {
+          "avatar_url": "https://avatars.githubusercontent.com/u/179895",
+          "name": null
+        },
         "comments": 1,
         "pull_request": ""
       },
@@ -516,7 +441,10 @@
         "number": 212,
         "html_url": "https://github.com/mozilla/mcom-tests/issues/212",
         "updated_at": "2013-09-17 23:14:28",
-        "assignee": "",
+        "assignee": {
+          "avatar_url": "https://avatars.githubusercontent.com/u/179895",
+          "name": null
+        },
         "comments": 3,
         "pull_request": ""
       },
@@ -535,9 +463,9 @@
         ],
         "number": 210,
         "html_url": "https://github.com/mozilla/mcom-tests/issues/210",
-        "updated_at": "2014-02-13 15:39:27",
+        "updated_at": "2014-02-28 13:27:25",
         "assignee": "",
-        "comments": 4,
+        "comments": 5,
         "pull_request": ""
       },
       {
@@ -547,7 +475,10 @@
         "number": 66,
         "html_url": "https://github.com/mozilla/mcom-tests/issues/66",
         "updated_at": "2014-02-13 15:51:35",
-        "assignee": "",
+        "assignee": {
+          "avatar_url": "https://avatars.githubusercontent.com/u/179895",
+          "name": null
+        },
         "comments": 3,
         "pull_request": ""
       }
@@ -562,9 +493,9 @@
         "labels": [],
         "number": 79,
         "html_url": "https://github.com/mozilla/mdn-tests/pull/79",
-        "updated_at": "2014-02-21 13:51:27",
+        "updated_at": "2014-03-03 14:21:15",
         "assignee": "",
-        "comments": 0,
+        "comments": 2,
         "pull_request": "https://github.com/mozilla/mdn-tests/pull/79"
       },
       {
@@ -698,9 +629,9 @@
         ],
         "number": 127,
         "html_url": "https://github.com/mozilla/mozillians-tests/issues/127",
-        "updated_at": "2014-02-18 23:28:52",
+        "updated_at": "2014-03-03 03:15:34",
         "assignee": "",
-        "comments": 1,
+        "comments": 0,
         "pull_request": ""
       },
       {
@@ -813,6 +744,44 @@
     ]
   },
   {
+    "repo": "mozwebqa-dashboard",
+    "issues": [
+      {
+        "body": "On the dashboard, a label would be added as assigned, and display the GitHub username of the assignee. ",
+        "title": "Add the ability to mark tasks as assigned",
+        "labels": [],
+        "number": 9,
+        "html_url": "https://github.com/mozilla/mozwebqa-dashboard/issues/9",
+        "updated_at": "2014-03-03 17:43:52",
+        "assignee": "",
+        "comments": 0,
+        "pull_request": ""
+      },
+      {
+        "body": "",
+        "title": "Add Github issues dashboard",
+        "labels": [],
+        "number": 8,
+        "html_url": "https://github.com/mozilla/mozwebqa-dashboard/pull/8",
+        "updated_at": "2014-02-12 17:10:25",
+        "assignee": "",
+        "comments": 0,
+        "pull_request": "https://github.com/mozilla/mozwebqa-dashboard/pull/8"
+      },
+      {
+        "body": "In order to run this you need to pass in the name of the repos file (this uses the same one as Vaidik's xfails job) and a Github API Token. I have created an anonymous api token that gives is read-only access. There is no reason that this api token cannot be made public. The value of the token is `0c66ab2b3fceec29a82ec3110679d0fac05af57a`.\r\n\r\nA sample command line would be:\r\n\r\n`generate_github_issues_dashboard_data.py repos 0c66ab2b3fceec29a82ec3110679d0fac05af57a`\r\n\r\nOnce merged this can be set up with a job on Jenkins similar to the one we will have for the Marketplace tests dashboard, or it could be set up as a cron job anywhere that has access to the internet.",
+        "title": "Create aggregator for Github issues",
+        "labels": [],
+        "number": 7,
+        "html_url": "https://github.com/mozilla/mozwebqa-dashboard/pull/7",
+        "updated_at": "2014-02-12 13:50:45",
+        "assignee": "",
+        "comments": 0,
+        "pull_request": "https://github.com/mozilla/mozwebqa-dashboard/pull/7"
+      }
+    ]
+  },
+  {
     "repo": "mozwebqa-test-templates",
     "issues": [
       {
@@ -886,9 +855,9 @@
         "labels": [],
         "number": 73,
         "html_url": "https://github.com/mozilla/qmo-tests/issues/73",
-        "updated_at": "2013-12-19 21:04:00",
+        "updated_at": "2014-03-01 11:11:51",
         "assignee": "",
-        "comments": 5,
+        "comments": 7,
         "pull_request": ""
       },
       {
@@ -929,9 +898,12 @@
         "labels": [],
         "number": 58,
         "html_url": "https://github.com/mozilla/remo-tests/issues/58",
-        "updated_at": "2013-08-02 08:24:49",
-        "assignee": "AndreiH",
-        "comments": 3,
+        "updated_at": "2014-03-03 14:19:27",
+        "assignee": {
+          "avatar_url": "https://avatars.githubusercontent.com/u/2787766",
+          "name": "AndreiH"
+        },
+        "comments": 5,
         "pull_request": ""
       },
       {
@@ -952,7 +924,10 @@
         "number": 54,
         "html_url": "https://github.com/mozilla/remo-tests/issues/54",
         "updated_at": "2014-02-14 20:12:28",
-        "assignee": "Rebecca Billings",
+        "assignee": {
+          "avatar_url": "https://avatars.githubusercontent.com/u/737878",
+          "name": "Rebecca Billings"
+        },
         "comments": 7,
         "pull_request": ""
       }
@@ -994,6 +969,71 @@
     "repo": "Socorro-Tests",
     "issues": [
       {
+        "body": "Removed several out of date references to pivotal tracker, which is no\r\nlonger used as described in\r\nhttps://github.com/mozilla/Socorro-Tests/issues/245.",
+        "title": "Removed references to pivotaltracker",
+        "labels": [],
+        "number": 255,
+        "html_url": "https://github.com/mozilla/Socorro-Tests/pull/255",
+        "updated_at": "2014-03-03 15:28:10",
+        "assignee": "",
+        "comments": 5,
+        "pull_request": "https://github.com/mozilla/Socorro-Tests/pull/255"
+      },
+      {
+        "body": "Given that we weren't able to catch https://bugzilla.mozilla.org/show_bug.cgi?id=977825 in any of the tests, perhaps we should add a randomized test (in production first, at least, and whether it runs in staging can be discussed) to:\r\n\r\na) grab a product/version\r\nb) go to the \"reports\" for a certain signature (random?)\r\nc) make sure it has loads (200 OK) and/or has content",
+        "title": "Need to test (at least on prod) that reports load/aren't returning 404s",
+        "labels": [
+          {
+            "color": "d7e102",
+            "name": "difficulty intermediate"
+          },
+          {
+            "color": "e102d8",
+            "name": "priority high"
+          }
+        ],
+        "number": 254,
+        "html_url": "https://github.com/mozilla/Socorro-Tests/issues/254",
+        "updated_at": "2014-03-03 13:46:44",
+        "assignee": "",
+        "comments": 2,
+        "pull_request": ""
+      },
+      {
+        "body": "ASAP, we need a smoketest that logs in to Socorro (I think a \"regular\" user account is a good start, but best to cover Admin as well, at some point, too).\r\n\r\nSee https://bugzilla.mozilla.org/show_bug.cgi?id=977748 for the regression.",
+        "title": "Write a test to verify that we can log in to Socorro via Persona, successfully",
+        "labels": [
+          {
+            "color": "d7e102",
+            "name": "difficulty intermediate"
+          },
+          {
+            "color": "e102d8",
+            "name": "priority high"
+          }
+        ],
+        "number": 252,
+        "html_url": "https://github.com/mozilla/Socorro-Tests/issues/252",
+        "updated_at": "2014-03-03 14:26:47",
+        "assignee": {
+          "avatar_url": "https://avatars.githubusercontent.com/u/142755",
+          "name": "Bob Silverberg"
+        },
+        "comments": 3,
+        "pull_request": ""
+      },
+      {
+        "body": "Unxfail test_that_top_crashers_reports_links_work and test_that_top_crashers_reports_links_work when Bug 977406 is fixed.\r\n\r\nThe tests will not xpass because pytest.xfail on parameterized tests acts like a skip.\r\n\r\n#250  ",
+        "title": "Unxfail test_that_top_crashers_reports_links_work and test_that_top_crashers_reports_links_work",
+        "labels": [],
+        "number": 251,
+        "html_url": "https://github.com/mozilla/Socorro-Tests/issues/251",
+        "updated_at": "2014-02-27 15:04:31",
+        "assignee": "",
+        "comments": 0,
+        "pull_request": ""
+      },
+      {
         "body": "",
         "title": "Create Super Search app and new tests that use the app ",
         "labels": [],
@@ -1026,9 +1066,9 @@
         ],
         "number": 245,
         "html_url": "https://github.com/mozilla/Socorro-Tests/issues/245",
-        "updated_at": "2014-02-07 15:24:26",
+        "updated_at": "2014-02-28 21:11:29",
         "assignee": "",
-        "comments": 0,
+        "comments": 1,
         "pull_request": ""
       },
       {
@@ -1046,9 +1086,9 @@
         ],
         "number": 223,
         "html_url": "https://github.com/mozilla/Socorro-Tests/issues/223",
-        "updated_at": "2014-02-04 19:46:43",
+        "updated_at": "2014-02-28 19:50:58",
         "assignee": "",
-        "comments": 6,
+        "comments": 7,
         "pull_request": ""
       },
       {
