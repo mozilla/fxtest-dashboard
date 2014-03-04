@@ -1,0 +1,15 @@
+{
+  "response": [
+    {
+      "results": {
+        "xfail": {
+          "reason": "'-dev' in config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_watch_main_page_after_log_in.py", 
+      "dir": "workspace/wiki-tests/tests", 
+      "method": "test_visitor_can_watch_page"
+    }
+  ]
+}

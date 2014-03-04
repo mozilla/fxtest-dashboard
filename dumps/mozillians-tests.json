@@ -1,0 +1,54 @@
+{
+  "response": [
+    {
+      "results": {
+        "xfail": {
+          "reason": "config.getvalue('base_url') == 'https://mozillians-dev.allizom.org'", 
+          "links": []
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/mozillians-tests/tests", 
+      "method": "test_that_search_returns_results_for_email_substring"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 835318 - Error adding groups / skills / or languages with non-latin chars.", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/835318", 
+              "raw": "Bug 835318", 
+              "to_use": "Bug 835318"
+            }
+          ]
+        }
+      }, 
+      "file": "test_profile.py", 
+      "dir": "workspace/mozillians-tests/tests", 
+      "method": "test_non_ascii_characters_are_allowed_in_profile_information"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "'allizom' in config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_profile.py", 
+      "dir": "workspace/mozillians-tests/tests", 
+      "method": "test_group_addition"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "'allizom' in config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_profile.py", 
+      "dir": "workspace/mozillians-tests/tests", 
+      "method": "test_group_deletion"
+    }
+  ]
+}

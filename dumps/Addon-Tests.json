@@ -1,0 +1,26 @@
+{
+  "response": [
+    {
+      "results": {
+        "xfail": {
+          "reason": "config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_details_page.py", 
+      "dir": "workspace/Addon-Tests/tests/desktop", 
+      "method": "test_what_is_this_in_the_version_information"
+    }, 
+    {
+      "results": {
+        "skipif": {
+          "reason": "urlparse(config.getvalue(\"base_url\")).netloc != \"addons.mozilla.org", 
+          "links": []
+        }
+      }, 
+      "file": "test_statistics.py", 
+      "dir": "workspace/Addon-Tests/tests/desktop", 
+      "method": "test_that_checks_content_in_json_endpoints_from_statistics_urls"
+    }
+  ]
+}
