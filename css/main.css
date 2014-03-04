@@ -1,3 +1,7 @@
+.label-pull-request {
+    background: plum;
+}
+
 .label-xfail {
     background: #b94a48;
 }
@@ -34,7 +38,7 @@
     padding-top: 8px;
 }
 
-.reason-skip,.reason-skipif {
+.reason-skip,.reason-skipif, .status-skipping {
     background: rgba(238, 200, 0, 0.14);
 }
 
@@ -67,8 +71,12 @@
     background: #b94a48;
 }
 
-.reason-xfail {
+.reason-xfail, .status-failing {
     background: rgba(255, 93, 90, 0.12);
+}
+
+.status-passing {
+    background: rgba(50, 135, 60, 0.15);
 }
 
 .hooray {
@@ -76,4 +84,26 @@
     font-size: 1.3em;
     font-weight: bold;
     font-style: italic;
+}
+
+.filters_holder {
+    text-align: right;
+    display: block;
+}
+
+.filter_type {
+    text-align: left;
+    display: inline-block;
+}
+
+#filter_tag {
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #e3e3e3;
+    background: #f5f5f5;
+    margin-left: 4px;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
 }
