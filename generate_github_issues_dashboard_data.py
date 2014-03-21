@@ -13,8 +13,8 @@ from github import Github
 
 class GithubIssuesAggregator(object):
 
-    def __init__(self, repos_file, gh_token):
-        self.repos_file = repos_file
+    def __init__(self, gh_token):
+        self.config_data = json.load(open('config.json'))
         self.gh_api = Github(gh_token)
         rate_limit = self.gh_api.get_rate_limit()
         if rate_limit.rate.limit < 5000:
@@ -22,10 +22,9 @@ class GithubIssuesAggregator(object):
 
     def process_issues(self):
         all_issues = []
-        with open('%s.txt' % self.repos_file) as f:
-            self.repos = [a.split('/')[-1] for a in f.read().splitlines()]
         org = self.gh_api.get_organization('Mozilla')
-        for repo in self.repos:
+        repos = [repo.split('/')[-1] for repo in self.config_data['repos']]
+        for repo in repos:
             print 'Retrieving issues for %s...' % repo
             issues = []
             for issue in org.get_repo(repo).get_issues(state='Open'):
@@ -46,16 +45,16 @@ class GithubIssuesAggregator(object):
                 issues.append(issue_dict)
             all_issues.append({'repo': repo, 'issues': issues})
         final = {'last_updated': str(datetime.datetime.now()), 'issues': all_issues}
-        with open('%s_issues.json' % self.repos_file, 'w') as outfile:
+        with open('data/repos_issues.json', 'w') as outfile:
             json.dump(final, outfile)
         return True
 
 
 if __name__ == '__main__':
 
-    if len(sys.argv) < 3:
-        raise ValueError('Must provide Repos filename and Github API token.')
+    if len(sys.argv) < 2:
+        raise ValueError('Must provide Github API token.')
 
-    print 'Starting job for %s using %s' % (sys.argv[1], sys.argv[2])
-    aggregator = GithubIssuesAggregator(sys.argv[1], sys.argv[2])
+    print 'Starting job ...'
+    aggregator = GithubIssuesAggregator(sys.argv[1])
     print 'Job successful: %s' % aggregator.process_issues()
