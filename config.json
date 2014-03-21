@@ -1,0 +1,35 @@
+{
+  "repos": [
+    "https://github.com/mozilla/Addon-Tests",
+    "https://github.com/mozilla/Affiliates-Tests",
+    "https://github.com/mozilla/bouncer-tests",
+    "https://github.com/mozilla/marketing-project-template",
+    "https://github.com/mozilla/marketplace-tests",
+    "https://github.com/mozilla/mcom-tests",
+    "https://github.com/mozilla/mdn-tests",
+    "https://github.com/mozilla/mozillians-tests",
+    "https://github.com/mozilla/moztrap-tests",
+    "https://github.com/mozilla/mozwebqa-dashboard",
+    "https://github.com/mozilla/mozwebqa-test-templates",
+    "https://github.com/mozilla/qmo-tests",
+    "https://github.com/mozilla/remo-tests",
+    "https://github.com/mozilla/snippets-tests",
+    "https://github.com/mozilla/Socorro-Tests",
+    "https://github.com/mozilla/sumo-tests",
+    "https://github.com/mozilla/wiki-tests"
+  ],
+  "jenkins_artifact_url_pattern": "http://selenium.qa.mtv2.mozilla.com:8080/job/%s/lastSuccessfulBuild/artifact/results.xml",
+  "marketplace_jobs": [
+    "b2g.hamachi.mozilla-b2g28_v1_3.v1.3.marketplace",
+    "marketplace.dev.developer_hub.saucelabs",
+    "marketplace.dev.developer_hub",
+    "marketplace.dev.mobile.saucelabs",
+    "marketplace.dev.saucelabs",
+    "marketplace.prod.mobile.saucelabs",
+    "marketplace.prod.saucelabs",
+    "marketplace.prod",
+    "marketplace.stage.developer_hub.saucelabs",
+    "marketplace.stage.mobile.saucelabs",
+    "marketplace.stage.saucelabs"
+  ]
+}

@@ -5,7 +5,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 import json
-import sys
 import xml.etree.cElementTree as et
 
 import requests
@@ -13,11 +12,8 @@ import requests
 
 class JenkinsResultsAggregator(object):
 
-    def __init__(self, jobs_file, jenkins_artifact_url):
-        self.jobs_file = jobs_file
-        self.jenkins_artifact_url = jenkins_artifact_url
-        with open('%s.txt' % jobs_file) as f:
-            self.job_names = f.read().splitlines()
+    def __init__(self):
+        self.config_data = json.load(open('config.json'))
 
     def process_results(self):
         json_results = self._generate_json_results()
@@ -29,7 +25,7 @@ class JenkinsResultsAggregator(object):
         aggregated_results = {'Firefox OS': {}, 'Android': {}, 'Desktop': {}}
         final = []
 
-        for job_name in self.job_names:
+        for job_name in self.config_data['marketplace_jobs']:
             jobs[job_name] = self._process_xml_results(job_name)
 
         for job_name in jobs:
@@ -69,7 +65,7 @@ class JenkinsResultsAggregator(object):
         return final
 
     def _process_xml_results(self, job_name):
-        response = requests.get(self.jenkins_artifact_url % job_name)
+        response = requests.get(self.config_data['jenkins_artifact_url_pattern'] % job_name)
         response.raise_for_status()
         tree = et.fromstring(response.content)
         test_results = {}
@@ -102,15 +98,12 @@ class JenkinsResultsAggregator(object):
         return 'unknown'
 
     def _generate_json_file(self, json_results):
-        with open('%s_results.json' % self.jobs_file, 'w') as outfile:
+        with open('data/marketplace_jobs_results.json', 'w') as outfile:
             json.dump(json_results, outfile)
 
 
 if __name__ == '__main__':
 
-    if len(sys.argv) < 3:
-        raise ValueError('Must provide name of jobs file and jenkins artifact url pattern.')
-
-    print 'Starting job for %s using %s' % (sys.argv[1], sys.argv[2])
-    aggregator = JenkinsResultsAggregator(sys.argv[1], sys.argv[2])
+    print 'Starting job ...'
+    aggregator = JenkinsResultsAggregator()
     print 'Job successful: %s' % aggregator.process_results()
