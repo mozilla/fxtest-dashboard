@@ -1,0 +1,15 @@
+{
+  "response": [
+    {
+      "results": {
+        "skipif": {
+          "reason": "urlparse(config.getvalue(\"base_url\")).netloc != \"addons.mozilla.org", 
+          "links": []
+        }
+      }, 
+      "file": "test_statistics.py", 
+      "dir": "workspace/Addon-Tests/tests/desktop", 
+      "method": "test_that_checks_content_in_json_endpoints_from_statistics_urls"
+    }
+  ]
+}

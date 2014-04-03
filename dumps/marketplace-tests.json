@@ -1,0 +1,167 @@
+{
+  "response": [
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 977084 - Problems with screenshot previews on the Edit Listing page", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/977084", 
+              "raw": "Bug 977084", 
+              "to_use": "Bug 977084"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_a_screenshot_can_be_added"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 969242 - Combine Android Phone and Android Tablet on submission page", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/969242", 
+              "raw": "Bug 969242", 
+              "to_use": "Bug 969242"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_checks_required_field_validations_on_device_types_for_hosted_apps"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 969242 - Combine Android Phone and Android Tablet on submission page", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/969242", 
+              "raw": "Bug 969242", 
+              "to_use": "Bug 969242"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub_submit_apps.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_hosted_app_submission"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 969284 - [dev] \"Oops ...\" page displayed when trying to save payment options for a hosted paid app", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/969284", 
+              "raw": "Bug 969284", 
+              "to_use": "Bug 969284"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub_submit_apps.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_hosted_paid_app_submission"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 969242 - Combine Android Phone and Android Tablet on submission page", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/969242", 
+              "raw": "Bug 969242", 
+              "to_use": "Bug 969242"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub_submit_apps.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_packaged_app_submission"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bugzilla 769364 - IPN Updates refund table", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/769364", 
+              "raw": "Bugzilla 769364", 
+              "to_use": "Bugzilla 769364"
+            }
+          ]
+        }
+      }, 
+      "file": "test_purchase_app.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "request_refund_procedure"
+    }, 
+    {
+      "results": {
+        "skipif": {
+          "reason": "True', reason='Purchase app option is currently not available for desktop environment", 
+          "links": []
+        }
+      }, 
+      "file": "test_purchase_app.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_purchases_an_app_without_pre_auth_and_requests_a_refund"
+    }, 
+    {
+      "results": {
+        "skipif": {
+          "reason": "True', reason='Sort not available yet.", 
+          "links": []
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_verifies_the_sort_region_from_search_results"
+    }, 
+    {
+      "results": {
+        "skipif": {
+          "reason": "True', reason='Search suggestions not available yet.", 
+          "links": []
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
+    }, 
+    {
+      "results": {
+        "skip": {
+          "reason": "We currently don't have the option for changing the language in Fireplace", 
+          "links": []
+        }
+      }, 
+      "file": "test_users_account.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_checks_changing_language"
+    }, 
+    {
+      "results": {
+        "skipif": {
+          "reason": "True', 'Test skipped because of Bug 847625 - Port search suggestions to Fireplace", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/847625", 
+              "raw": "Bug 847625", 
+              "to_use": "Bug 847625"
+            }
+          ]
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/marketplace-tests/tests/mobile", 
+      "method": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
+    }
+  ]
+}

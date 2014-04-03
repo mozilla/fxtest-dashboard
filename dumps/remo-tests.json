@@ -1,0 +1,15 @@
+{
+  "response": [
+    {
+      "results": {
+        "xfail": {
+          "reason": "-dev.allizom\" in config.getvalue(\"base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_events_page.py", 
+      "dir": "workspace/remo-tests/tests", 
+      "method": "test_events_icalendar_export"
+    }
+  ]
+}
