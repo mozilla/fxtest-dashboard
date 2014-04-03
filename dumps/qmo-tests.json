@@ -1,0 +1,15 @@
+{
+  "response": [
+    {
+      "results": {
+        "xfail": {
+          "reason": "u'There is a capcha on the registration page", 
+          "links": []
+        }
+      }, 
+      "file": "test_user_registration.py", 
+      "dir": "workspace/qmo-tests/tests", 
+      "method": "test_new_user_can_register"
+    }
+  ]
+}
