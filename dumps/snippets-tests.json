@@ -1,0 +1,15 @@
+{
+  "response": [
+    {
+      "results": {
+        "skip": {
+          "reason": "Only test well formedness on production.", 
+          "links": []
+        }
+      }, 
+      "file": "test_snippets.py", 
+      "dir": "workspace/snippets-tests/tests", 
+      "method": "test_that_snippets_are_well_formed_xml"
+    }
+  ]
+}
