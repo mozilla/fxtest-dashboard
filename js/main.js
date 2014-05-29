@@ -205,12 +205,12 @@ dashboardApp.controller('MarketplaceController', function ($scope, $http) {
 
   }
 });
-
 dashboardApp.controller('IssuesController', function ($scope, $http, filterFilter) {
 
   $scope.init = function () {
     $("#nav-issues").addClass('active');
-    $http.get('data/repos_issues.json').success(function (data) {
+    var aggregator = new GithubIssuesAggregator();
+    aggregator.processIssues(function (data) {
       $scope.issues = data.issues;
       $scope.last_updated = data.last_updated;
       $scope.issueFilters = {'hasPullRequest': ''};
@@ -244,9 +244,7 @@ dashboardApp.controller('IssuesController', function ($scope, $http, filterFilte
         angular.forEach(repo.issues, function (issue) {
           issue.shouldShow = true;
         });
-
       });
-
       setTimeout(Hyphenator.run, 200);
     });
 
@@ -262,7 +260,7 @@ dashboardApp.controller('IssuesController', function ($scope, $http, filterFilte
       for (var b = 0; b < issues.length; b++) {
         issue = issues[b];
         issue.shouldShow = $scope.hasPullRequest == 'undefined' | $scope.hasPullRequest == null | $scope.hasPullRequest == '' |
-          (issue.pull_request.length > 0 && $scope.hasPullRequest == 'yes') |  (issue.pull_request.length == 0 && $scope.hasPullRequest == 'no');
+          (issue.pull_request && $scope.hasPullRequest == 'yes') |  (!issue.pull_request && $scope.hasPullRequest == 'no');
         var showForLabels = true;
         if (issue.shouldShow && $scope.selectedLabels().length > 0) {
           showForLabels = false;
@@ -281,7 +279,7 @@ dashboardApp.controller('IssuesController', function ($scope, $http, filterFilte
           issue.shouldShow = issue.shouldShow && showForLabels;
         }
         var showForAssignee = true;
-        if (issue.shouldShow && $scope.hasAssignee != 'undefined' & $scope.hasAssignee != null | $scope.hasAssignee == '' ) {
+        if (issue.shouldShow && $scope.hasAssignee != 'undefined' && $scope.hasAssignee != null | $scope.hasAssignee == '' ) {
           showForAssignee = (issue.assignee.name && $scope.hasAssignee == 'yes') | (!issue.assignee.name && $scope.hasAssignee == 'no');
           issue.shouldShow = issue.shouldShow && showForAssignee;
         }
