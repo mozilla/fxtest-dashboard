@@ -70,8 +70,8 @@ function GithubIssuesAggregator(){
                                                'issues': allIssues
                                               };
 
-                                callback(finalIssues);
-                                return;
+                                return callback(finalIssues);
+                                
                             }
                         })
                 })(i)
