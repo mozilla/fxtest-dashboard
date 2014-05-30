@@ -3,13 +3,57 @@
     {
       "results": {
         "xfail": {
-          "reason": "'-dev' in config.getvalue('base_url", 
+          "reason": "allizom\" in config.getvalue(\"base_url", 
           "links": []
         }
       }, 
-      "file": "test_watch_main_page_after_log_in.py", 
+      "file": "test_create_user.py", 
       "dir": "workspace/wiki-tests/tests", 
-      "method": "test_visitor_can_watch_page"
+      "method": "test_passwords_mismatch_error"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "allizom\" in config.getvalue(\"base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_create_user.py", 
+      "dir": "workspace/wiki-tests/tests", 
+      "method": "test_email_required_error"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "allizom\" in config.getvalue(\"base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_create_user.py", 
+      "dir": "workspace/wiki-tests/tests", 
+      "method": "test_valid_email_required_error"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "allizom\" in config.getvalue(\"base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_create_user.py", 
+      "dir": "workspace/wiki-tests/tests", 
+      "method": "test_create_valid_new_user"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "allizom\" in config.getvalue(\"base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_create_user.py", 
+      "dir": "workspace/wiki-tests/tests", 
+      "method": "test_user_already_exists_error"
     }
   ]
 }

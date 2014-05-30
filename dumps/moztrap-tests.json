@@ -1,3 +1,21 @@
 {
-  "response": []
+  "response": [
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 1008850 - Suggestion box is cut off when the filter is too long", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1008850", 
+              "raw": "Bug 1008850", 
+              "to_use": "Bug 1008850"
+            }
+          ]
+        }
+      }, 
+      "file": "test_pinning_filters.py", 
+      "dir": "workspace/moztrap-tests/tests", 
+      "method": "test_that_pinning_filters_on_product_and_version_and_suite_set_defaults_in_new_case"
+    }
+  ]
 }
