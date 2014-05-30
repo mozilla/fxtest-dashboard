@@ -42,7 +42,7 @@
                     <tbody>
                         <tr ng-repeat="issue in repo.issues" ng-show="issue.shouldShow">
                             <td>
-                                <span ng-if="issue.pull_request.length" class="label label-pull-request">
+                                <span ng-if="issue.pull_request" class="label label-pull-request">
                                     Pull Request
                                 </span>
                                 <span class="hyphenate">

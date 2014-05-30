@@ -205,30 +205,33 @@ dashboardApp.controller('MarketplaceController', function ($scope, $http) {
 
   }
 });
+
 dashboardApp.controller('IssuesController', function ($scope, $http, filterFilter) {
 
   $scope.init = function () {
     $("#nav-issues").addClass('active');
     var aggregator = new GithubIssuesAggregator();
+
+    $scope.issueFilters = {'hasPullRequest': '', 'hasAssignee': ''};
+
+    var labelArray = ['Community', 'blocked',
+      'difficulty beginner', 'difficulty intermediate', 'difficulty advanced',
+      'priority low', 'priority medium', 'priority high']
+    $scope.labels = labelArray.map(function (label) {
+      return {'name': label, selected: false}
+    });
+
+    // selected labels
+    $scope.selection = [];
+
+    // helper method
+    $scope.selectedLabels = function selectedLabels() {
+      return filterFilter($scope.labels, { selected: true });
+    };
+
     aggregator.processIssues(function (data) {
       $scope.issues = data.issues;
       $scope.last_updated = data.last_updated;
-      $scope.issueFilters = {'hasPullRequest': ''};
-
-      var labelArray = ['Community', 'blocked',
-        'difficulty beginner', 'difficulty intermediate', 'difficulty advanced',
-        'priority low', 'priority medium', 'priority high']
-      $scope.labels = labelArray.map(function (label) {
-        return {'name': label, selected: false}
-      });
-
-      // selected labels
-      $scope.selection = [];
-
-      // helper method
-      $scope.selectedLabels = function selectedLabels() {
-        return filterFilter($scope.labels, { selected: true });
-      };
 
       // watch labels for changes
       $scope.$watch('labels|filter:{selected:true}', function (nv) {
@@ -246,6 +249,7 @@ dashboardApp.controller('IssuesController', function ($scope, $http, filterFilte
         });
       });
       setTimeout(Hyphenator.run, 200);
+      $scope.$apply();
     });
 
   }
@@ -279,8 +283,10 @@ dashboardApp.controller('IssuesController', function ($scope, $http, filterFilte
           issue.shouldShow = issue.shouldShow && showForLabels;
         }
         var showForAssignee = true;
-        if (issue.shouldShow && $scope.hasAssignee != 'undefined' && $scope.hasAssignee != null | $scope.hasAssignee == '' ) {
-          showForAssignee = (issue.assignee.name && $scope.hasAssignee == 'yes') | (!issue.assignee.name && $scope.hasAssignee == 'no');
+        if (issue.shouldShow && $scope.hasAssignee != 'undefined' && $scope.hasAssignee != null | $scope.hasAssignee == '') {
+          showForAssignee = $scope.hasAssignee == ''
+                            | (issue.assignee.name && $scope.hasAssignee == 'yes')
+                            | (!issue.assignee.name && $scope.hasAssignee == 'no');
           issue.shouldShow = issue.shouldShow && showForAssignee;
         }
       }
