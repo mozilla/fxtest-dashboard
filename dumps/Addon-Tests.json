@@ -3,7 +3,7 @@
     {
       "results": {
         "skipif": {
-          "reason": "urlparse(config.getvalue(\"base_url\")).netloc != \"addons.mozilla.org", 
+          "reason": "urlparse(config.getvalue(\"base_url\")", 
           "links": []
         }
       }, 
