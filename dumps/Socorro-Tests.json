@@ -3,6 +3,23 @@
     {
       "results": {
         "xfail": {
+          "reason": "reason = 'Bug 1010987 - [prod] Wrong order for the version in the drop-down menu", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1010987", 
+              "raw": "Bug 1010987", 
+              "to_use": "Bug 1010987"
+            }
+          ]
+        }
+      }, 
+      "file": "test_layout.py", 
+      "dir": "workspace/Socorro-Tests/tests", 
+      "method": "test_that_product_versions_are_ordered_correctly"
+    }, 
+    {
+      "results": {
+        "xfail": {
           "reason": "Bug 968476 - crash counts appear to be different", 
           "links": [
             {
@@ -20,13 +37,19 @@
     {
       "results": {
         "xfail": {
-          "reason": "'-dev' in config.getvalue('base_url", 
-          "links": []
+          "reason": "Bug 1013916 - [prod][stage]Top Crashers for B2G selects the wrong version and returns Page not found", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1013916", 
+              "raw": "Bug 1013916", 
+              "to_use": "Bug 1013916"
+            }
+          ]
         }
       }, 
       "file": "test_crash_reports.py", 
       "dir": "workspace/Socorro-Tests/tests", 
-      "method": "test_that_reports_form_has_same_product"
+      "method": "test_that_current_version_selected_in_top_crashers_header"
     }, 
     {
       "results": {
