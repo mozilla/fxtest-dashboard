@@ -1,2 +1,3 @@
 Fabric==1.7.0
 requests==2.2.1
+PyGithub==1.23
