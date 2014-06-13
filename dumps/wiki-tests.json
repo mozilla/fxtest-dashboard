@@ -3,8 +3,14 @@
     {
       "results": {
         "xfail": {
-          "reason": "allizom\" in config.getvalue(\"base_url", 
-          "links": []
+          "reason": "Bug 1011818 - MozillaWiki on QA staging and dev has automated account creation test issues", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1011818", 
+              "raw": "Bug 1011818", 
+              "to_use": "Bug 1011818"
+            }
+          ]
         }
       }, 
       "file": "test_create_user.py", 
@@ -14,8 +20,14 @@
     {
       "results": {
         "xfail": {
-          "reason": "allizom\" in config.getvalue(\"base_url", 
-          "links": []
+          "reason": "Bug 1011818 - MozillaWiki on QA staging and dev has automated account creation test issues", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1011818", 
+              "raw": "Bug 1011818", 
+              "to_use": "Bug 1011818"
+            }
+          ]
         }
       }, 
       "file": "test_create_user.py", 
@@ -25,8 +37,14 @@
     {
       "results": {
         "xfail": {
-          "reason": "allizom\" in config.getvalue(\"base_url", 
-          "links": []
+          "reason": "Bug 1011818 - MozillaWiki on QA staging and dev has automated account creation test issues", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1011818", 
+              "raw": "Bug 1011818", 
+              "to_use": "Bug 1011818"
+            }
+          ]
         }
       }, 
       "file": "test_create_user.py", 
@@ -36,8 +54,14 @@
     {
       "results": {
         "xfail": {
-          "reason": "allizom\" in config.getvalue(\"base_url", 
-          "links": []
+          "reason": "Bug 1011818 - MozillaWiki on QA staging and dev has automated account creation test issues", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1011818", 
+              "raw": "Bug 1011818", 
+              "to_use": "Bug 1011818"
+            }
+          ]
         }
       }, 
       "file": "test_create_user.py", 
@@ -47,8 +71,14 @@
     {
       "results": {
         "xfail": {
-          "reason": "allizom\" in config.getvalue(\"base_url", 
-          "links": []
+          "reason": "Bug 1011818 - MozillaWiki on QA staging and dev has automated account creation test issues", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1011818", 
+              "raw": "Bug 1011818", 
+              "to_use": "Bug 1011818"
+            }
+          ]
         }
       }, 
       "file": "test_create_user.py", 
