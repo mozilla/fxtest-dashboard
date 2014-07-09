@@ -3,13 +3,30 @@
     {
       "results": {
         "xfail": {
-          "reason": "u'There is a capcha on the registration page", 
+          "reason": "u'QMO has removed registration", 
           "links": []
         }
       }, 
       "file": "test_user_registration.py", 
       "dir": "workspace/qmo-tests/tests", 
       "method": "test_new_user_can_register"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "reason = 'Bug 1028898 - Links to QMO videos are returning error page", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1028898", 
+              "raw": "Bug 1028898", 
+              "to_use": "Bug 1028898"
+            }
+          ]
+        }
+      }, 
+      "file": "test_for_broken_links.py", 
+      "dir": "workspace/qmo-tests/tests", 
+      "method": "test_media_page_links"
     }
   ]
 }

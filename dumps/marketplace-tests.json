@@ -20,6 +20,28 @@
     {
       "results": {
         "xfail": {
+          "reason": "'-dev.allizom.org' in config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_reviews.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_checks_the_addition_of_a_review"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "'-dev.allizom.org' in config.getvalue('base_url", 
+          "links": []
+        }
+      }, 
+      "file": "test_reviews.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_that_checks_the_editing_of_a_review"
+    }, 
+    {
+      "results": {
+        "xfail": {
           "reason": "Bugzilla 769364 - IPN Updates refund table", 
           "links": [
             {
