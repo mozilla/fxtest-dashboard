@@ -3,7 +3,7 @@
     {
       "results": {
         "skip": {
-          "reason": "Only run re-write tests on prod.", 
+          "reason": "Skipped per dev instructions on continuous deployment.  To be run only on Prod", 
           "links": []
         }
       }, 

@@ -1,21 +1,3 @@
 {
-  "response": [
-    {
-      "results": {
-        "xfail": {
-          "reason": "Bug 1021333 - Broken link to Firefox 32.0a2 Aurora release notes URL", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1021333", 
-              "raw": "Bug 1021333", 
-              "to_use": "Bug 1021333"
-            }
-          ]
-        }
-      }, 
-      "file": "test_notes.py", 
-      "dir": "workspace/mcom-tests/tests", 
-      "method": "test_that_all_links_are_valid"
-    }
-  ]
+  "response": []
 }
