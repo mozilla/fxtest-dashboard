@@ -1,22 +1,15 @@
 {
   "repos": [
     "https://github.com/mozilla/Addon-Tests",
-    "https://github.com/mozilla/Affiliates-Tests",
-    "https://github.com/mozilla/bouncer-tests",
     "https://github.com/mozilla/marketing-project-template",
     "https://github.com/mozilla/marketplace-tests",
+    "https://github.com/mozilla/marketplace-tests-gaia",
     "https://github.com/mozilla/mcom-tests",
-    "https://github.com/mozilla/mdn-tests",
-    "https://github.com/mozilla/mozillians-tests",
     "https://github.com/mozilla/moztrap-tests",
     "https://github.com/mozilla/mozwebqa-dashboard",
     "https://github.com/mozilla/mozwebqa-test-templates",
-    "https://github.com/mozilla/qmo-tests",
-    "https://github.com/mozilla/remo-tests",
-    "https://github.com/mozilla/snippets-tests",
     "https://github.com/mozilla/Socorro-Tests",
-    "https://github.com/mozilla/sumo-tests",
-    "https://github.com/mozilla/wiki-tests"
+    "https://github.com/mozilla/sumo-tests"
   ],
   "jenkins_artifact_url_pattern": "http://selenium.qa.mtv2.mozilla.com:8080/job/%s/lastCompletedBuild/artifact/results.xml",
   "marketplace_jobs": [
