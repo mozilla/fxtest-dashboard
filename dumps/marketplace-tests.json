@@ -3,14 +3,42 @@
     {
       "results": {
         "xfail": {
-          "reason": "Bug 977084 - Problems with screenshot previews on the Edit Listing page", 
+          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/977084", 
-              "raw": "Bug 977084", 
-              "to_use": "Bug 977084"
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
+              "raw": "Bug 1154123", 
+              "to_use": "Bug 1154123"
             }
           ]
+        }
+      }, 
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_deletes_app"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
+              "raw": "Bug 1154123", 
+              "to_use": "Bug 1154123"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_checks_required_field_validations_on_basic_info_for_a_free_app"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Issue 618 - Test adding a screenshot on Dev_hub fails because send_keys() method", 
+          "links": []
         }
       }, 
       "file": "test_developer_hub.py", 
@@ -20,52 +48,114 @@
     {
       "results": {
         "xfail": {
-          "reason": "'-dev.allizom.org' in config.getvalue('base_url", 
+          "reason": "Issue 618 - Test adding a screenshot on Dev_hub fails because send_keys() method", 
           "links": []
         }
       }, 
-      "file": "test_reviews.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-      "method": "test_that_checks_the_addition_of_a_review"
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_a_screenshot_cannot_be_added_via_an_invalid_file_format"
     }, 
     {
       "results": {
         "xfail": {
-          "reason": "'-dev.allizom.org' in config.getvalue('base_url", 
-          "links": []
-        }
-      }, 
-      "file": "test_reviews.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-      "method": "test_that_checks_the_editing_of_a_review"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Bugzilla 769364 - IPN Updates refund table", 
+          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/769364", 
-              "raw": "Bugzilla 769364", 
-              "to_use": "Bugzilla 769364"
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
+              "raw": "Bug 1154123", 
+              "to_use": "Bug 1154123"
             }
           ]
         }
       }, 
-      "file": "test_purchase_app.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-      "method": "request_refund_procedure"
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_checks_required_field_validations_on_device_types_for_hosted_apps"
     }, 
     {
       "results": {
-        "skipif": {
-          "reason": "True', reason='Purchase app option is currently not available for desktop environment", 
+        "xfail": {
+          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
+              "raw": "Bug 1154123", 
+              "to_use": "Bug 1154123"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_checks_editing_support_information_for_a_free_app"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
+              "raw": "Bug 1154123", 
+              "to_use": "Bug 1154123"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_checks_editing_basic_info_for_a_free_app"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Issue 618 - Test adding a screenshot on Dev_hub fails because send_keys() method", 
+          "links": []
+        }
+      }, 
+      "file": "test_developer_hub.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_that_an_icon_cannot_be_added_via_an_invalid_file_format"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
+              "raw": "Bug 1154123", 
+              "to_use": "Bug 1154123"
+            }
+          ]
+        }
+      }, 
+      "file": "test_developer_hub_submit_apps.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
+      "method": "test_check_submission_of_an_app_with_XSS_in_its_app_name"
+    }, 
+    {
+      "results": {
+        "skip": {
+          "reason": "Payments can only be tested on dev.", 
           "links": []
         }
       }, 
       "file": "test_purchase_app.py", 
       "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-      "method": "test_that_purchases_an_app_without_pre_auth_and_requests_a_refund"
+      "method": "test_that_user_can_purchase_an_app"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Issue 657 - Need an app installed to test My Apps", 
+          "links": []
+        }
+      }, 
+      "file": "test_home_page.py", 
+      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
+      "method": "test_settings_dropdown_menu"
     }, 
     {
       "results": {
@@ -102,20 +192,20 @@
     }, 
     {
       "results": {
-        "skipif": {
-          "reason": "True', 'Test skipped because of Bug 847625 - Port search suggestions to Fireplace", 
+        "xfail": {
+          "reason": "Bug 1156370 - Create some fake apps which have all the optional fields listed", 
           "links": [
             {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/847625", 
-              "raw": "Bug 847625", 
-              "to_use": "Bug 847625"
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1156370", 
+              "raw": "Bug 1156370", 
+              "to_use": "Bug 1156370"
             }
           ]
         }
       }, 
-      "file": "test_search.py", 
+      "file": "test_details_page.py", 
       "dir": "workspace/marketplace-tests/tests/mobile", 
-      "method": "test_that_verifies_the_search_suggestions_list_under_the_search_field"
+      "method": "test_reviews_section"
     }
   ]
 }
