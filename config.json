@@ -14,7 +14,6 @@
     "https://github.com/mozilla/mozwebqa-test-templates",
     "https://github.com/mozilla/oneanddone-Tests",
     "https://github.com/mozilla/pytest-mozwebqa",
-    "https://github.com/mozilla/pytest-selenium",
     "https://github.com/mozilla/Socorro-Tests",
     "https://github.com/mozilla/sumo-tests"
   ],
