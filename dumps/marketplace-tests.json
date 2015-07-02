@@ -2,141 +2,6 @@
   "response": [
     {
       "results": {
-        "xfail": {
-          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
-              "raw": "Bug 1154123", 
-              "to_use": "Bug 1154123"
-            }
-          ]
-        }
-      }, 
-      "file": "test_developer_hub.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
-      "method": "test_that_deletes_app"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
-              "raw": "Bug 1154123", 
-              "to_use": "Bug 1154123"
-            }
-          ]
-        }
-      }, 
-      "file": "test_developer_hub.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
-      "method": "test_that_checks_required_field_validations_on_basic_info_for_a_free_app"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Issue 618 - Test adding a screenshot on Dev_hub fails because send_keys() method", 
-          "links": []
-        }
-      }, 
-      "file": "test_developer_hub.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
-      "method": "test_that_a_screenshot_can_be_added"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Issue 618 - Test adding a screenshot on Dev_hub fails because send_keys() method", 
-          "links": []
-        }
-      }, 
-      "file": "test_developer_hub.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
-      "method": "test_that_a_screenshot_cannot_be_added_via_an_invalid_file_format"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
-              "raw": "Bug 1154123", 
-              "to_use": "Bug 1154123"
-            }
-          ]
-        }
-      }, 
-      "file": "test_developer_hub.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
-      "method": "test_that_checks_required_field_validations_on_device_types_for_hosted_apps"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
-              "raw": "Bug 1154123", 
-              "to_use": "Bug 1154123"
-            }
-          ]
-        }
-      }, 
-      "file": "test_developer_hub.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
-      "method": "test_that_checks_editing_support_information_for_a_free_app"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
-              "raw": "Bug 1154123", 
-              "to_use": "Bug 1154123"
-            }
-          ]
-        }
-      }, 
-      "file": "test_developer_hub.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
-      "method": "test_that_checks_editing_basic_info_for_a_free_app"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Issue 618 - Test adding a screenshot on Dev_hub fails because send_keys() method", 
-          "links": []
-        }
-      }, 
-      "file": "test_developer_hub.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
-      "method": "test_that_an_icon_cannot_be_added_via_an_invalid_file_format"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "Bug 1154123 - Screenshot thumbnail does not appear on Edit Listing page", 
-          "links": [
-            {
-              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1154123", 
-              "raw": "Bug 1154123", 
-              "to_use": "Bug 1154123"
-            }
-          ]
-        }
-      }, 
-      "file": "test_developer_hub_submit_apps.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/developer_hub", 
-      "method": "test_check_submission_of_an_app_with_XSS_in_its_app_name"
-    }, 
-    {
-      "results": {
         "skip": {
           "reason": "Payments can only be tested on dev.", 
           "links": []
@@ -181,17 +46,6 @@
     }, 
     {
       "results": {
-        "skip": {
-          "reason": "We currently don't have the option for changing the language in Fireplace", 
-          "links": []
-        }
-      }, 
-      "file": "test_users_account.py", 
-      "dir": "workspace/marketplace-tests/tests/desktop/consumer_pages", 
-      "method": "test_that_checks_changing_language"
-    }, 
-    {
-      "results": {
         "xfail": {
           "reason": "Bug 1156370 - Create some fake apps which have all the optional fields listed", 
           "links": [
@@ -206,6 +60,23 @@
       "file": "test_details_page.py", 
       "dir": "workspace/marketplace-tests/tests/mobile", 
       "method": "test_reviews_section"
+    }, 
+    {
+      "results": {
+        "xfail": {
+          "reason": "Bug 1177718 - Websites search is not working as expected", 
+          "links": [
+            {
+              "url": "https://api-dev.bugzilla.mozilla.org/latest/bug/1177718", 
+              "raw": "Bug 1177718", 
+              "to_use": "Bug 1177718"
+            }
+          ]
+        }
+      }, 
+      "file": "test_search.py", 
+      "dir": "workspace/marketplace-tests/tests/mobile", 
+      "method": "test_searching_with_no_matching_results"
     }
   ]
 }

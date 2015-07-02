@@ -10,17 +10,6 @@
       "file": "test_search.py", 
       "dir": "workspace/Socorro-Tests/tests", 
       "method": "test_selecting_one_version_doesnt_show_other_versions"
-    }, 
-    {
-      "results": {
-        "xfail": {
-          "reason": "'allizom.org' in config.getvalue('base_url", 
-          "links": []
-        }
-      }, 
-      "file": "test_crash_reports.py", 
-      "dir": "workspace/Socorro-Tests/tests", 
-      "method": "test_top_crasher_reports_tab_has_uuid_report"
     }
   ]
 }
