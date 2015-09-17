@@ -15,21 +15,8 @@
     "https://github.com/mozilla/oneanddone-Tests",
     "https://github.com/mozilla/pytest-mozwebqa",
     "https://github.com/mozilla/Socorro-Tests",
-    "https://github.com/mozilla/sumo-tests"
-  ],
-  "jenkins_artifact_url_pattern": "http://selenium.qa.mtv2.mozilla.com:8080/job/%s/lastCompletedBuild/artifact/results.xml",
-  "marketplace_jobs": [
-    "b2g.hamachi.mozilla-b2g28_v1_3.v1.3.marketplace",
-    "marketplace.dev.developer_hub.saucelabs",
-    "marketplace.dev.developer_hub",
-    "marketplace.dev.mobile.saucelabs",
-    "marketplace.dev.saucelabs",
-    "marketplace.prod.mobile.saucelabs",
-    "marketplace.prod.saucelabs",
-    "marketplace.prod",
-    "marketplace.stage.developer_hub.saucelabs",
-    "marketplace.stage.mobile.saucelabs",
-    "marketplace.stage.saucelabs"
+    "https://github.com/mozilla/sumo-tests",
+    "https://github.com/mozilla/webqabot"
   ],
   "api_token": "692aadd2c9789a337c4d3544787f101ad8c35bc7"
 }
