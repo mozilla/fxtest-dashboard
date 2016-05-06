@@ -1,14 +1,10 @@
 {
   "repos": [
     "https://github.com/mozilla/Addon-Tests",
-    "https://github.com/mozilla/Affiliates-Tests",
     "https://github.com/mozilla/bidpom",
     "https://github.com/mozilla/bouncer-tests",
     "https://github.com/mozilla/fxapom",
     "https://github.com/mozilla/hello-tests",
-    "https://github.com/mozilla/marketplace-tests",
-    "https://github.com/mozilla/marketplace-tests-gaia",
-    "https://github.com/mozilla/mcom-tests",
     "https://github.com/mozilla/moz-grid-config",
     "https://github.com/mozilla/mozillians-tests",
     "https://github.com/mozilla/moztrap-tests",
