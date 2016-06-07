@@ -7,12 +7,6 @@
             <div class="filters_holder well well-small">
                 <div class="filter_type">
                     <div class="controls>">
-                        Is Pull Request:
-                        <select ng-model="hasPullRequest" ng-change="showHideIssues()">
-                            <option value="">All</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
                         Is Assigned:
                         <select ng-model="hasAssignee" ng-change="showHideIssues()">
                             <option value="">All</option>
@@ -21,62 +15,70 @@
                         </select>
                     </div>
                 </div>
+                <br>
                 <div class="filter_type">
                     <label class="control-label">Labels:</label>
-                        <div class="controls>">
-                            <label class="checkbox inline"  ng-repeat="label in labels">
+                        <div class="controls">
+                            <label class="form-inline"  ng-repeat="label in labels">
                                 <input type="checkbox" name="selectedLabels[]" value="{{label.name}}" ng-model="label.selected" />
-                                {{label.name}}
+                                {{label.name}}&nbsp;&nbsp;&nbsp;
                             </label>
                         </div>
                 </div>
             </div>
             <div>Issues last refreshed from Github on {{last_updated}}.</div>
             <div class="test-result" ng-repeat="repo in issues">
-                <h3 ng-click="toggleRepo(repo)" id="{{repo.repo}}">{{repo.repo}}
-                    <span class="badge" title="{{repo.issues.length}} issues">
-                        {{repo.issues.length}}
-                    </span>
+                <h3 ng-click="toggleRepo(repo)" id="{{repo.repo}}">
+                  <span ng-if="repo.show">
+                    <span class="glyphicon glyphicon-triangle-bottom small" aria-hidden="true"></span>&nbsp;{{repo.repo}}
+                  </span>
+                  <span ng-if="!repo.show">
+                    <span class="glyphicon glyphicon-triangle-right small" aria-hidden="true"></span>&nbsp;{{repo.repo}}
+                  </span>
+                  <span class="badge" title="{{repo.issues.length}} issues">
+                    {{repo.issueCount}}
+                  </span>
                 </h3>
-                <table class="table table-bordered" ng-show="repo.show">
-                    <tbody>
-                        <tr ng-repeat="issue in repo.issues" ng-show="issue.shouldShow">
-                            <td>
-                                <span ng-if="issue.pull_request" class="label label-pull-request">
-                                    Pull Request
+                <div ng-show="repo.show">
+                  <div ng-repeat="issue in repo.issues" ng-show="issue.shouldShow">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <a href="{{issue.html_url}}" target="_blank">
+                          {{issue.title}}
+                        </a>
+                      </div>
+                      <div class="panel-footer">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <span ng-if="issue.assignee.name">
+                              <img padding-top="10px" class="img-rounded center-block" width="60%" height="60%" src="{{issue.assignee.avatar_url}}" alt="{{issue.assignee.name}}"></img>
+                            </span>
+                          </div>
+                          <div class="col-md-11">
+                            <p>Assigned To:
+                                <span ng-if="issue.assignee.name">
+                                    {{issue.assignee.name}}
                                 </span>
-                                <span class="hyphenate">
-                                    <a href="{{issue.html_url}}" target="_blank">
-                                        <strong>{{issue.title}}</strong>
-                                    </a>
-                                    <span class="badge" title="{{issue.comments}} comments">
-                                        {{issue.comments}}
-                                    </span>
+                                <span ng-if="!issue.assignee.name">
+                                    Nobody
                                 </span>
-                                <div ng-if="issue.labels.length" class="btn-group">
-                                    <span ng-repeat="label in issue.labels" class="label" style="background-color: #{{label.color}};">
-                                        {{label.name}}
-                                    </span>
-                                </div>
-                                <p>Assigned To:
-                                    <span ng-if="issue.assignee.name">
-                                        <img class=" js-avatar" width="16" height="16" src="{{issue.assignee.avatar_url}}" alt="{{issue.assignee.name}}">
-                                        {{issue.assignee.name}}
-                                        </img>
-                                    </span>
-                                    <span ng-if="!issue.assignee.name">
-                                        Nobody!
-                                    </span>
-                                </p>
-                                <p>Last Updated: {{issue.updated_at}}</p>
-                                <p ng-if="issue.body.length">
-                                    <span class="hyphenate">{{issue.body | limitTo:150}}</span>
-                                    <span ng-if="issue.body.length > 150"> ...</span>
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </p>
+                            <p>Last Updated: {{issue.updated_at}}</p>
+                            <p ng-if="issue.body.length">
+                                <span class="hyphenate">{{issue.body | limitTo:150}}</span>
+                                <span ng-if="issue.body.length > 150"> ...</span>
+                            </p>
+                            <div ng-if="issue.labels.length" class="btn-group">
+                              <span ng-repeat="label in issue.labels" class="label" style="background-color:grey; margin-right:5px;">
+                                  {{label.name}}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>

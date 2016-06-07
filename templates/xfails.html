@@ -37,7 +37,7 @@
                         <tr ng-repeat="(key, val) in test_data | isBugType:bugTypeFilter">
                             <td><span class="hyphenate">
                                 <a href="https://github.com/mozilla/{{name}}/tree/master/tests{{val.dir.split(name + '/tests')[1]}}/{{val.file}}">
-                                    {{val.dir.split(name + '/tests')[1]}}/<strong>{{val.file}}</strong>
+                                    {{val.dir.split(name + '/tests')[1]}}/{{val.file}}
                                 </a>
                             </span></td>
                             <td><span class="hyphenate">{{val.method}}</span></td>
