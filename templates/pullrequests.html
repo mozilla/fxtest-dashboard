@@ -3,7 +3,7 @@
         <div id="dashboard" ng-init="init()">
             <div>Pull Requests last refreshed from Github on {{last_updated}}.</div>
               <div class="test-result" ng-repeat="repo in issues">
-                <h3 ng-click="toggleRepo(repo)" id="{{repo.repo}}">
+                <h3 ng-click="toggleRepo(repo)" id="{{repo.repo}}" class="repo-title">
                   <span ng-if="repo.show">
                     <span class="glyphicon glyphicon-triangle-bottom small" aria-hidden="true"></span>&nbsp;{{repo.repo}}
                   </span>
