@@ -1,7 +1,7 @@
 <div class="row" xmlns="http://www.w3.org/1999/html">
     <div class="span12">
         <div id="dashboard" ng-init="init()">
-            <div>Pull Requests last refreshed from Github on {{last_updated}}.</div>
+            <div><i class="fa fa-clock-o"></i>&nbsp;Updated <span am-time-ago="last_updated"></span></div>
               <div class="test-result" ng-repeat="repo in issues">
                 <h3 ng-click="toggleRepo(repo)" id="{{repo.repo}}" class="repo-title">
                   <span ng-if="repo.show">
