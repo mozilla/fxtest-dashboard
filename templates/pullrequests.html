@@ -1,33 +1,8 @@
 <div class="row" xmlns="http://www.w3.org/1999/html">
     <div class="span12">
         <div id="dashboard" ng-init="init()">
-            <div style="" id="filter_tag">
-                Filters
-            </div>
-            <div class="filters_holder well well-small">
-                <div class="filter_type">
-                    <div class="controls>">
-                        Is Assigned:
-                        <select ng-model="hasAssignee" ng-change="showHideIssues()">
-                            <option value="">All</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-                    </div>
-                </div>
-                <br>
-                <div class="filter_type">
-                    <label class="control-label">Labels:</label>
-                        <div class="controls">
-                            <label class="form-inline"  ng-repeat="label in labels">
-                                <input type="checkbox" name="selectedLabels[]" value="{{label.name}}" ng-model="label.selected" />
-                                {{label.name}}&nbsp;&nbsp;&nbsp;
-                            </label>
-                        </div>
-                </div>
-            </div>
-            <div>Issues last refreshed from GitHub on {{last_updated}}.</div>
-            <div class="test-result" ng-repeat="repo in issues">
+            <div>Pull Requests last refreshed from Github on {{last_updated}}.</div>
+              <div class="test-result" ng-repeat="repo in issues">
                 <h3 ng-click="toggleRepo(repo)" id="{{repo.repo}}" class="repo-title">
                   <span ng-if="repo.show">
                     <span class="glyphicon glyphicon-triangle-bottom small" aria-hidden="true"></span>&nbsp;{{repo.repo}}
@@ -36,7 +11,7 @@
                     <span class="glyphicon glyphicon-triangle-right small" aria-hidden="true"></span>&nbsp;{{repo.repo}}
                   </span>
                   <span class="badge" title="{{repo.issues.length}} issues">
-                    {{repo.issueCount}}
+                    {{repo.prCount}}
                   </span>
                 </h3>
                 <div ng-show="repo.show">
