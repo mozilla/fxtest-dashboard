@@ -119,3 +119,6 @@ a:hover {
   -webkit-transform: translate(-50%,-50%);
   position: absolute;
 }
+.repo-title {
+  cursor: pointer;
+}

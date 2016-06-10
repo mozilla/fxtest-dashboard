@@ -21,21 +21,59 @@
                         <a href="{{issue.html_url}}" target="_blank">
                           {{issue.title}}
                         </a>
+                        &nbsp;
+                        <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;{{issue.comments}}
                       </div>
                       <div class="panel-footer">
-                        <p>Assigned To:
-                            <span ng-if="issue.assignee.name">
-                                {{issue.assignee.name}}
+                        <span ng-if="issue.assignee.name">
+                          <div class="row">
+                            <div class="col-md-1">
+                              <span ng-if="issue.assignee.name">
+                                <img padding-top="10px" class="img-rounded center-block" width="60%" height="60%" src="{{issue.assignee.avatar_url}}" alt="{{issue.assignee.name}}"></img>
+                              </span>
+                            </div>
+                            <div class="col-md-11">
+                              <p>Assigned To:
+                                  <span ng-if="issue.assignee.name">
+                                      {{issue.assignee.name}}
+                                  </span>
+                                  <span ng-if="!issue.assignee.name">
+                                      Nobody
+                                  </span>
+                              </p>
+                              <p>Last Updated: {{issue.updated_at}}</p>
+                              <p ng-if="issue.body.length">
+                                  <span class="hyphenate">{{issue.body | limitTo:150}}</span>
+                                  <span ng-if="issue.body.length > 150"> ...</span>
+                              </p>
+                              <div ng-if="issue.labels.length" class="btn-group">
+                                <span ng-repeat="label in issue.labels" class="label" style="background-color:grey; margin-right:5px; border-style:solid; border-left-color:#{{label.color}};">
+                                    {{label.name}}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                        <span ng-if="!issue.assignee.name">
+                          <p>Assigned To:
+                              <span ng-if="issue.assignee.name">
+                                  {{issue.assignee.name}}
+                              </span>
+                              <span ng-if="!issue.assignee.name">
+                                  Nobody
+                              </span>
+                          </p>
+                          <p>Last Updated: {{issue.updated_at}}</p>
+                          <p ng-if="issue.body.length">
+                              <span class="hyphenate">{{issue.body | limitTo:150}}</span>
+                              <span ng-if="issue.body.length > 150"> ...</span>
+                          </p>
+                          <div ng-if="issue.labels.length" class="btn-group">
+                            <span ng-repeat="label in issue.labels" class="label" style="background-color:grey; margin-right:5px; border-style:solid; border-left-color:#{{label.color}};">
+                                {{label.name}}
                             </span>
-                            <span ng-if="!issue.assignee.name">
-                                Nobody
-                            </span>
-                        </p>
-                        <p>Last Updated: {{issue.updated_at}}</p>
-                        <p ng-if="issue.body.length">
-                            <span class="hyphenate">{{issue.body | limitTo:150}}</span>
-                            <span ng-if="issue.body.length > 150"> ...</span>
-                        </p>
+                          </div>
+                        </span>
                       </div>
                     </div>
                 </div>
