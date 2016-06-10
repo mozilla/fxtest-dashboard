@@ -3,17 +3,6 @@
     {
       "results": {
         "skip": {
-          "reason": "Only run re-write tests on prod.", 
-          "links": []
-        }
-      }, 
-      "file": "test_rewrites.py", 
-      "dir": "workspace/sumo-tests/tests/desktop", 
-      "method": "_check_redirect"
-    }, 
-    {
-      "results": {
-        "skip": {
           "reason": "No questions present for filter=%s\" % expected_sorted_text", 
           "links": []
         }
@@ -32,6 +21,17 @@
       "file": "test_questions.py", 
       "dir": "workspace/sumo-tests/tests/desktop", 
       "method": "test_that_questions_sorts_correctly_by_filter_equal_to_solved"
+    }, 
+    {
+      "results": {
+        "skip": {
+          "reason": "Skipped per dev instructions on continuous deployment.  To be run only on Prod", 
+          "links": []
+        }
+      }, 
+      "file": "test_rewrites.py", 
+      "dir": "workspace/sumo-tests/tests/desktop", 
+      "method": "_check_redirect"
     }, 
     {
       "results": {

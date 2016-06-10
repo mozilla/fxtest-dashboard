@@ -1,4 +1,7 @@
 {
+<<<<<<< HEAD
+  "response": []
+=======
   "response": [
     {
       "results": {
@@ -12,4 +15,5 @@
       "method": "test_events_icalendar_export"
     }
   ]
+>>>>>>> ba651609c3d1207298839e503c41a1acf4224248
 }
