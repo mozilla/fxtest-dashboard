@@ -1,4 +1,4 @@
-var dashboardApp = angular.module('dashboardApp', []);
+var dashboardApp = angular.module('dashboardApp', ['angularMoment']);
 
 $(function () {
   $("ul.nav li").click(function () {
@@ -52,7 +52,7 @@ dashboardApp.controller('IssuesController', function ($scope, $http, filterFilte
 
     aggregator.processIssues(function (data) {
       $scope.issues = data.issues;
-      $scope.last_updated = data.last_updated;
+      $scope.last_updated = new Date(data.last_updated);
 
       // watch labels for changes
       $scope.$watch('labels|filter:{selected:true}', function (nv) {
