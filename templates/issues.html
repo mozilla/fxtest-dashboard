@@ -28,6 +28,7 @@
             </div>
             <div><i class="fa fa-clock-o"></i>&nbsp;Updated <span am-time-ago="last_updated"></span></div>
             <div class="test-result" ng-repeat="repo in issues">
+              <span ng-if="repo.issueCount > 0">
                 <h3 ng-click="toggleRepo(repo)" id="{{repo.repo}}" class="repo-title">
                   <span ng-if="repo.show">
                     <span class="glyphicon glyphicon-triangle-bottom small" aria-hidden="true"></span>&nbsp;{{repo.repo}}
@@ -103,6 +104,7 @@
                     </div>
                 </div>
               </div>
+            </span>
             </div>
         </div>
     </div>
