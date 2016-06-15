@@ -67,7 +67,7 @@
                                       Nobody
                                   </span>
                               </p>
-                              <p>Last Updated: {{issue.updated_at}}</p>
+                              <p>Last updated <span am-time-ago="issue.updated_at"></span></p>
                               <p ng-if="issue.body.length">
                                   <span class="hyphenate">{{issue.body | limitTo:150}}</span>
                                   <span ng-if="issue.body.length > 150"> ...</span>
@@ -89,7 +89,7 @@
                                   Nobody
                               </span>
                           </p>
-                          <p>Last Updated: {{issue.updated_at}}</p>
+                          <p>Last updated <span am-time-ago="issue.updated_at"></span></p>
                           <p ng-if="issue.body.length">
                               <span class="hyphenate">{{issue.body | limitTo:150}}</span>
                               <span ng-if="issue.body.length > 150"> ...</span>
