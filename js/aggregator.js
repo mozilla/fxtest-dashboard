@@ -14,7 +14,7 @@ function GithubIssuesAggregator(){
 
             var base_url = 'https://api.github.com/repos/Mozilla/';
             var url_suffix = '/issues?per_page=100&state=open&sort=created&access_token=' + config_data.api_token;
-            
+
             for(i = 0; i < repos.length; i++){
                 (function(index){
 
@@ -28,7 +28,7 @@ function GithubIssuesAggregator(){
                                 issue = data[j];
 
                                 if(issue.assignee){
-                                    assignee = {'name': issue.assignee.login, 'avatar_url':issue.assignee.avatar_url};
+                                    assignee = {'name': issue.assignee.login, 'url':issue.assignee.html_url, 'avatar_url':issue.assignee.avatar_url};
                                 }
                                 else{
                                     assignee = '';
@@ -71,7 +71,7 @@ function GithubIssuesAggregator(){
                                               };
 
                                 return callback(finalIssues);
-                                
+
                             }
                         })
                 })(i)

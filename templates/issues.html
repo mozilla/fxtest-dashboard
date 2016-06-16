@@ -57,18 +57,11 @@
                     <div class="row">
                       <div class="col-md-1">
                         <span ng-if="issue.assignee.name">
-                          <img padding-top="10px" class="img-rounded center-block" width="60%" height="60%" src="{{issue.assignee.avatar_url}}" alt="{{issue.assignee.name}}"></img>
+                          <a ng-href="{{issue.assignee.url}}"><img padding-top="10px" class="img-rounded center-block" width="60%" height="60%" src="{{issue.assignee.avatar_url}}" alt="{{issue.assignee.name}}"></img></a>
                         </span>
                       </div>
                       <div class="col-md-11">
-                        <p>Assigned To:
-                          <span ng-if="issue.assignee.name">
-                            {{issue.assignee.name}}
-                          </span>
-                          <span ng-if="!issue.assignee.name">
-                            Nobody
-                          </span>
-                        </p>
+                        <p>Assigned to <a ng-href="{{issue.assignee.url}}">{{issue.assignee.name}}</a></p>
                         <p>Last updated <span am-time-ago="issue.updated_at"></span></p>
                         <p ng-if="issue.body.length">
                           <span class="hyphenate">{{issue.body | limitTo:150}}</span>
@@ -83,14 +76,7 @@
                     </div>
                   </span>
                   <span ng-if="!issue.assignee.name">
-                    <p>Assigned To:
-                      <span ng-if="issue.assignee.name">
-                        {{issue.assignee.name}}
-                      </span>
-                      <span ng-if="!issue.assignee.name">
-                        Nobody
-                      </span>
-                    </p>
+                    <p>Assigned to no one</p>
                     <p>Last updated <span am-time-ago="issue.updated_at"></span></p>
                     <p ng-if="issue.body.length">
                       <span class="hyphenate">{{issue.body | limitTo:150}}</span>
