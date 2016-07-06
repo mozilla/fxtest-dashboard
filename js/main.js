@@ -35,9 +35,8 @@ dashboardApp.controller('IssuesController', function ($scope, $http, filterFilte
 
     $scope.issueFilters = {'hasPullRequest': '', 'hasAssignee': ''};
 
-    var labelArray = ['Community', 'blocked',
-      'difficulty beginner', 'difficulty intermediate', 'difficulty advanced',
-      'priority low', 'priority medium', 'priority high']
+    var labelArray = ['enhancement', 'help wanted', 'question', 'blocked',
+      'beginner', 'intermediate', 'advanced', 'urgent']
     $scope.labels = labelArray.map(function (label) {
       return {'name': label, selected: false}
     });
