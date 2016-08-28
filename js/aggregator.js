@@ -22,6 +22,7 @@ function GithubIssuesAggregator(){
 
                     var repo = repos[index];
                     var issues = [];
+
                     $.getJSON(base_url+repo+url_suffix)
                         .done(function(data){
                             issues = [];
