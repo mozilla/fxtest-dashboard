@@ -11,7 +11,7 @@ function GithubIssuesAggregator(){
                 repo = config_data.repos[i].split('/');
                 org = repo[repo.length - 2]
                 project = repo[repo.length - 1]
-                repos.push(org + "/" + project]);
+                repos.push(org + "/" + project);
             }
 
             var base_url = 'https://api.github.com/repos/';
