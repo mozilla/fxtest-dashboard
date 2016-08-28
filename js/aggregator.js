@@ -9,10 +9,12 @@ function GithubIssuesAggregator(){
 
             for(var i = 0; i < config_data.repos.length; i++){
                 repo = config_data.repos[i].split('/');
-                repos.push(repo[repo.length - 1]);
+                org = repo[repo.length - 2]
+                project = repo[repo.length - 1]
+                repos.push(org + "/" + project]);
             }
 
-            var base_url = 'https://api.github.com/repos/Mozilla/';
+            var base_url = 'https://api.github.com/repos/';
             var url_suffix = '/issues?per_page=100&state=open&sort=created&access_token=' + config_data.api_token;
 
             for(i = 0; i < repos.length; i++){

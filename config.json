@@ -14,7 +14,7 @@
     "https://github.com/mozilla/Socorro-Tests",
     "https://github.com/mozilla/treeherder-tests",
     "https://github.com/mozilla/webqabot",
-    "https://github.com/mozilla/services-test"
+    "https://github.com/mozilla-services/services-test"
   ],
   "api_token": "692aadd2c9789a337c4d3544787f101ad8c35bc7"
 }
