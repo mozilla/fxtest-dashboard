@@ -14,12 +14,12 @@ with open('requirements.txt') as f:
 
 setup(name='mozwebqa-dashboard',
       version='1.1',
-      description="Dashboard data generators and UI for Mozilla Web QA",
+      description="Dashboard data generators and UI for Firefox Test Engineering",
       long_description=description,
       classifiers=[],  # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='mozilla',
-      author='WebQA Team and contributors',
-      author_email='mozwebqa@mozilla.org',
+      author='Firefox Test Engineering Team and contributors',
+      author_email='firefox-test-engineering@mozilla.org',
       url='https://github.com/mozilla/mozwebqa-dashboard',
       license='MPL',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),

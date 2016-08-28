@@ -1,3 +1,3 @@
-# [MozWebQA Dashboard](https://mozilla.github.io/mozilla/mozwebqa-dashboard)
+# [Firefox Test Engineering Dashboard](https://mozilla.github.io/mozilla/mozwebqa-dashboard)
 
-GitHub dashboard for monitoring [Web QA](https://wiki.mozilla.org/QA/Execution/Web_Testing)'s issues, pull requests, and more. 
+GitHub dashboard for monitoring [Firefox Test Engineering](https://wiki.mozilla.org/TestEngineering)'s issues, pull requests, and more.
