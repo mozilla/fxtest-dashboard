@@ -10,8 +10,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/dashboard.css">
         <style>
             body {
                 padding-top: 60px;
@@ -20,8 +21,10 @@
         </style>
         <link rel="stylesheet" href="css/main.css">
 
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:Light" />
+
     </head>
-    <body ng-app="dashboardApp">
+    <body ng-app="dashboardApp" ng-init="init()">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -38,10 +41,39 @@
                         <li id="nav-issues"><a href="#/issues">Github Issues</a></li>
                     </ul>
                 </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#bf3c2e">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#" style="color:white">MozWebQA Dashboard</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+              <ul class="nav nav-sidebar">
+                <li id="nav-issues"><a href="#/issues">Issues<span class="sr-only">(current)</span></a></li>
+                <li id="nav-pullrequests"><a href="#/pullrequests">Pull Requests</a></li>
+              </ul>
+              <ul class="nav nav-sidebar">
+                <li id="nav-jenkins"><a href="https://webqa-ci.mozilla.com/">Jenkins</a></li>
+              </ul>
+              <ul class="nav nav-sidebar">
+                <li><a href="https://quality.mozilla.org/teams/web-qa/">About Web QA</a></li>
+                <li><a href="https://wiki.mozilla.org/QA/Execution/Web_Testing">Wiki</a></li>
+              </ul>
             </div>
         </div>
+    </div>
 
-        <div class="container" ng-view>
+        <div class="container col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view>
         </div> <!-- /container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
