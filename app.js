@@ -7,6 +7,9 @@
         .controller('PullRequestsController', PullRequestsController)
         .controller('GithubReposController', GithubReposController)
         .service('GithubReposService', GithubReposService)
+        .directive('githubRepository', githubRepository)
+        .directive('githubIssue', githubIssue)
+        .directive('githubPullRequest', githubPullRequest)
         .config(ConfigRoutes);
 
         ConfigRoutes.$inject = ['$routeProvider'];
