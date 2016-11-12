@@ -1,20 +1,80 @@
 {
   "repos": [
-    "https://github.com/mozilla/Addon-Tests",
-    "https://github.com/mozilla/bidpom",
-    "https://github.com/mozilla/fxapom",
-    "https://github.com/mozilla/fxtestbot",
-    "https://github.com/mozilla/hello-tests",
-    "https://github.com/mozilla/moz-grid-config",
-    "https://github.com/mozilla/mozillians-tests",
-    "https://github.com/mozilla/moztrap-tests",
-    "https://github.com/mozilla/mozwebqa-dashboard",
-    "https://github.com/mozilla/mozwebqa-examples",
-    "https://github.com/mozilla/snippets-tests",
-    "https://github.com/mozilla/Socorro-Tests",
-    "https://github.com/mozilla/treeherder-tests",
-    "https://github.com/mozilla/webqabot",
-    "https://github.com/mozilla-services/services-test"
+      {
+          owner: "mozilla",
+          name: "Addon-Tests",
+          url: "https://github.com/mozilla/Addon-Tests",
+      },
+      {
+          owner: "mozilla",
+          name: "bidpom",
+          url: "https://github.com/mozilla/bidpom"
+      },
+      {
+          owner: "mozilla",
+          name: "fxapom",
+          url: "https://github.com/mozilla/fxapom"
+      },
+      {
+          owner: "mozilla",
+          name: "fxtestbot",
+          url: "https://github.com/mozilla/fxtestbot"
+      },
+      {
+          owner: "mozilla",
+          name: "hello-tests",
+          url: "https://github.com/mozilla/hello-tests"
+      },
+      {
+          owner: "mozilla",
+          name: "moz-grid-config",
+          url: "https://github.com/mozilla/moz-grid-config"
+      },
+      {
+          owner: "mozilla",
+          name: "mozillians-tests",
+          url: "https://github.com/mozilla/mozillians-tests"
+      },
+      {
+          owner: "mozilla",
+          name: "moztrap-tests",
+          url: "https://github.com/mozilla/moztrap-tests"
+      },
+      {
+          owner: "mozilla",
+          name: "mozwebqa-dashboard",
+          url: "https://github.com/mozilla/mozwebqa-dashboard"
+      },
+      {
+          owner: "mozilla",
+          name: "mozwebqa-examples",
+          url: "https://github.com/mozilla/mozwebqa-examples"
+      },
+      {
+          owner: "mozilla",
+          name: "snippets-tests",
+          url: "https://github.com/mozilla/snippets-tests"
+      },
+      {
+          owner: "mozilla",
+          name: "Socorro-Tests",
+          url: "https://github.com/mozilla/Socorro-Tests"
+      },
+      {
+          owner: "mozilla",
+          name: "treeherder-tests",
+          url: "https://github.com/mozilla/treeherder-tests"
+      },
+      {
+          owner: "mozilla",
+          name: "webqabot",
+          url: "https://github.com/mozilla/webqabot"
+      },
+      {
+          owner: "mozilla-services",
+          name: "services-test",
+          url: "https://github.com/mozilla-services/services-test"
+      }
   ],
-  "api_token": "692aadd2c9789a337c4d3544787f101ad8c35bc7"
+  "apiToken": "692aadd2c9789a337c4d3544787f101ad8c35bc7"
 }
