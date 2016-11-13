@@ -1,0 +1,70 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:Light" />
+
+</head>
+<body ng-app="dashboardApp">
+
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#bf3c2e">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color:white">Firefox Test Engineering Dashboard</a>
+            </div>
+        </div>
+    </nav><!-- .navbar -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li id="nav-issues"><a href="#/issues">Issues<span class="sr-only">(current)</span></a></li>
+                    <li id="nav-pullrequests"><a href="#/pullrequests">Pull Requests</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li id="nav-jenkins"><a href="https://webqa-ci.mozilla.com/">Jenkins</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="https://quality.mozilla.org/teams/test-engineering/">About Firefox Test Engineering</a></li>
+                    <li><a href="https://wiki.mozilla.org/TestEngineering">Wiki</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li id="nav-fork"><a href="https://github.com/mozilla/fxtest-dashboard">Fork on GitHub</a></li>
+                </ul><!-- .nav-sidebar -->
+            </div><!-- .sidebar -->
+        </div><!-- .row -->
+    </div><!-- .container-fluid -->
+
+
+
+    <div class="container col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"  ng-controller="FeedController as feed" ng-init="loadFeeds()">
+        <github-repository ng-repeat="repo in feed.repos">
+        </github-repository>
+    </div> <!-- .container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/e1862a0f00.js"></script>
+    <script src="js/vendor/moment.min.js"></script>
+    <script src="js/vendor/angular-moment.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
