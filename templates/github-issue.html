@@ -1,0 +1,48 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <a href="{{ issue.html_url }}" target="_blank">
+        {{ issue.title }}
+        </a>
+        &nbsp;
+        <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;{{ issue.comments }}
+    </div><!-- .panel-body -->
+    <div class="panel-footer">
+        <span ng-if="issue.assignee">
+            <div class="row">
+                <div class="col-md-1">
+                    <span ng-if="issue.assignee" class="issue-assignee">
+                        <a ng-href="{{ issue.assignee.html_url }}">
+                            <img class="img-rounded center-block" ng-src="{{ issue.assignee.avatar_url }}" alt="{{ issue.assignee.login }}"></img>
+                        </a>
+                    </span>
+                </div><!-- .col-md-1 -->
+                <div class="col-md-11">
+                    <p>Assigned to <a ng-href="{{ issue.assignee.url }}">{{ issue.assignee.name }}</a></p>
+                    <p>Last updated <span am-time-ago="issue.updated_at"></span></p>
+                    <p ng-if="issue.body.length">
+                        <span class="hyphenate">{{ issue.body | limitTo:150 }}</span>
+                        <span ng-if="issue.body.length > 150"> ...</span>
+                    </p>
+                    <div ng-if="issue.labels.length" class="btn-group">
+                        <span ng-repeat="label in issue.labels" class="label issue-label" style="border-left-color:#{{label.color}};">
+                        {{ label.name }}
+                        </span>
+                    </div>
+                </div><!-- .col-md-11 -->
+            </div><!-- .row -->
+        </span>
+        <span ng-if="!issue.assignee">
+            <p>Assigned to no one</p>
+            <p>Last updated <span am-time-ago="issue.updated_at"></span></p>
+            <p ng-if="issue.body.length">
+                <span class="hyphenate">{{ issue.body | limitTo:150 }}</span>
+                <span ng-if="issue.body.length > 150"> ...</span>
+            </p>
+            <div ng-if="issue.labels.length" class="btn-group">
+                <span ng-repeat="label in issue.labels" class="label issue-label" style="border-left-color:#{{label.color}};">
+                {{ label.name }}
+                </span>
+            </div>
+        </span>
+    </div><!-- .panel-footer -->
+</div><!-- .panel .panel-default -->
