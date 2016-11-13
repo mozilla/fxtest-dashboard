@@ -32,7 +32,7 @@
                     <div class="row">
                       <div class="col-md-1">
                         <span ng-if="issue.assignee.name">
-                          <a ng-href="{{issue.assignee.url}}"><img padding-top="10px" class="img-rounded center-block" width="60%" height="60%" src="{{issue.assignee.avatar_url}}" alt="{{issue.assignee.name}}"></img></a>
+                          <a ng-href="{{issue.assignee.url}}"><img padding-top="10px" class="img-rounded center-block" width="60%" height="60%" ng-src="{{issue.assignee.avatar_url}}" alt="{{issue.assignee.name}}"></img></a>
                         </span>
                       </div>
                       <div class="col-md-11">
