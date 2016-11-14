@@ -31,12 +31,12 @@
                 <div class="panel-footer">
                   <span ng-if="issue.assignee.name">
                     <div class="row">
-                      <div class="col-md-1">
+                      <div class="user-avatar-wrap col-md-1 col-sm-2 col-xs-3">
                         <span ng-if="issue.assignee.name">
-                          <a ng-href="{{issue.assignee.url}}"><img padding-top="10px" class="img-rounded center-block" width="60%" height="60%" ng-src="{{issue.assignee.avatar_url}}" alt="{{issue.assignee.name}}"></img></a>
+                          <a ng-href="{{issue.assignee.url}}"><img padding-top="10px" class="user-avatar img-rounded center-block" ng-src="{{issue.assignee.avatar_url}}" alt="{{issue.assignee.name}}"></img></a>
                         </span>
                       </div>
-                      <div class="col-md-11">
+                      <div class="col-md-11 col-sm-10 col-xs-9">
                         <p>Assigned to <a ng-href="{{issue.assignee.url}}">{{issue.assignee.name}}</a></p>
                         <p>Last updated <span am-time-ago="issue.updated_at"></span></p>
                         <p ng-if="issue.body.length">
