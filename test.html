@@ -1,4 +1,4 @@
-<html>
+<html ng-app="dashboardApp">
 <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/dashboard.css">
@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:Light" />
 
 </head>
-<body ng-app="dashboardApp">
+<body ng-controller="FeedController as feed">
 
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -32,8 +32,8 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
-                    <li id="nav-issues"><a href="#/issues">Issues<span class="sr-only">(current)</span></a></li>
-                    <li id="nav-pullrequests"><a href="#/pullrequests">Pull Requests</a></li>
+                    <li id="nav-issues"><a ng-click="pullRequestFalse()">Issues<span class="sr-only">(current)</span></a></li>
+                    <li id="nav-pullrequests"><a ng-click="pullRequestTrue()">Pull Requests</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li id="nav-jenkins"><a href="https://webqa-ci.mozilla.com/">Jenkins</a></li>
@@ -51,7 +51,12 @@
 
 
 
-    <div class="container col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"  ng-controller="FeedController as feed" ng-init="loadFeeds()">
+    <div class="container col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-init="loadFeeds()">
+
+        <div>
+            <i class="fa fa-clock-o"></i>&nbsp;Updated <span am-time-ago="last_updated"></span>
+        </div>
+
         <github-repository ng-repeat="repo in feed.repos">
         </github-repository>
     </div> <!-- .container -->
