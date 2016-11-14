@@ -6,16 +6,17 @@
       </div>
       <div class="test-result" ng-repeat="repo in issues">
         <span ng-if="repo.prCount > 0">
-          <h3 ng-click="toggleRepo(repo)" id="{{repo.repo}}" class="repo-title">
+          <h3 id="{{repo.repo}}" class="repo-title">
             <span ng-if="repo.show">
-              <span class="glyphicon glyphicon-triangle-bottom small" aria-hidden="true"></span>&nbsp;{{repo.repo}}
+              <span ng-click="toggleRepo(repo)" class="toggle-repo glyphicon glyphicon-triangle-bottom small" aria-hidden="true"></span>&nbsp;{{repo.repo}}
             </span>
             <span ng-if="!repo.show">
-              <span class="glyphicon glyphicon-triangle-right small" aria-hidden="true"></span>&nbsp;{{repo.repo}}
+              <span ng-click="toggleRepo(repo)" class="toggle-repo glyphicon glyphicon-triangle-right small" aria-hidden="true"></span>&nbsp;{{repo.repo}}
             </span>
             <span class="badge" title="{{repo.issues.length}} issues">
               {{repo.prCount}}
             </span>
+            <a ng-href="https://github.com/{{repo.repo}}"><i class="fa fa-github-alt repo-link" aria-hidden="true"></i></a>
           </h3>
           <div ng-show="repo.show">
             <div ng-repeat="issue in repo.issues" ng-show="issue.shouldShow">
