@@ -103,6 +103,13 @@ a:hover {
     color: #999;
 }
 
+.user-avatar {
+    max-width: 100%;
+    width: 60px;
+}
+.user-avatar-wrap {
+    max-width: 90px;
+}
 
 /*
  * Placeholder dashboard ideas
