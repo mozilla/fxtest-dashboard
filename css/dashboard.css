@@ -97,6 +97,16 @@ a:hover {
     margin-top: 0;
 }
 
+.repo-link {
+    color: #777;
+    padding-left: 1rem;
+}
+
+.repo-link:hover {
+    cursor: pointer;
+    color: #999;
+}
+
 
 /* Issues */
 .issue-assignee img {
