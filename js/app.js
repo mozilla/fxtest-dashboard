@@ -5,6 +5,7 @@
     angular.module('dashboardApp', ['angularMoment'])
         .controller('FeedController', FeedController)
         .controller('RepoController', RepoController)
+        .constant('REPO_CONFIG_URL', 'config-new.json')
         .directive('githubIssue', githubIssue)
         .directive('githubRepository', githubRepository)
         .factory('GithubIssueFeedService', GithubIssueFeedService);
@@ -13,6 +14,8 @@
         function FeedController($scope, $http, $q, GithubIssueFeedService) {
             var feed = this;
             var baseUrl = 'https://api.github.com/repos/';
+            $scope.pullRequest = false;
+
             GithubIssueFeedService.getRepoConfig().then(function(response) {
                 feed.repos = response.data["repos"];
                 feed.apiToken = response.data["apiToken"];
@@ -28,17 +31,36 @@
                             access_token: feed.apiToken
                         }
                     }).then(function success(response) {
-                        repo["issues"] = response.data;
+                        if (response.data.length > 0) {
+                            repo["issues"] = response.data;
+                        }
                     }, function error(response) {
                         console.log('An error has occurred.');
                     });
                 });
                 console.log(feed.repos);
             });
+
+            $scope.pullRequestFalse = function() {
+                $scope.pullRequest = false;
+            }
+
+            $scope.pullRequestTrue = function() {
+                $scope.pullRequest = true;
+            }
         }
 
         RepoController.$inject = ['GithubIssueFeedService'];
         function RepoController(GithubIssueFeedService) {
+
+            var repoCtrl = this;
+            repoCtrl.hasPullRequests = function(repo) {
+                var foundPR = false;
+                angular.forEach(repo.issues, function(issue) {
+                    console.log(issue.pull_request);
+                    // if(issue.pull_request)
+                })
+            }
 
         }
 
@@ -57,7 +79,7 @@
         }
 
 
-        GithubIssueFeedService.$inject = ['$http', '$q'];
+        GithubIssueFeedService.$inject = ['$http', '$q', 'REPO_CONFIG_URL'];
         function GithubIssueFeedService($http, $q) {
             var service = this;
             // List of Relevant Repositories.
