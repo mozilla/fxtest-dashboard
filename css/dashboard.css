@@ -93,6 +93,16 @@ a:hover {
   margin-top: 0;
 }
 
+.repo-link {
+    color: #777;
+    padding-left: 1rem;
+}
+
+.repo-link:hover {
+    cursor: pointer;
+    color: #999;
+}
+
 
 /*
  * Placeholder dashboard ideas
@@ -119,6 +129,6 @@ a:hover {
   -webkit-transform: translate(-50%,-50%);
   position: absolute;
 }
-.repo-title {
+.toggle-repo:hover {
   cursor: pointer;
 }
