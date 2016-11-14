@@ -1,26 +1,20 @@
-<div>
-  <i class="fa fa-clock-o"></i>&nbsp;Updated <span am-time-ago="last_updated"></span>
-</div>
-<div>
-  <span>
-    <h3 ng-click="toggleRepo(repo)" id="{{ repo.owner }}/{{ repo.name }}" class="repo-title">
-      <span>
-        <span class="glyphicon glyphicon-triangle-bottom small" aria-hidden="true"></span>
-        &nbsp;{{ repo.owner }}/{{ repo.name }}
-      </span>
-      <span ng-if="!repo.show">
-        <span class="glyphicon glyphicon-triangle-right small" aria-hidden="true"></span>
-        &nbsp;{{ repo.owner }}/{{ repo.name }}
-      </span>
-      <span class="badge" title="{{ repo.issues.length }} issues">
-        {{ repo.issueCount }}
-      </span>
+<div ng-if="repo.issues && !pullRequest || repoCtrl.hasPullRequests(repo) && pullRequest" ng-controller="RepoController as repoCtrl">
+    <span>
+        <h3 ng-click="repo.state = !repo.state" id="{{ repo.owner }}/{{ repo.name }}" class="repo-title">
+            <span>
+                <span ng-if="!repo.state" class="glyphicon glyphicon-triangle-bottom small" aria-hidden="true"></span>
+                <span ng-if="repo.state" class="glyphicon glyphicon-triangle-right small" aria-hidden="true"></span>
+                &nbsp;{{ repo.owner }}/{{ repo.name }}
+            </span>
+            <span class="badge" title="{{ repo.issues.length }} issues">
+                {{ repo.issueCount }}
+            </span>
+        </h3>
+    </span>
 
-    </h3>
-  </span>
-
-  <github-issue ng-repeat="issue in repo.issues">
-      {{ issue }}
-  </github-issue>
-
+    <div ng-hide="repo.state" class="repo-issues-container">
+        <github-issue ng-repeat="issue in repo.issues">
+            {{ issue }}
+        </github-issue>
+    </div><!-- .repo-issues-container -->
 </div><!-- .test-result -->
