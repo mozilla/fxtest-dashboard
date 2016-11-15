@@ -184,6 +184,7 @@ ___
 
 # Mozilla Style Guides
 
+
 I have edited all of the CSS, HTML, and JS files to abide by Mozilla's
 [style guides](http://mozweb.readthedocs.io/en/latest/reference/index.html). I
 have taken care to give meaningful variable and function names.
