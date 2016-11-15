@@ -186,8 +186,7 @@ ___
 
 
 I have edited all of the CSS, HTML, and JS files to abide by Mozilla's
-[style guides](http://mozweb.readthedocs.io/en/latest/reference/index.html). I
-have taken care to give meaningful variable and function names.
+[style guides](http://mozweb.readthedocs.io/en/latest/reference/index.html). I have taken care to give meaningful variable and function names.
 
 I also add comments next to closing tags in HTML, as a preference, to make it
 easier on both myself and anyone else who may read the code after me.
