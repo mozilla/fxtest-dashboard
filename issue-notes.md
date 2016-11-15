@@ -7,8 +7,8 @@
 
 ## Contents
 
-- [config.json](#config-json)
-- [main.js](#main-js)
+- [config.json](#configjson)
+- [main.js](#mainjs)
   - [IIFE](#iife)
   - ['use strict'](#use-strict)
   - [Instantiation](#instantiation)
