@@ -16,7 +16,8 @@
 
 ### config.json
 
-```{
+```
+{
   "repos": [
     "https://github.com/mozilla/Addon-Tests",
     "https://github.com/mozilla/bidpom",
@@ -30,7 +31,8 @@
 
   ],
   "api_token": "692aadd2c9789a337c4d3544787f101ad8c35bc7"
-}```
+}
+```
 
 Rather than an array of URLs, I restructed the `repos` array to contain Object Literals.
 Including `https://github.com/` in every entry is redundant, becuase it will always be the same.
