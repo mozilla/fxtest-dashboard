@@ -14,7 +14,7 @@
         FeedController.$inject = ['$scope', '$http', '$q', 'GithubIssueFeedService'];
         function FeedController($scope, $http, $q, GithubIssueFeedService) {
             var feed = this;
-            // Time for "Last Updated".
+            // Time for 'Last Updated'.
             feed.time = new Date();
             // Is this the pull requests page?
             $scope.pullRequest = false;
@@ -38,17 +38,17 @@
 
             // Fetch list of repositories from config.json.
             promise.then(function(response) {
-                feed.repos = response.data["repos"];
-                feed.apiToken = response.data["apiToken"];
+                feed.repos = response.data['repos'];
+                feed.apiToken = response.data['apiToken'];
 
                 // Get issues for each repository.
                 angular.forEach(feed.repos, function(repo) {
                     var promise = GithubIssueFeedService.getRepoIssues(repo.owner, repo.name, feed.apiToken);
 
                     promise.then(function(response) {
-                        // Only add "issues" array if open issues exist.
+                        // Only add 'issues' array if open issues exist.
                         if (response.data.length > 0) {
-                            repo["issues"] = response.data;
+                            repo['issues'] = response.data;
                         }
                     }, function error(response) {
                         console.log('An error has occurred while fetching repository issues.');

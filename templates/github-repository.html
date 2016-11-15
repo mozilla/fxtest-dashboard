@@ -1,23 +1,23 @@
-<div ng-if="repo.issues && !pullRequest || feed.hasPullRequests(repo) && pullRequest">
+<div ng-if='repo.issues && !pullRequest || feed.hasPullRequests(repo) && pullRequest'>
     <span>
-        <h3 id="{{ repo.owner }}/{{ repo.name }}" class="repo-title">
+        <h3 id='{{ repo.owner }}/{{ repo.name }}' class='repo-title'>
             <span>
-                <span ng-if="!repo.state" ng-click="repo.state = !repo.state" class="toggle-repo glyphicon glyphicon-triangle-bottom small" aria-hidden="true"></span>
-                <span ng-if="repo.state" ng-click="repo.state = !repo.state" class="toggle-repo glyphicon glyphicon-triangle-right small" aria-hidden="true"></span>
+                <span ng-if='!repo.state' ng-click='repo.state = !repo.state' class='toggle-repo glyphicon glyphicon-triangle-bottom small' aria-hidden='true'></span>
+                <span ng-if='repo.state' ng-click='repo.state = !repo.state' class='toggle-repo glyphicon glyphicon-triangle-right small' aria-hidden='true'></span>
                 &nbsp;{{ repo.owner }}/{{ repo.name }}
             </span>
-            <span ng-if="!pullRequest" class="badge" title="{{ repo.issues.length }} issues">
+            <span ng-if='!pullRequest' class='badge' title='{{ repo.issues.length }} issues'>
                 {{ repo.issues.length }}
             </span>
-            <span ng-if="pullRequest" class="badge" title="{{ feed.countPullRequests(repo) }} issues">
+            <span ng-if='pullRequest' class='badge' title='{{ feed.countPullRequests(repo) }} issues'>
                 {{ feed.countPullRequests(repo)}}
             </span>
-            <a ng-href="https://github.com/{{ repo.owner }}/{{ repo.name }}"><i class="fa fa-github-alt repo-link" aria-hidden="true"></i></a>
+            <a ng-href='https://github.com/{{ repo.owner }}/{{ repo.name }}'><i class='fa fa-github-alt repo-link' aria-hidden='true'></i></a>
         </h3>
     </span>
 
-    <div ng-hide="repo.state" class="repo-issues-container">
-        <github-issue ng-repeat="issue in repo.issues | filter: (data.filterHasAssignee) || '' && hasAssignee">
+    <div ng-hide='repo.state' class='repo-issues-container'>
+        <github-issue ng-repeat='issue in repo.issues | filter: (data.filterHasAssignee) || '' && hasAssignee'>
             {{ issue }}
         </github-issue>
     </div><!-- .repo-issues-container -->
