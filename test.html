@@ -60,11 +60,35 @@
     <div class="container col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
         <div>
-            <i class="fa fa-clock-o"></i>&nbsp;Updated <span am-time-ago="last_updated"></span>
+            <i class="fa fa-clock-o"></i>&nbsp;Updated <span am-time-ago="feed.time"></span>
         </div>
+
+        <div class="filters_holder well well-small">
+            <div class="filter_type">
+                <div class="controls">
+                    Is Assigned:
+                    <select ng-model="data.filterHasAssignee">
+                        <option ng-click="" value="">&#8212;</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div><!-- .controls -->
+            </div><!-- .filter_type -->
+            <br>
+            <div class="filter_type">
+                <label class="control-label">Labels:</label>
+                <div class="controls">
+                    <label class="form-inline"  ng-repeat="label in labels">
+                        <input type="checkbox" value="{{ label }}" ng-model="label.selected" />
+                        {{ label }}&nbsp;&nbsp;&nbsp;
+                    </label><!-- .form-inline -->
+                </div><!-- .controls -->
+            </div><!-- filter_type -->
+        </div><!-- filters_holder -->
 
         <github-repository ng-repeat="repo in feed.repos">
         </github-repository>
+
     </div> <!-- .container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
