@@ -6,40 +6,51 @@
         .controller('FeedController', FeedController)
         .controller('RepoController', RepoController)
         .constant('REPO_CONFIG_URL', 'config-new.json')
+        .constant('API_BASE_PATH', 'https://api.github.com/repos/')
         .directive('githubIssue', githubIssue)
         .directive('githubRepository', githubRepository)
-        .factory('GithubIssueFeedService', GithubIssueFeedService);
+        .service('GithubIssueFeedService', GithubIssueFeedService);
 
         FeedController.$inject = ['$scope', '$http', '$q', 'GithubIssueFeedService'];
         function FeedController($scope, $http, $q, GithubIssueFeedService) {
             var feed = this;
-            var baseUrl = 'https://api.github.com/repos/';
             $scope.pullRequest = false;
 
-            GithubIssueFeedService.getRepoConfig().then(function(response) {
+            var promise = GithubIssueFeedService.getRepoList();
+
+            // Fetch list of repositories from config.json.
+            promise.then(function(response) {
                 feed.repos = response.data["repos"];
                 feed.apiToken = response.data["apiToken"];
-                var promises = [];
+
+                // Get issues for each repository.
                 angular.forEach(feed.repos, function(repo) {
-                    var promise = $http({
-                        method: 'GET',
-                        url: baseUrl + repo.owner + '/' + repo.name + '/issues',
-                        params: {
-                            per_page: 100,
-                            state: 'open',
-                            sort: 'created',
-                            access_token: feed.apiToken
-                        }
-                    }).then(function success(response) {
+                    var promise = GithubIssueFeedService.getRepoIssues(repo.owner, repo.name, feed.apiToken);
+
+                    promise.then(function(response) {
+                        // Only add "issues" array if open issues exist.
                         if (response.data.length > 0) {
                             repo["issues"] = response.data;
                         }
                     }, function error(response) {
-                        console.log('An error has occurred.');
+                        console.log('An error has occurred while fetching repository issues.');
                     });
                 });
-                console.log(feed.repos);
+            }, function error(response) {
+                console.log('An error has occurred while fetching list of repositories.');
             });
+
+
+            feed.hasPullRequests = function(repo) {
+                var foundPR = false;
+                angular.forEach(repo.issues, function(issue) {
+                    console.log(issue.pull_request);
+                    if(issue.pull_request) {
+                        foundPR = true;
+                    }
+                });
+                return foundPR;
+            }
 
             $scope.pullRequestFalse = function() {
                 $scope.pullRequest = false;
@@ -53,14 +64,7 @@
         RepoController.$inject = ['GithubIssueFeedService'];
         function RepoController(GithubIssueFeedService) {
 
-            var repoCtrl = this;
-            repoCtrl.hasPullRequests = function(repo) {
-                var foundPR = false;
-                angular.forEach(repo.issues, function(issue) {
-                    console.log(issue.pull_request);
-                    // if(issue.pull_request)
-                })
-            }
+
 
         }
 
@@ -79,22 +83,32 @@
         }
 
 
-        GithubIssueFeedService.$inject = ['$http', '$q', 'REPO_CONFIG_URL'];
-        function GithubIssueFeedService($http, $q) {
+        GithubIssueFeedService.$inject = ['$http', '$q', 'REPO_CONFIG_URL', 'API_BASE_PATH'];
+        function GithubIssueFeedService($http, $q, REPO_CONFIG_URL, API_BASE_PATH) {
             var service = this;
-            // List of Relevant Repositories.
-            var configUrl = 'config-new.json';
-            // Base URL to Access Github Repos.
-            var baseUrl = 'https://api.github.com/repos/';
 
-            return {
-                getRepoConfig: function() {
-                    return $http.get(configUrl);
-                },
-                getIssues: function() {
-                    return $http.get()
-                }
+            service.getRepoList = function() {
+                var response = $http({
+                    method: 'GET',
+                    url: (REPO_CONFIG_URL)
+                });
+                return response;
+            };
+
+            service.getRepoIssues = function(repoOwner, repoName, apiToken) {
+                var response = $http({
+                    method: 'GET',
+                    url: (API_BASE_PATH + repoOwner + '/' + repoName + '/issues'),
+                    params: {
+                        per_page: 100,
+                        state: 'open',
+                        sort: 'created',
+                        access_token: apiToken
+                    }
+                });
+                return response;
             }
+
         }
 
 
