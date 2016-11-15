@@ -107,6 +107,12 @@ a:hover {
     color: #999;
 }
 
+// Prevent text from overflowing div on small screens.
+.panel-body,
+.panel-footer {
+    word-wrap: break-word;
+}
+
 
 /* Issues */
 .issue-assignee img {
