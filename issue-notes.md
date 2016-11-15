@@ -18,6 +18,7 @@
   - [$routeProvider](#routeprovider)
 - [aggregator.js](#aggregatorjs)
 - [Mozilla Style Guides](#mozilla-style-guides)
+
 ___
 
 # config.json
