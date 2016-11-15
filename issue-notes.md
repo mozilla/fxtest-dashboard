@@ -10,7 +10,7 @@
 - [config.json](#config-json)
 - [main.js](#main-js)
   - [IIFE](#iife)
-  - ['use strict'](use-strict)
+  - ['use strict'](#use-strict)
   - [Instantiation](#instantiation)
   - [$routeProvider](#routeprovider)
 
