@@ -4,7 +4,7 @@
 
     angular.module('dashboardApp', ['angularMoment'])
         .controller('FeedController', FeedController)
-        .constant('REPO_CONFIG_URL', 'config-new.json')
+        .constant('REPO_CONFIG_URL', 'config.json')
         .constant('API_BASE_PATH', 'https://api.github.com/repos/')
         .directive('githubIssue', githubIssue)
         .directive('githubRepository', githubRepository)

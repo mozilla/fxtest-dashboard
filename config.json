@@ -1,21 +1,69 @@
 {
   "repos": [
-    "https://github.com/mozilla/Addon-Tests",
-    "https://github.com/mozilla/bidpom",
-    "https://github.com/mozilla/fxapom",
-    "https://github.com/mozilla/fxtest-dashboard",
-    "https://github.com/mozilla/fxtestbot",
-    "https://github.com/mozilla/hello-tests",
-    "https://github.com/mozilla/moz-grid-config",
-    "https://github.com/mozilla/mozillians-tests",
-    "https://github.com/mozilla/moztrap-tests",
-    "https://github.com/mozilla/mozwebqa-dashboard",
-    "https://github.com/mozilla/mozwebqa-examples",
-    "https://github.com/mozilla/snippets-tests",
-    "https://github.com/mozilla/Socorro-Tests",
-    "https://github.com/mozilla/treeherder-tests",
-    "https://github.com/mozilla/webqabot",
-    "https://github.com/mozilla-services/services-test"
+      {
+          "owner": "mozilla",
+          "name": "Addon-Tests"
+      },
+      {
+          "owner": "mozilla",
+          "name": "bidpom"
+      },
+      {
+          "owner": "mozilla",
+          "name": "fxapom"
+      },
+      {
+          "owner": "mozilla",
+          "name": "fxtest-dashboard"
+      },
+      {
+          "owner": "mozilla",
+          "name": "fxtestbot"
+      },
+      {
+          "owner": "mozilla",
+          "name": "hello-tests"
+      },
+      {
+          "owner": "mozilla",
+          "name": "moz-grid-config"
+      },
+      {
+          "owner": "mozilla",
+          "name": "mozillians-tests"
+      },
+      {
+          "owner": "mozilla",
+          "name": "moztrap-tests"
+      },
+      {
+          "owner": "mozilla",
+          "name": "mozwebqa-dashboard"
+      },
+      {
+          "owner": "mozilla",
+          "name": "mozwebqa-examples"
+      },
+      {
+          "owner": "mozilla",
+          "name": "snippets-tests"
+      },
+      {
+          "owner": "mozilla",
+          "name": "Socorro-Tests"
+      },
+      {
+          "owner": "mozilla",
+          "name": "treeherder-tests"
+      },
+      {
+          "owner": "mozilla",
+          "name": "webqabot"
+      },
+      {
+          "owner": "mozilla-services",
+          "name": "services-test"
+      }
   ],
-  "api_token": "692aadd2c9789a337c4d3544787f101ad8c35bc7"
+  "apiToken": "692aadd2c9789a337c4d3544787f101ad8c35bc7"
 }
