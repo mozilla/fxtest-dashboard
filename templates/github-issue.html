@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div ng-if="pullRequest && issue.pull_request!==undefined || !pullRequest" class="panel panel-default">
     <div class="panel-body">
         <a href="{{ issue.html_url }}" target="_blank">
         {{ issue.title }}
