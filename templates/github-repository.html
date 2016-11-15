@@ -1,4 +1,4 @@
-<div ng-if="repo.issues && !pullRequest || repoCtrl.hasPullRequests(repo) && pullRequest" ng-controller="RepoController as repoCtrl">
+<div ng-if="repo.issues && !pullRequest || feed.hasPullRequests(repo) && pullRequest" ng-controller="RepoController as repoCtrl">
     <span>
         <h3 id="{{ repo.owner }}/{{ repo.name }}" class="repo-title">
             <span>
@@ -7,7 +7,7 @@
                 &nbsp;{{ repo.owner }}/{{ repo.name }}
             </span>
             <span class="badge" title="{{ repo.issues.length }} issues">
-                {{ repo.issueCount }}
+                {{ repo.issues.length }}
             </span>
             <a ng-href="https://github.com/{{ repo.owner }}/{{ repo.name }}"><i class="fa fa-github-alt repo-link" aria-hidden="true"></i></a>
         </h3>
