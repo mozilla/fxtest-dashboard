@@ -89,15 +89,26 @@
 
     </div> <!-- .container -->
 
+
+    <!-- Libraries -->
     <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-    <script src='js/vendor/modernizr-2.6.2-respond-1.1.0.min.js'></script>
-    <script src='js/vendor/angular.min.js'></script>
-    <script src='js/vendor/bootstrap.min.js'></script>
+    <script>window.jQuery || document.write('<script src="lib/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src='lib/angular.min.js'></script>
+    <script src='lib/bootstrap.min.js'></script>
     <script src='https://use.fontawesome.com/e1862a0f00.js'></script>
-    <script src='js/vendor/moment.min.js'></script>
-    <script src='js/vendor/angular-moment.min.js'></script>
-    <script src='js/app.js'></script>
+    <script src='lib/modernizr-2.6.2-respond-1.1.0.min.js'></script>
+    <script src='lib/moment.min.js'></script>
+    <script src='lib/angular-moment.min.js'></script>
+
+    <!-- Modules -->
+    <script src='src/dashboard/dashboard.module.js'></script>
+
+    <!-- 'DashboardApp' module artifacts -->
+    <script src="src/dashboard/feed.controller.js"></script>
+    <script src="src/dashboard/issuefeed.service.js"></script>
+    <script src="src/dashboard/githubissue.directive.js"></script>
+    <script src="src/dashboard/githubrepository.directive.js"></script>
+    <script src="src/dashboard/hasassignee.filter.js"></script>
 
 </body>
 </html>
