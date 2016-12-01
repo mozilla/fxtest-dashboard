@@ -17,7 +17,7 @@
                     </span>
                 </div><!-- .col-md-1 -->
                 <div class='col-md-11 col-sm-10 col-xs-9'>
-                    <p>Assigned to <a ng-href='{{ issue.assignee.url }}'>{{ issue.assignee.name }}</a></p>
+                    <p>Assigned to <a ng-href='{{ issue.assignee.url }}'>{{ issue.assignee.login }}</a></p>
                     <p>Last updated <span am-time-ago='issue.updated_at'></span></p>
                     <p ng-if='issue.body.length'>
                         <span class='hyphenate'>{{ issue.body | limitTo:150 }}</span>

@@ -17,7 +17,7 @@
     </span>
 
     <div ng-hide='repo.state' class='repo-issues-container'>
-        <github-issue ng-repeat='issue in repo.issues'>
+        <github-issue ng-repeat='issue in repo.issues | hasAssignee: filterItem.assignee'>
             {{ issue }}
         </github-issue>
     </div><!-- .repo-issues-container -->

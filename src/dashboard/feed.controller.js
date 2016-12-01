@@ -11,22 +11,32 @@ function FeedController($scope, $http, $q, IssueFeedService) {
     feed.time = new Date();
     // Is this the pull requests page?
     $scope.pullRequest = false;
-    // Array for Available Filters
-    $scope.labels = [
-        'enhancement',
-        'help wanted',
-        'question',
-        'blocked',
-        'beginner',
-        'intermediate',
-        'advanced',
-        'urgent'
-    ];
-    $scope.filters = {
-        filterHasAssignee: null,
-        labels: []
+
+
+
+    $scope.filterOptions = {
+        hasAssignee: [
+            { name: '—' },
+            { name: 'Yes' },
+            { name: 'No' }
+        ],
+        labels: [
+            'enhancement',
+            'help wanted',
+            'question',
+            'blocked',
+            'beginner',
+            'intermediate',
+            'advanced',
+            'urgent'
+        ]
     };
 
+    //Mapped to the model to filter
+    $scope.filterItem = {
+      assignee: $scope.filterOptions.hasAssignee[0]
+    };
+    console.log($scope.filterItem.assignee.name);
     var promise = IssueFeedService.getRepoList();
 
     // Fetch list of repositories from config.json.
