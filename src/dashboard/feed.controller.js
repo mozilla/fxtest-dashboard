@@ -21,6 +21,7 @@ function FeedController($scope, $http, $q, IssueFeedService) {
 
     // Label filters
     $scope.labels = [];
+    $scope.selectedLabels = [];
 
     //Uncheck all filters
     $scope.uncheckAll = function(input) {
@@ -53,6 +54,7 @@ function FeedController($scope, $http, $q, IssueFeedService) {
                             for(var j = 0; j<labels.length; j++) {
                                 if($scope.labels.indexOf(labels[j].name) < 0) {
                                     $scope.labels.push(labels[j].name);
+                                    $scope.selectedLabels.push({name: labels[j].name, selected: false});
                                 }
                             }
                         }

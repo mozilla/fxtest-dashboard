@@ -1,4 +1,4 @@
-<div ng-if='(repo.issues | hasAssignee: assigned | pullRequests: pullRequest).length > 0'>
+<div ng-if='(repo.issues | hasAssignee: assigned | labels: selectedLabels | pullRequests: pullRequest).length > 0'>
     <span>
         <h3 id='{{ repo.owner }}/{{ repo.name }}' class='repo-title'>
             <span>
@@ -7,15 +7,15 @@
                 &nbsp;{{ repo.owner }}/{{ repo.name }}
             </span>
             <span class='badge' title='issue count'>
-                {{ (repo.issues | hasAssignee: assigned | pullRequests: pullRequest).length }}
+                {{ (repo.issues | hasAssignee: assigned | labels: selectedLabels | pullRequests: pullRequest).length }}
             </span>
             <a ng-href='https://github.com/{{ repo.owner }}/{{ repo.name }}'><i class='fa fa-github-alt repo-link' aria-hidden='true'></i></a>
         </h3>
     </span>
 
     <div ng-hide='repo.state' class='repo-issues-container'>
-        <github-issue ng-repeat='issue in repo.issues | hasAssignee: assigned | pullRequests: pullRequest'>
+        <github-issue ng-repeat='issue in repo.issues | hasAssignee: assigned | labels: selectedLabels | pullRequests: pullRequest'>
             {{ issue }}
         </github-issue>
     </div><!-- .repo-issues-container -->
-</div><!-- .test-result -->
+</div>
