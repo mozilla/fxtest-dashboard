@@ -8,7 +8,6 @@
 
     <link rel='stylesheet' href='css/bootstrap.css'>
     <link rel='stylesheet' href='css/dashboard.css'>
-    <link rel='stylesheet' href='css/main.css'>
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:Light' />
 
 </head>
@@ -63,6 +62,16 @@
                     <li class='uncheck-filters'>
                         <a href='' ng-click='uncheckAll(assigned)'>Uncheck All</a>
                     </li>
+
+                    <li ng-repeat='item in selectedLabels'>
+                        <label>
+                            <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' value='item.selected' />
+                            {{ item.name }}
+                        </label>
+                    </li>
+                    <li class='uncheck-filters'>
+                        <a href='' ng-click='uncheckAll(selectedLabels)'>Uncheck All</a>
+                    </li>
                 </ul>
             </div><!-- .sidebar -->
         </div><!-- .row -->
@@ -74,10 +83,9 @@
             <i class='fa fa-clock-o'></i>&nbsp;Updated <span am-time-ago='feed.time'></span>
         </div>
 
-
-
         <github-repository ng-repeat='repo in feed.repos'>
         </github-repository>
+        
 
     </div> <!-- .container -->
 
