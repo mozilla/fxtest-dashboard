@@ -51,6 +51,19 @@
                 <ul class='nav nav-sidebar'>
                     <li id='nav-fork'><a href='https://github.com/mozilla/fxtest-dashboard'>Fork on GitHub&nbsp;<i class='fa fa-code-fork' aria-hidden='true'></i></a></li>
                 </ul><!-- .nav-sidebar -->
+                <br />
+                Filters:
+                <ul class='list-unstyled'>
+                    <li ng-repeat='item in assigned'>
+                        <label>
+                            <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' value='item.selected' />
+                            {{ item.name }}
+                        </label>
+                    </li>
+                    <li class='uncheck-filters'>
+                        <a href='' ng-click='uncheckAll(assigned)'>Uncheck All</a>
+                    </li>
+                </ul>
             </div><!-- .sidebar -->
         </div><!-- .row -->
     </div><!-- .container-fluid -->
@@ -61,25 +74,7 @@
             <i class='fa fa-clock-o'></i>&nbsp;Updated <span am-time-ago='feed.time'></span>
         </div>
 
-        <div class='filters_holder well well-small'>
-            <div class='filter_type'>
-                <div class='controls'>
-                    Is Assigned:
-                    <select ng-model='filterItem.assignee' ng-options='item.name for item in filterOptions.hasAssignee'>
-                    </select>
-                </div><!-- .controls -->
-            </div><!-- .filter_type -->
-            <br>
-            <div class='filter_type'>
-                <label class='control-label'>Labels:</label>
-                <div class='controls'>
-                    <label class='form-inline'  ng-repeat='label in labels'>
-                        <input type='checkbox' value='{{ label }}' ng-model='label.selected' />
-                        {{ label }}&nbsp;&nbsp;&nbsp;
-                    </label><!-- .form-inline -->
-                </div><!-- .controls -->
-            </div><!-- filter_type -->
-        </div><!-- filters_holder -->
+
 
         <github-repository ng-repeat='repo in feed.repos'>
         </github-repository>
@@ -101,11 +96,13 @@
     <script src='src/dashboard/dashboard.module.js'></script>
 
     <!-- 'DashboardApp' module artifacts -->
-    <script src="src/dashboard/feed.controller.js"></script>
-    <script src="src/dashboard/issuefeed.service.js"></script>
-    <script src="src/dashboard/githubissue.directive.js"></script>
-    <script src="src/dashboard/githubrepository.directive.js"></script>
-    <script src="src/dashboard/hasassignee.filter.js"></script>
+    <script src='src/dashboard/feed.controller.js'></script>
+    <script src='src/dashboard/issuefeed.service.js'></script>
+    <script src='src/dashboard/githubissue.directive.js'></script>
+    <script src='src/dashboard/githubrepository.directive.js'></script>
+    <script src='src/dashboard/pullrequests.filter.js'></script>
+    <script src='src/dashboard/hasassignee.filter.js'></script>
+    <script src='src/dashboard/labels.filter.js'></script>
 
 </body>
 </html>
