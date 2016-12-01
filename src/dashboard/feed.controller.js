@@ -19,6 +19,9 @@ function FeedController($scope, $http, $q, IssueFeedService) {
         { name: 'Unassigned', selected: false }
     ];
 
+    // Label filters
+    $scope.labels = [];
+
     //Uncheck all filters
     $scope.uncheckAll = function(input) {
         angular.forEach(input, function(value, key) {
@@ -41,6 +44,19 @@ function FeedController($scope, $http, $q, IssueFeedService) {
                 // Only add 'issues' array if open issues exist.
                 if (response.data.length > 0) {
                     repo['issues'] = response.data;
+
+                    // Populate Labels array with found Labels
+                    for(var i=0; i<response.data.length; i++) {
+                        var curr = response.data[i];
+                        if (curr.labels) {
+                            var labels = curr.labels;
+                            for(var j = 0; j<labels.length; j++) {
+                                if($scope.labels.indexOf(labels[j].name) < 0) {
+                                    $scope.labels.push(labels[j].name);
+                                }
+                            }
+                        }
+                    }
                 }
             }, function error(response) {
                 console.log('An error has occurred while fetching repository issues.');
