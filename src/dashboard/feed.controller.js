@@ -13,30 +13,19 @@ function FeedController($scope, $http, $q, IssueFeedService) {
     $scope.pullRequest = false;
 
 
+    // Assigned filter
+    $scope.assigned =  [
+        { name: 'Assigned', selected: false },
+        { name: 'Unassigned', selected: false }
+    ];
 
-    $scope.filterOptions = {
-        hasAssignee: [
-            { name: '—' },
-            { name: 'Yes' },
-            { name: 'No' }
-        ],
-        labels: [
-            'enhancement',
-            'help wanted',
-            'question',
-            'blocked',
-            'beginner',
-            'intermediate',
-            'advanced',
-            'urgent'
-        ]
+    //Uncheck all filters
+    $scope.uncheckAll = function(input) {
+        angular.forEach(input, function(value, key) {
+            value.selected = false;
+        });
     };
 
-    //Mapped to the model to filter
-    $scope.filterItem = {
-      assignee: $scope.filterOptions.hasAssignee[0]
-    };
-    console.log($scope.filterItem.assignee.name);
     var promise = IssueFeedService.getRepoList();
 
     // Fetch list of repositories from config.json.
@@ -61,28 +50,6 @@ function FeedController($scope, $http, $q, IssueFeedService) {
     }, function error(response) {
         console.log('An error has occurred while fetching list of repositories.');
     });
-
-
-    feed.hasPullRequests = function(repo) {
-        var foundPR = false;
-        angular.forEach(repo.issues, function(issue) {
-            if(issue.pull_request) {
-                foundPR = true;
-            }
-        });
-        return foundPR;
-    }
-
-    feed.countPullRequests = function(repo) {
-        if (feed.hasPullRequests(repo)) {
-            var pullRequests = repo.issues.filter(function(item) {
-                return item.pull_request !== undefined;
-            });
-            return pullRequests.length;
-        } else {
-            return 0;
-        }
-    }
 
     $scope.pullRequestFalse = function() {
         $scope.pullRequest = false;
