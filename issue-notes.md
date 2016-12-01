@@ -130,7 +130,7 @@ Using `$routeProvider` (main.js line 15) is unnecessary for this app. Instead of
 having two separate pages for Issues and Pull Requests, (since pull requests are issues),
 you can use the same template and filter for pull requests when viewing the Pull Requests Page.
 
-### Redundant & Excess Code
+### Redundant Code
 There are many places in the app where redundant code is used.
 
 - IssuesController & PullRequestsController
@@ -185,15 +185,15 @@ ___
 
 # Issues Addressed
 
-## Issue #52
+### Issue #52
 
 While creating filter functionality, I decided to also address [Issue #52](https://github.com/mozilla/fxtest-dashboard/issues/52) to avoid rewriting the filters later.
 
 Is Assigned filter is now a checkbox. Uncheck All links have been added.
 
-## Issue #60
+### Issue #60
 
-Also addressing this issue to avoid later rewrite. [Issue #60](https://github.com/mozilla/fxtest-dashboard/issues/60)
+Also addressing this issue to avoid later rewrite. Labels are now pulled from the found open issues  [Issue #60](https://github.com/mozilla/fxtest-dashboard/issues/60)
 
 ___
 
