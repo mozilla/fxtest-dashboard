@@ -19,16 +19,6 @@ a:hover {
 
 
 /*
-* Global add-ons
-*/
-
-.sub-header {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-}
-
-
-/*
 * Top navigation
 * Hide default border to remove 1px line.
 */
@@ -72,12 +62,6 @@ a:hover {
     padding-right: 20px;
     padding-left: 20px;
 }
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-    color: #fff;
-    background-color: #0793e2;
-}
 
 
 /*
@@ -93,9 +77,6 @@ a:hover {
         padding-left: 40px;
     }
 }
-.main .page-header {
-    margin-top: 0;
-}
 
 .repo-link {
     color: #777;
@@ -107,15 +88,11 @@ a:hover {
     color: #999;
 }
 
-.user-avatar {
-    max-width: 100%;
-    width: 60px;
-}
 .user-avatar-wrap {
     max-width: 90px;
 }
 
-// Prevent text from overflowing div on small screens.
+/* Prevent text from overflowing div on small screens. */
 .panel-body,
 .panel-footer {
     word-wrap: break-word;
@@ -133,49 +110,6 @@ a:hover {
     margin-right:5px;
 }
 
-.repo-link {
-    color: #777;
-    padding-left: 1rem;
-}
-
-.repo-link:hover {
-    cursor: pointer;
-    color: #999;
-}
-
-.user-avatar {
-    max-width: 100%;
-    width: 60px;
-}
-.user-avatar-wrap {
-    max-width: 90px;
-}
-
-/*
-* Placeholder dashboard ideas
-*/
-
-.placeholders {
-    margin-bottom: 30px;
-    text-align: center;
-}
-.placeholders h4 {
-    margin-bottom: 0;
-}
-.placeholder {
-    margin-bottom: 20px;
-}
-.placeholder img {
-    border-radius: 50%;
-    display: inline-block;
-}
-.vertical-center {
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-}
 .toggle-repo:hover {
     cursor: pointer;
 }
