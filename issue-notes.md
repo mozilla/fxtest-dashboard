@@ -17,6 +17,8 @@
   - [jQuery](#jquery)
   - [$routeProvider](#routeprovider)
 - [aggregator.js](#aggregatorjs)
+- [Issues Addressed](#issues-addressed)
+    - [#52](#issue-52)
 - [Mozilla Style Guides](#mozilla-style-guides)
 
 ___
@@ -179,6 +181,19 @@ I have broken down into functions within GitHubIssueFeedService and FeedControll
 Instead of using jQuery's getJSON method, we can utilize Angular's `$http` service.
 This also eliminates the need for the paramaters in our API URL, as the $http service
 can take `params: {}` and parse them appropriately.
+___
+
+# Issues Addressed
+
+## Issue #52
+
+While creating filter functionality, I decided to also address [Issue #52](https://github.com/mozilla/fxtest-dashboard/issues/52) to avoid rewriting the filters later.
+
+Is Assigned filter is now a checkbox. Uncheck All links have been added.
+
+## Issue #60
+
+Also addressing this issue to avoid later rewrite. [Issue #60](https://github.com/mozilla/fxtest-dashboard/issues/60)
 
 ___
 
