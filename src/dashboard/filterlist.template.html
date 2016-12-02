@@ -8,8 +8,8 @@
             </label>
         </li>
         <li class='uncheck-filters'>
-            <a href='' ng-click='checkAll(assigned)'>Check All</a>
-            <a href='' ng-click='uncheckAll(assigned)'>Uncheck All</a>
+            <button class='btn btn-primary btn-xs' ng-click='checkAll(assigned)'>Check All</button>
+            <button class='btn btn-primary btn-xs' ng-click='uncheckAll(assigned)'>Uncheck All</button>
         </li>
 
         <li class='list-item col-xs-4' ng-repeat='item in selectedLabels'>
@@ -19,8 +19,8 @@
             </label>
         </li>
         <li class='uncheck-filters'>
-            <a href='' ng-click='checkAll(selectedLabels)'>Check All</a>
-            <a href='' ng-click='uncheckAll(selectedLabels)'>Uncheck All</a>
+            <button class='btn btn-primary btn-xs' ng-click='checkAll(selectedLabels)'>Check All</button>
+            <button class='btn btn-primary btn-xs' ng-click='uncheckAll(selectedLabels)'>Uncheck All</button>
         </li>
     </ul>
 </div><!-- #filters -->
