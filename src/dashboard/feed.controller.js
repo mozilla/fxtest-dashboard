@@ -23,6 +23,13 @@ function FeedController($scope, $http, $q, IssueFeedService) {
     $scope.labels = [];
     $scope.selectedLabels = [];
 
+    // Check all filters
+    $scope.checkAll = function(input) {
+        angular.forEach(input, function(value, key) {
+            value.selected = true;
+        });
+    };
+
     //Uncheck all filters
     $scope.uncheckAll = function(input) {
         angular.forEach(input, function(value, key) {
@@ -71,10 +78,12 @@ function FeedController($scope, $http, $q, IssueFeedService) {
 
     $scope.pullRequestFalse = function() {
         $scope.pullRequest = false;
+        if ($scope.menu.state) $scope.menu.state = false;
     }
 
     $scope.pullRequestTrue = function() {
         $scope.pullRequest = true;
+        if ($scope.menu.state) $scope.menu.state = false;
     }
 }
 
