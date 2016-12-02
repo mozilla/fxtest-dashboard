@@ -78,10 +78,9 @@ The new structure is as follows:
 }
 ```
 
-Within the FeedController, the `"repos"` array also becomes the data structure to
-hold the array of issues for each repository, so each repo object also contains
-its own issues. Currently they are two separate arrays. The issues is _only_
-added to each `repo` entry _if open issues exist_.
+Within the FeedController, the `"repos"` array also becomes the data structure to hold the array of issues for each repository, so each repo object also contains its own issues. The original app contatined two separate arrays.
+
+The `issues` array  is _only_ added to each `repo` object _if open issues exist_.
 
 ___
 
