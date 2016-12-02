@@ -17,62 +17,28 @@
     <p class='chromeframe'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> or <a href='http://www.google.com/chromeframe/?redirect=true'>activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-
-    <nav class='navbar navbar-inverse navbar-fixed-top' style='background-color:#bf3c2e'>
-        <div class='container-fluid'>
-            <div class='navbar-header'>
-                <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar'>
-                <span class='sr-only'>Toggle navigation</span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                </button>
-                <a class='navbar-brand' href='#' style='color:white'>Firefox Test Engineering Dashboard</a>
-            </div>
-        </div>
-    </nav><!-- .navbar -->
-
     <div class='container-fluid'>
         <div class='row'>
-            <div class='col-sm-3 col-md-2 sidebar'>
-                <ul class='nav nav-sidebar'>
-                    <li id='nav-issues'><a href='' ng-click='pullRequestFalse()'>Issues<span class='sr-only'>(current)</span></a></li>
-                    <li id='nav-pullrequests'><a href='' ng-click='pullRequestTrue()'>Pull Requests</a></li>
-                </ul>
-                <ul class='nav nav-sidebar'>
-                    <li id='nav-jenkins'><a href='https://webqa-ci.mozilla.com/'>Jenkins</a></li>
-                </ul>
-                <ul class='nav nav-sidebar'>
-                    <li><a href='https://quality.mozilla.org/teams/test-engineering/'>About Firefox Test Engineering</a></li>
-                    <li><a href='https://wiki.mozilla.org/TestEngineering'>Wiki</a></li>
-                </ul>
-                <ul class='nav nav-sidebar'>
-                    <li id='nav-fork'><a href='https://github.com/mozilla/fxtest-dashboard'>Fork on GitHub&nbsp;<i class='fa fa-code-fork' aria-hidden='true'></i></a></li>
-                </ul><!-- .nav-sidebar -->
-                <br />
-                Filters:
-                <ul class='list-unstyled'>
-                    <li ng-repeat='item in assigned'>
-                        <label>
-                            <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' value='item.selected' />
-                            {{ item.name }}
-                        </label>
-                    </li>
-                    <li class='uncheck-filters'>
-                        <a href='' ng-click='uncheckAll(assigned)'>Uncheck All</a>
-                    </li>
+            <nav class='navbar'>
+                <div class='navbar-header'>
+                  <button type='button' class='navbar-toggle' ng-click='menu.state = !menu.state' aria-hidden='true'>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                  </button>
+                  <a class='navbar-brand' href='#'>Firefox Test Engineering Dashboard</a>
+                </div>
+                <navigation-menu ng-if='menu.state'></navigation-menu>
+                <filter-list class='filters-mobile'></filter-list>
+            </nav>
 
-                    <li ng-repeat='item in selectedLabels'>
-                        <label>
-                            <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' value='item.selected' />
-                            {{ item.name }}
-                        </label>
-                    </li>
-                    <li class='uncheck-filters'>
-                        <a href='' ng-click='uncheckAll(selectedLabels)'>Uncheck All</a>
-                    </li>
-                </ul>
+            <div class='col-sm-3 col-md-2 sidebar'>
+                <div class='nav-sidebar'>
+                    <navigation-menu></navigation-menu>
+                </div><!-- .sidebar-nav -->
+
+                <filter-list></filter-list>
+
             </div><!-- .sidebar -->
         </div><!-- .row -->
     </div><!-- .container-fluid -->
@@ -85,16 +51,15 @@
 
         <github-repository ng-repeat='repo in feed.repos'>
         </github-repository>
-        
+
 
     </div> <!-- .container -->
 
 
     <!-- Libraries -->
     <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
-    <script>window.jQuery || document.write('<script src="lib/jquery-1.10.1.min.js"><\/script>')</script>
-    <script src='lib/angular.min.js'></script>
     <script src='lib/bootstrap.min.js'></script>
+    <script src='lib/angular.min.js'></script>
     <script src='https://use.fontawesome.com/e1862a0f00.js'></script>
     <script src='lib/modernizr-2.6.2-respond-1.1.0.min.js'></script>
     <script src='lib/moment.min.js'></script>
@@ -108,6 +73,8 @@
     <script src='src/dashboard/issuefeed.service.js'></script>
     <script src='src/dashboard/githubissue.directive.js'></script>
     <script src='src/dashboard/githubrepository.directive.js'></script>
+    <script src='src/dashboard/navigationmenu.directive.js'></script>
+    <script src='src/dashboard/filterlist.directive.js'></script>
     <script src='src/dashboard/pullrequests.filter.js'></script>
     <script src='src/dashboard/hasassignee.filter.js'></script>
     <script src='src/dashboard/labels.filter.js'></script>

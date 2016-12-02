@@ -1,12 +1,7 @@
-/*
-* Base structure
-*/
-
-/* Move down content because we have a fixed navbar that is 50px tall */
 body {
     font-family:'Open Sans';
     font-style:light;
-    padding-top: 50px;
+    padding-top: 26rem;
 }
 
 a:link {
@@ -17,65 +12,66 @@ a:hover {
     color: #00539F;
 }
 
-
-/*
-* Top navigation
-* Hide default border to remove 1px line.
-*/
-
-.navbar-fixed-top {
+.navbar {
+    background: #f5f5f5;
     border: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+a.navbar-brand {
+    color: white;
+    cursor: default;
+}
+.navbar-header {
+    background-color:#bf3c2e;
+}
+.navbar-toggle {
+    border: 1px solid whitesmoke;
+}
+.navbar-toggle:active,
+.navbar-toggle:focus,
+.navbar-toggle:hover {
+    background-color: #9e3227;
+}
+.icon-bar {
+    background: whitesmoke;
+}
+.navbar-nav {
+    background: #f5f5f5;
+}
+.navbar-nav li:hover {
+    background-color: #eee;
+}
+nav .navbar-nav li {
+    padding-left: 4rem;
+}
+nav ul.navbar-nav  {
+    border-bottom: 1px solid #dcdcdc;
 }
 
+.filters-mobile .filter-list {
+    padding: 5px 1rem;
+}
+.filters-mobile .list-item {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
-/*
-* Sidebar
-*/
-
-/* Hide for mobile, show later */
 .sidebar {
     display: none;
 }
-@media (min-width: 768px) {
-    .sidebar {
-        background-color: #f5f5f5;
-        border-right: 1px solid #eee;
-        bottom: 0;
-        display: block;
-        left: 0;
-        overflow-x: hidden;
-        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-        padding: 20px;
-        position: fixed;
-        top: 51px;
-        z-index: 1000;
-    }
+.nav-sidebar ul {
+    width: 100%;
 }
-
-/* Sidebar navigation */
-.nav-sidebar {
-    margin-right: -21px; /* 20px padding + 1px border */
-    margin-bottom: 20px;
-    margin-left: -20px;
+.sidebar li {
+    padding: 0.5rem 0.2rem 0.5rem 1rem;
+    width: 100%;
 }
-.nav-sidebar > li > a {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-
-/*
-* Main content
-*/
 
 .main {
     padding: 20px;
-}
-@media (min-width: 768px) {
-    .main {
-        padding-right: 40px;
-        padding-left: 40px;
-    }
 }
 
 .repo-link {
@@ -98,7 +94,6 @@ a:hover {
     word-wrap: break-word;
 }
 
-
 /* Issues */
 .issue-assignee img {
     height: 50px;
@@ -112,4 +107,35 @@ a:hover {
 
 .toggle-repo:hover {
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 0;
+    }
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .navbar-toggle,
+    .filters-mobile {
+        display: none;
+    }
+    .navbar {
+        background: #bf3c2e;
+        border-radius: 0;
+    }
+    .sidebar {
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+        bottom: 0;
+        display: block;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        padding: 0;
+        position: fixed;
+        top: 51px;
+        z-index: 1000;
+    }
 }
