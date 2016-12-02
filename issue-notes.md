@@ -19,6 +19,7 @@
 - [aggregator.js](#aggregatorjs)
 - [Issues Addressed](#issues-addressed)
     - [#52](#issue-52)
+    - [#52](#issue-60)
 - [Mozilla Style Guides](#mozilla-style-guides)
 
 ___
