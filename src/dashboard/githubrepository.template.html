@@ -2,8 +2,8 @@
     <span>
         <h3 id='{{ repo.owner }}/{{ repo.name }}' class='repo-title'>
             <span>
-                <span ng-if='!repo.state' ng-click='repo.state = !repo.state' class='toggle-repo glyphicon glyphicon-triangle-bottom small' aria-hidden='true'></span>
-                <span ng-if='repo.state' ng-click='repo.state = !repo.state' class='toggle-repo glyphicon glyphicon-triangle-right small' aria-hidden='true'></span>
+                <span ng-if='repo.state' ng-click='repo.state = !repo.state' class='toggle-repo glyphicon glyphicon-triangle-bottom small' aria-hidden='true'></span>
+                <span ng-if='!repo.state' ng-click='repo.state = !repo.state' class='toggle-repo glyphicon glyphicon-triangle-right small' aria-hidden='true'></span>
                 &nbsp;{{ repo.owner }}/{{ repo.name }}
             </span>
             <span class='badge' title='issue count'>
@@ -13,7 +13,7 @@
         </h3>
     </span>
 
-    <div ng-hide='repo.state' class='repo-issues-container'>
+    <div ng-show='repo.state' class='repo-issues-container'>
         <github-issue ng-repeat='issue in repo.issues | hasAssignee: assigned | labels: selectedLabels | pullRequests: pullRequest'>
             {{ issue }}
         </github-issue>
