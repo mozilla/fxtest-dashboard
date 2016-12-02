@@ -1,0 +1,26 @@
+<div id='filters' class='filter-list'>
+    <ul class='list-unstyled'>
+        <li>Filters:</li>
+        <li class='list-item col-xs-6' ng-repeat='item in assigned'>
+            <label>
+                <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' value='item.selected' />
+                {{ item.name }}
+            </label>
+        </li>
+        <li class='uncheck-filters'>
+            <a href='' ng-click='checkAll(assigned)'>Check All</a>
+            <a href='' ng-click='uncheckAll(assigned)'>Uncheck All</a>
+        </li>
+
+        <li class='list-item col-xs-4' ng-repeat='item in selectedLabels'>
+            <label>
+                <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' value='item.selected' />
+                {{ item.name }}
+            </label>
+        </li>
+        <li class='uncheck-filters'>
+            <a href='' ng-click='checkAll(selectedLabels)'>Check All</a>
+            <a href='' ng-click='uncheckAll(selectedLabels)'>Uncheck All</a>
+        </li>
+    </ul>
+</div><!-- #filters -->
