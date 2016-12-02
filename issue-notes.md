@@ -95,20 +95,11 @@ Wrapping the code in an [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked
 Specifying `'use strict';` will throw errors that will otherwise have been ignored.
 
 
-### Instantiation
-I moved the instantiation of all controllers, directives, services, etc., to the top of the page.
-This both improves organization, and makes it clearly visible immediately what the contents of the file are.
+### "Modularized"
+I moved all module artifacts&#8212;controllers, directives, services, etc.&#8212;into separate files.
+This both improves organization, and improves code reusability.
 
-__Example:__
-
-```
-angular.module('dashboardApp', ['angularMoment'])
-    .controller('FeedController', FeedController)
-    .constant('REPO_CONFIG_URL', 'config.json')
-    .directive('githubIssue', githubIssue)
-
-    ....
-```
+All module artifact files are found in `src/dashboard/`, following the pattern of `[name].controller.js`, `[name].filter.js`, `[name].template.html`, etc.
 
 ### Dependency Injection
 The app is currently lacking dependency injection on both controllers&#8212;
@@ -154,20 +145,12 @@ it is unnecessary, the logic can be implemented using Angular filters and direct
 
 ### Custom Directives
 
-I have broken down all of the structure in `issues.html` into custom directives.
-Instead of having index.html with the `ng-view` directive that loads templates
-from the `routeProvider`, it now uses the custom directive `<github-repository>`
-to display each repo with open issues.
-
-Within the `githubRepository.html` template, there is the custom directive
-`<github-issue>` which uses the `githubIssue.html` template.
-
-I have used filters to display only pull requests when viewing the pull requests
-"page" (clicking pull requests link), and viewing the issues "page" will display
-all issues.
+I have created several custom directives for blocks of code that are reused, i.e. `<github-repository>`
+ and `<filter-list>`. Directives are comprised of a declaration file `[name].directive.js`, and a template file `[name].template.html`.
 
 ### Custom Service
 
+I creatd the `issueFeed` service to handle JSON calls, passing the data to the `FeedController`.
 ___
 
 # aggregator.js
@@ -201,10 +184,8 @@ ___
 # Mozilla Style Guides
 
 
-I have edited all of the CSS, HTML, and JS files to abide by Mozilla's
-[style guides](http://mozweb.readthedocs.io/en/latest/reference/index.html). I have taken care to give meaningful variable and function names.
+I have begun editing all of the CSS, HTML, and JS to follow Mozilla's
+[style guides](http://mozweb.readthedocs.io/en/latest/reference/index.html).
 
 I also add comments next to closing tags in HTML, as a preference, to make it
 easier on both myself and anyone else who may read the code after me.
-
-_Edit: main.css has not yet been edited to follow style guides._
