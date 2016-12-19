@@ -71,7 +71,6 @@ function FeedController($scope, $http, $q, IssueFeedService) {
                 console.log('An error has occurred while fetching repository issues.');
             });
         });
-        console.log(feed.repos);
     }, function error(response) {
         console.log('An error has occurred while fetching list of repositories.');
     });
