@@ -1,11 +1,14 @@
 {
   "repos": [
-    "https://github.com/mozilla/Addon-Tests",
     "https://github.com/mozilla/fxapom",
     "https://github.com/mozilla/fxtest-dashboard",
     "https://github.com/mozilla/fxtestbot",
+    "https://github.com/mozilla/fxtest-jenkins-pipeline",
+    "https://github.com/mozilla-services/go-bouncer",
+    "https://github.com/Kinto/kinto-integration-tests",
     "https://github.com/mozilla/mozillians-tests",
-    "https://github.com/mozilla-services/services-test"
+    "https://github.com/mozilla-services/services-test",
+    "https://github.com/mozilla/stubattribution-tests"
   ],
   "api_token": "692aadd2c9789a337c4d3544787f101ad8c35bc7"
 }
