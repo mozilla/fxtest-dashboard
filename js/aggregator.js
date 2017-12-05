@@ -15,7 +15,7 @@ function GithubIssuesAggregator(){
             }
 
             var base_url = 'https://api.github.com/repos/';
-            var url_suffix = '/issues?per_page=100&state=open&sort=created&access_token=' + config_data.api_token;
+            var url_suffix = '/issues?per_page=100&state=open&sort=created';
 
             for(i = 0; i < repos.length; i++){
                 (function(index){
